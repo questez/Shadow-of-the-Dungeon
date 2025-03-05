@@ -15,7 +15,7 @@ Z:/UNITY/Shadow-of-the-Dungeon/Shadow of the Dungeon
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-55339
+57282
 -job-worker-count
 5
 -background-job-worker-count
@@ -59,12 +59,14 @@ Z:/UNITY/Shadow-of-the-Dungeon/Shadow of the Dungeon
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7980]  Target information:
+Player connection [6716]  Target information:
 
-Player connection [7980]  * "[IP] 192.168.178.43 [Port] 0 [Flags] 2 [Guid] 2498160968 [EditorId] 2498160968 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-VKT7RGT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [6716]  * "[IP] 192.168.178.43 [Port] 0 [Flags] 2 [Guid] 2740187786 [EditorId] 2740187786 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-VKT7RGT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [7980] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [7980] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6716]  * "[IP] 10.0.85.2 [Port] 0 [Flags] 2 [Guid] 2740187786 [EditorId] 2740187786 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-VKT7RGT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [6716] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [6716] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,7 +77,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 1.43 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.25f1 (4859ab7b5a49)
 [Subsystems] Discovering subsystems at path Z:/UNITY/Editor/Data/Resources/UnitySubsystems
@@ -91,43 +93,43 @@ Initialize mono
 Mono path[0] = 'Z:/UNITY/Editor/Data/Managed'
 Mono path[1] = 'Z:/UNITY/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'Z:/UNITY/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56184
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: Z:/UNITY/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002163 seconds.
-- Loaded All Assemblies, in  0.323 seconds
+Registered in 0.002728 seconds.
+- Loaded All Assemblies, in  0.359 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.286 seconds
-Domain Reload Profiling: 609ms
-	BeginReloadAssembly (128ms)
+- Finished resetting the current domain, in  0.312 seconds
+Domain Reload Profiling: 671ms
+	BeginReloadAssembly (148ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (119ms)
-		LoadAssemblies (128ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (129ms)
+		LoadAssemblies (148ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (116ms)
-			TypeCache.Refresh (115ms)
-				TypeCache.ScanAssembly (104ms)
+		AnalyzeDomain (126ms)
+			TypeCache.Refresh (124ms)
+				TypeCache.ScanAssembly (113ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (286ms)
+	FinalizeReload (313ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (250ms)
+		SetupLoadedEditorAssemblies (273ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (164ms)
-			ProcessInitializeOnLoadMethodAttributes (56ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (186ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -136,148 +138,56 @@ Domain Reload Profiling: 609ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.930 seconds
-Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.935 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.708 seconds
-Domain Reload Profiling: 1637ms
-	BeginReloadAssembly (395ms)
+- Finished resetting the current domain, in  0.724 seconds
+Domain Reload Profiling: 1658ms
+	BeginReloadAssembly (428ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (34ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (33ms)
 	RebuildNativeTypeToScriptingClass (9ms)
 	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (460ms)
-		LoadAssemblies (305ms)
+	LoadAllAssembliesAndSetupDomain (432ms)
+		LoadAssemblies (338ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (260ms)
-			TypeCache.Refresh (194ms)
-				TypeCache.ScanAssembly (181ms)
-			BuildScriptInfoCaches (54ms)
+		AnalyzeDomain (218ms)
+			TypeCache.Refresh (152ms)
+				TypeCache.ScanAssembly (137ms)
+			BuildScriptInfoCaches (55ms)
 			ResolveRequiredComponents (9ms)
-	FinalizeReload (708ms)
+	FinalizeReload (724ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (491ms)
+		SetupLoadedEditorAssemblies (499ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (56ms)
-			ProcessInitializeOnLoadAttributes (359ms)
-			ProcessInitializeOnLoadMethodAttributes (66ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (63ms)
+			ProcessInitializeOnLoadAttributes (361ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
 			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.63 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 198 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5928 unused Assets / (3.0 MB). Loaded Objects now: 6696.
-Memory consumption went from 181.8 MB to 178.8 MB.
-Total: 13.888600 ms (FindLiveObjects: 1.095100 ms CreateObjectMapping: 0.720700 ms MarkObjects: 8.973000 ms  DeleteObjects: 3.096600 ms)
+Unloading 5928 unused Assets / (2.5 MB). Loaded Objects now: 6697.
+Memory consumption went from 182.1 MB to 179.6 MB.
+Total: 14.691600 ms (FindLiveObjects: 1.040800 ms CreateObjectMapping: 1.559400 ms MarkObjects: 8.622100 ms  DeleteObjects: 3.466600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 253638.269771 seconds.
-  path: Assets/minotaur1
-  artifactKey: Guid(b737776f0bb21cf4cabfd6cad8bf3536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1 using Guid(b737776f0bb21cf4cabfd6cad8bf3536) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2739ebfa98ae74def5e0271f63519ea8') in 0.0097352 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.641203 seconds.
+  Time since last request: 79197.142718 seconds.
   path: Assets/minotaur1/Materials/mat_minotaur1_body.mat
   artifactKey: Guid(33c9ee4a234365847b2a66694d208c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1/Materials/mat_minotaur1_body.mat using Guid(33c9ee4a234365847b2a66694d208c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1db983046c84495acac5a91adf608e5f') in 0.5219242 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+Start importing Assets/minotaur1/Materials/mat_minotaur1_body.mat using Guid(33c9ee4a234365847b2a66694d208c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fad69a23cb644664f6b103c43de5c1c9') in 0.4381794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
-========================================================================
-Received Import Request.
-  Time since last request: 5.369885 seconds.
-  path: Assets/minotaur1/Textures/t_minotaur1_AO.png
-  artifactKey: Guid(8df7e2b1890be8d4cbf50c7dd1c2158a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1/Textures/t_minotaur1_AO.png using Guid(8df7e2b1890be8d4cbf50c7dd1c2158a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15f982bcf67df0aeb58c7aaa612eaabb') in 0.0312107 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/minotaur1/Textures/t_minotaur1_axe_AlbedoTransparency.png
-  artifactKey: Guid(e36acd218e704e049a8dd6a30b8fc197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1/Textures/t_minotaur1_axe_AlbedoTransparency.png using Guid(e36acd218e704e049a8dd6a30b8fc197) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '747c89ce79ffcec664b1e73e9f417d52') in 0.0172845 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/minotaur1/Textures/t_minotaur1_MetallicSmoothness.png
-  artifactKey: Guid(08daa6888f68b714db0ef30075576638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1/Textures/t_minotaur1_MetallicSmoothness.png using Guid(08daa6888f68b714db0ef30075576638) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce23f4b4c2481d0a4620e25474189d42') in 0.0315179 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/minotaur1/Textures/t_minotaur1_axe_MetallicSmoothness.png
-  artifactKey: Guid(3d5570156ceab16419f17613a23f2186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1/Textures/t_minotaur1_axe_MetallicSmoothness.png using Guid(3d5570156ceab16419f17613a23f2186) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7dd6f34f9b120aeb347783ca45c759de') in 0.0152769 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.363263 seconds.
-  path: Assets/minotaur1/Animations/minotaur1@attack3.fbx
-  artifactKey: Guid(05590660f4e50e64687328f63b84c33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1/Animations/minotaur1@attack3.fbx using Guid(05590660f4e50e64687328f63b84c33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9069fc36896c2ebc0e051d71e2db4fb5') in 0.0095939 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 137
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/minotaur1/Animations/minotaur1@walk_forward2.fbx
-  artifactKey: Guid(aea58cfdc103ac941a356a4182c11a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1/Animations/minotaur1@walk_forward2.fbx using Guid(aea58cfdc103ac941a356a4182c11a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4edebc260c718102fc07963f838ca43') in 0.0029855 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 133
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/minotaur1/Animations/minotaur1@run_strafe_left45.fbx
-  artifactKey: Guid(efb13636ee4bc884c9da45660416063c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1/Animations/minotaur1@run_strafe_left45.fbx using Guid(efb13636ee4bc884c9da45660416063c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53ff4769e1363f08942e5089999d4b40') in 0.0032788 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 133
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/minotaur1/Animations/minotaur1@attack5_kick.fbx
-  artifactKey: Guid(b6ac5f1b5d941db4585d707f2f2c3b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1/Animations/minotaur1@attack5_kick.fbx using Guid(b6ac5f1b5d941db4585d707f2f2c3b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e50861d94ae68f85b046813def587f9') in 0.0034187 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 133
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/minotaur1/Animations/minotaur1@walk_back.fbx
-  artifactKey: Guid(6fc2561cd4b4d774bb8ff5db40bca1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1/Animations/minotaur1@walk_back.fbx using Guid(6fc2561cd4b4d774bb8ff5db40bca1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f3ab0be0e27bab886d752e207cd699c') in 0.0028369 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 133
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/minotaur1/Animations/minotaur1@hit_1.FBX
-  artifactKey: Guid(2444bb912854f754493256081c22bd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1/Animations/minotaur1@hit_1.FBX using Guid(2444bb912854f754493256081c22bd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e5e44da9a045a60c8ad668250c5e8f0') in 0.0032215 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 133
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
