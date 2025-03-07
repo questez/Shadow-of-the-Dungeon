@@ -1,29 +1,29 @@
 Using pre-set license
 Built from '6000.0/release' branch; Version is '6000.0.25f1 (4859ab7b5a49) revision 4741547'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 16265 MB
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'ru' Physical Memory: 16076 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-Z:\UNITY\Editor\Unity.exe
+D:\IVAN FOLDER [basic]\UNITY\6000.0.25f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-Z:/UNITY/Shadow-of-the-Dungeon/Shadow of the Dungeon
+D:/IVAN FOLDER [basic]/UNITY/Projects/Shadow-of-the-Dungeon/Shadow of the Dungeon
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57282
+50611
 -job-worker-count
 5
 -background-job-worker-count
 8
 -asset-garbage-collectors
 1
-Successfully changed project path to: Z:/UNITY/Shadow-of-the-Dungeon/Shadow of the Dungeon
-Z:/UNITY/Shadow-of-the-Dungeon/Shadow of the Dungeon
+Successfully changed project path to: D:/IVAN FOLDER [basic]/UNITY/Projects/Shadow-of-the-Dungeon/Shadow of the Dungeon
+D:/IVAN FOLDER [basic]/UNITY/Projects/Shadow-of-the-Dungeon/Shadow of the Dungeon
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,14 +59,12 @@ Z:/UNITY/Shadow-of-the-Dungeon/Shadow of the Dungeon
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9156]  Target information:
+Player connection [10784]  Target information:
 
-Player connection [9156]  * "[IP] 192.168.178.43 [Port] 0 [Flags] 2 [Guid] 1627961809 [EditorId] 1627961809 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-VKT7RGT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [10784]  * "[IP] 192.168.8.116 [Port] 0 [Flags] 2 [Guid] 3785555133 [EditorId] 3785555133 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-9J1EOIR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [9156]  * "[IP] 10.0.85.2 [Port] 0 [Flags] 2 [Guid] 1627961809 [EditorId] 1627961809 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-VKT7RGT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [9156] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [9156] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10784] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [10784] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -77,60 +75,60 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 1.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.25f1 (4859ab7b5a49)
-[Subsystems] Discovering subsystems at path Z:/UNITY/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path Z:/UNITY/Shadow-of-the-Dungeon/Shadow of the Dungeon/Assets
+[Subsystems] Discovering subsystems at path D:/IVAN FOLDER [basic]/UNITY/6000.0.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/IVAN FOLDER [basic]/UNITY/Projects/Shadow-of-the-Dungeon/Shadow of the Dungeon/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2488)
-    Vendor:   NVIDIA
-    VRAM:     8018 MB
-    Driver:   32.0.15.7260
+    Renderer: Intel(R) UHD Graphics (ID=0x46a3)
+    Vendor:   Intel
+    VRAM:     8038 MB
+    Driver:   32.0.101.5763
 Initialize mono
-Mono path[0] = 'Z:/UNITY/Editor/Data/Managed'
-Mono path[1] = 'Z:/UNITY/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'Z:/UNITY/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
+Mono path[0] = 'D:/IVAN FOLDER [basic]/UNITY/6000.0.25f1/Editor/Data/Managed'
+Mono path[1] = 'D:/IVAN FOLDER [basic]/UNITY/6000.0.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/IVAN FOLDER [basic]/UNITY/6000.0.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56200
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: Z:/UNITY/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002442 seconds.
-- Loaded All Assemblies, in  0.356 seconds
+Register platform support module: D:/IVAN FOLDER [basic]/UNITY/6000.0.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001320 seconds.
+- Loaded All Assemblies, in  0.404 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.312 seconds
-Domain Reload Profiling: 668ms
-	BeginReloadAssembly (146ms)
+- Finished resetting the current domain, in  0.412 seconds
+Domain Reload Profiling: 815ms
+	BeginReloadAssembly (144ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (130ms)
-		LoadAssemblies (145ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (163ms)
+		LoadAssemblies (144ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (127ms)
-			TypeCache.Refresh (126ms)
-				TypeCache.ScanAssembly (115ms)
+		AnalyzeDomain (160ms)
+			TypeCache.Refresh (158ms)
+				TypeCache.ScanAssembly (145ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (312ms)
+	FinalizeReload (412ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (273ms)
+		SetupLoadedEditorAssemblies (379ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (188ms)
-			ProcessInitializeOnLoadMethodAttributes (54ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (259ms)
+			ProcessInitializeOnLoadMethodAttributes (81ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -138,104 +136,165 @@ Domain Reload Profiling: 668ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.919 seconds
-Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.078 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.730 seconds
-Domain Reload Profiling: 1649ms
-	BeginReloadAssembly (412ms)
+- Finished resetting the current domain, in  0.892 seconds
+Domain Reload Profiling: 1970ms
+	BeginReloadAssembly (444ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (437ms)
-		LoadAssemblies (342ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (543ms)
+		LoadAssemblies (385ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (219ms)
-			TypeCache.Refresh (151ms)
-				TypeCache.ScanAssembly (136ms)
-			BuildScriptInfoCaches (56ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (731ms)
+		AnalyzeDomain (269ms)
+			TypeCache.Refresh (179ms)
+				TypeCache.ScanAssembly (162ms)
+			BuildScriptInfoCaches (76ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (893ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (506ms)
+		SetupLoadedEditorAssemblies (620ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (64ms)
-			ProcessInitializeOnLoadAttributes (364ms)
-			ProcessInitializeOnLoadMethodAttributes (69ms)
+			BeforeProcessingInitializeOnLoad (63ms)
+			ProcessInitializeOnLoadAttributes (472ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
 			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 198 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5928 unused Assets / (2.8 MB). Loaded Objects now: 6697.
-Memory consumption went from 182.1 MB to 179.2 MB.
-Total: 16.113900 ms (FindLiveObjects: 1.168500 ms CreateObjectMapping: 1.734000 ms MarkObjects: 10.085300 ms  DeleteObjects: 3.122600 ms)
+Unloading 199 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5934 unused Assets / (4.4 MB). Loaded Objects now: 6704.
+Memory consumption went from 183.1 MB to 178.7 MB.
+Total: 8.059900 ms (FindLiveObjects: 0.528300 ms CreateObjectMapping: 0.496400 ms MarkObjects: 4.703900 ms  DeleteObjects: 2.327900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 78432.055201 seconds.
-  path: Assets/Scenes/Level 2.unity
-  artifactKey: Guid(639bc2b210a9f7141a84d6900af81bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 2.unity using Guid(639bc2b210a9f7141a84d6900af81bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c93337f67892722206788832fee6350') in 0.0066261 seconds
+  Time since last request: 14704.069755 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Materials
+  artifactKey: Guid(3439d4b01c88d534ba58886b46cca809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Materials using Guid(3439d4b01c88d534ba58886b46cca809) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ef98f0ad8069552563ec2b06defbeee') in 0.0043336 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.410665 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b858ef3c0561cb49cb110af902c7dd08') in 0.0004788 seconds
+  Time since last request: 0.000021 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)
+  artifactKey: Guid(959528d1454ec4a4390780d9690ae5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free) using Guid(959528d1454ec4a4390780d9690ae5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f59e693efb4d4477133f84fbb527f24') in 0.0005451 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 347.141102 seconds.
-  path: Assets/Scenes/SaveZone.unity
-  artifactKey: Guid(639bc2b210a9f7141a84d6900af81bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SaveZone.unity using Guid(639bc2b210a9f7141a84d6900af81bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '48879ad566b2678551dd3487fe1532ae') in 0.0004896 seconds
+  Time since last request: 0.000025 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Materials/Dungeon_Mat_02.mat
+  artifactKey: Guid(2e701f9d6b8aa304c93f2af59c1ee5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Materials/Dungeon_Mat_02.mat using Guid(2e701f9d6b8aa304c93f2af59c1ee5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd45f994ea044d08e8a9ed11fc5fc018c') in 0.503556 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.255503 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Originals
+  artifactKey: Guid(d5294b976d35e52409c2f08d3cc23786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Originals using Guid(d5294b976d35e52409c2f08d3cc23786) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b04065a1b0634b3b56cbcb14d6dd817') in 0.0006429 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 31.326645 seconds.
-  path: Assets/Scenes/StartRoom.unity
-  artifactKey: Guid(c5bfc8faec47132478ed343243cb76f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/StartRoom.unity using Guid(c5bfc8faec47132478ed343243cb76f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e91bce08b73caa0d292c1ba5d56de3e2') in 0.0004406 seconds
+  Time since last request: 0.060769 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Originals/Door.fbx
+  artifactKey: Guid(1fed90e8722c1334d9b51e0b56f26e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Originals/Door.fbx using Guid(1fed90e8722c1334d9b51e0b56f26e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d66a4686004dab176210efc16c2b9fc') in 0.0814864 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Originals/Lamp_02.fbx
+  artifactKey: Guid(495bc5d65ef7c7a47b914d4dd69f0edf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Originals/Lamp_02.fbx using Guid(495bc5d65ef7c7a47b914d4dd69f0edf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94a270dd2c7092c91a1cfad780b6c9d5') in 0.0450219 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Originals/Wall.fbx
+  artifactKey: Guid(9c33f225c6ee98243a57390a7235bd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Originals/Wall.fbx using Guid(9c33f225c6ee98243a57390a7235bd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77877aa6beff12baa0563785d2740b89') in 0.041594 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Originals/Lamp_01.fbx
+  artifactKey: Guid(80f5a41c215b19a4096e40d8852a7562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Originals/Lamp_01.fbx using Guid(80f5a41c215b19a4096e40d8852a7562) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53e7cea78d7e6ac3ab9b641ed05fb1cb') in 0.0519286 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.479699 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Prefabs
+  artifactKey: Guid(325d3c5532164bb4aa5dd8f24fa1df7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Prefabs using Guid(325d3c5532164bb4aa5dd8f24fa1df7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3bca0824eef39fc551cb355437f5bb3') in 0.0006588 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 325.580570 seconds.
-  path: Assets/Materials/Torch 1.mat
-  artifactKey: Guid(d941528ade9c9e648a4e7a286146c923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Torch 1.mat using Guid(d941528ade9c9e648a4e7a286146c923) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9e3671f4dd1f9c07dbbeb9d21898e40') in 0.3820119 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.051809 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Door.prefab
+  artifactKey: Guid(9175d08a6bdddeb48afa15d1b714d918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Door.prefab using Guid(9175d08a6bdddeb48afa15d1b714d918) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ddc459d4cf223025f2b3578aa3ba8a9d') in 0.0342583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
-  Time since last request: 53.953297 seconds.
-  path: Assets/minotaur1/Materials/mat_minotaur1_axe.mat
-  artifactKey: Guid(7554a7af0586986438ea09adb8e77d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1/Materials/mat_minotaur1_axe.mat using Guid(7554a7af0586986438ea09adb8e77d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '371816efdfdbcc47209a7d127dcc2704') in 0.0373353 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+  Time since last request: 0.000031 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Lamp_01.prefab
+  artifactKey: Guid(7c3ceb5b9a32b7a4a8d42d30223f3c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Lamp_01.prefab using Guid(7c3ceb5b9a32b7a4a8d42d30223f3c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f1198a754af1528ca6e268ff2e54e920') in 0.0325657 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.022890 seconds.
-  path: Assets/minotaur1/Base mesh/minotaur1.fbx
-  artifactKey: Guid(63e974d9ec82619419e69ae2287be94e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/minotaur1/Base mesh/minotaur1.fbx using Guid(63e974d9ec82619419e69ae2287be94e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bae1e1f378e201474bebee8ac3e431fa') in 0.238745 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 212
+  Time since last request: 0.000077 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Wall.prefab
+  artifactKey: Guid(3ad7a1cffb2556547a8b7e60fd320431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Wall.prefab using Guid(3ad7a1cffb2556547a8b7e60fd320431) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '074dcad18e3fab55b805c2f3bdb0d9df') in 0.0262151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Wall_Entrance.prefab
+  artifactKey: Guid(49a5f24a081cbbc44bd23d76c2869723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Wall_Entrance.prefab using Guid(49a5f24a081cbbc44bd23d76c2869723) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee987723d6925788d4895a4a89cfbd96') in 0.0305625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.544598 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Textures/Dungeon_02_Diffuse.tga
+  artifactKey: Guid(2ad5769c41feb7749a077e020ed56acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Textures/Dungeon_02_Diffuse.tga using Guid(2ad5769c41feb7749a077e020ed56acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0277028d0de7753c0706f40931647926') in 0.0365015 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
