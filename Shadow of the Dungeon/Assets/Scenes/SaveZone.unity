@@ -385,6 +385,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 107539432052711165, guid: 6371a2c82bf71094fbb31118e47a132b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100448760390569159, guid: 6371a2c82bf71094fbb31118e47a132b, type: 3}
+      propertyPath: m_TagString
+      value: Lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521586349424986294, guid: 6371a2c82bf71094fbb31118e47a132b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3755954450846708761, guid: 6371a2c82bf71094fbb31118e47a132b, type: 3}
       propertyPath: m_Name
       value: SaveRoom
@@ -428,6 +440,10 @@ PrefabInstance:
     - target: {fileID: 4013455002402763393, guid: 6371a2c82bf71094fbb31118e47a132b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6999955361203796916, guid: 6371a2c82bf71094fbb31118e47a132b, type: 3}
+      propertyPath: m_TagString
+      value: Lamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

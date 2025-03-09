@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
+    - target: {fileID: 8858051749441068820, guid: 4c67ed6c086451b4db54ac4d24b626bb, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -360,6 +364,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c702044e8b7b7de4d96c5af2d585d4d4, type: 3}
       propertyPath: m_Name
       value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c702044e8b7b7de4d96c5af2d585d4d4, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -657,6 +665,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 483150865327879608, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_TagString
+      value: Lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524888554736118008, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_TagString
+      value: Lamp
+      objectReference: {fileID: 0}
     - target: {fileID: 3007243635690120779, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -697,9 +713,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3025061345553759297, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_TagString
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328784298088955401, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_TagString
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 4636561972193552437, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_TagString
+      value: Lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768884782821244898, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_TagString
+      value: MysteryBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393340993841051006, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_TagString
+      value: Lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670907981870370110, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_TagString
+      value: Lamp
+      objectReference: {fileID: 0}
     - target: {fileID: 6333303022440277606, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
       propertyPath: m_Name
       value: BasicLevelRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845712082038128020, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_TagString
+      value: Lamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
