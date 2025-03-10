@@ -2,15 +2,28 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+
+    [SerializeField] private float _speed;
+    
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.position += _speed * transform.forward * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.position -= _speed * transform.forward * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.position += _speed * transform.right * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.position -= _speed * transform.right * Time.deltaTime;
+        }
     }
 }
