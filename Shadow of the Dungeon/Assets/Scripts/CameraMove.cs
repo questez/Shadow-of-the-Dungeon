@@ -10,6 +10,7 @@ public class CameraMove : MonoBehaviour
         if (_Target != null)
         {
             transform.position = _Target.position;
+            transform.eulerAngles = _Target.eulerAngles;
         }
     }
 }
