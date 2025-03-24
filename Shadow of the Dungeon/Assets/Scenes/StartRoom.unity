@@ -389,6 +389,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 7961758309001472150, guid: a7f00749e466498469a049c5c44a2829, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.218
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961758309001472150, guid: a7f00749e466498469a049c5c44a2829, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 8643401874133280723, guid: a7f00749e466498469a049c5c44a2829, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

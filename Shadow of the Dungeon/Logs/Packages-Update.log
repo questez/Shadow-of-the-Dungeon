@@ -55,3 +55,14 @@ Update Mode: updateDependencies
 
 The following packages were removed:
   com.unity.textmeshpro@3.0.6
+
+=== Mon Mar 24 17:53:41 2025
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ai.navigation from version 2.0.4 to 2.0.5
+  com.unity.inputsystem from version 1.11.2 to 1.12.0
+  com.unity.visualscripting from version 1.9.4 to 1.9.5
+  com.unity.xr.openxr from version 1.13.2 to 1.14.0
