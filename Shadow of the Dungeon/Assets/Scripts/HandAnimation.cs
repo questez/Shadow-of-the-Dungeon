@@ -12,7 +12,8 @@ public class HandAnimation : MonoBehaviour
 
     private void Update()
     {
-        _handAnimator.SetFloat("Trigger", m_TriggerInput.ReadValue()); // считываем анимации
+        // считываем действия с контроллеров для работы анимации рук:
+        _handAnimator.SetFloat("Trigger", m_TriggerInput.ReadValue()); 
         _handAnimator.SetFloat("Grip", m_GripInput.ReadValue());
     }
 }

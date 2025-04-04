@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|z:\\unity\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\handanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\handanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|z:\\unity\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\cameramove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameramove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCF14426-5024-3242-D661-CFCD2B39AF9C}|Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj|z:\\unity\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\samples\\xr interaction toolkit\\3.1.1\\starter assets\\scripts\\controlleranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCF14426-5024-3242-D661-CFCD2B39AF9C}|Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj|solutionrelative:assets\\samples\\xr interaction toolkit\\3.1.1\\starter assets\\scripts\\controlleranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CameraMove.cs",
-              "DocumentMoniker": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\CameraMove.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraMove.cs",
-              "ToolTip": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\CameraMove.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CameraMove.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
+              "Title": "ControllerAnimator.cs",
+              "DocumentMoniker": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Samples\\XR Interaction Toolkit\\3.1.1\\Starter Assets\\Scripts\\ControllerAnimator.cs",
+              "RelativeDocumentMoniker": "Assets\\Samples\\XR Interaction Toolkit\\3.1.1\\Starter Assets\\Scripts\\ControllerAnimator.cs",
+              "ToolTip": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Samples\\XR Interaction Toolkit\\3.1.1\\Starter Assets\\Scripts\\ControllerAnimator.cs",
+              "RelativeToolTip": "Assets\\Samples\\XR Interaction Toolkit\\3.1.1\\Starter Assets\\Scripts\\ControllerAnimator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T10:55:29.607Z",
+              "WhenOpened": "2025-03-30T11:16:41.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Move.cs",
-              "DocumentMoniker": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Move.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Move.cs",
-              "ToolTip": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Move.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Move.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA7AAAAAAAAAA==",
+              "Title": "HandAnimation.cs",
+              "DocumentMoniker": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\HandAnimation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HandAnimation.cs",
+              "ToolTip": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\HandAnimation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HandAnimation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T10:50:21.019Z",
+              "WhenOpened": "2025-03-30T11:13:32.55Z",
               "EditorCaption": ""
             }
           ]
