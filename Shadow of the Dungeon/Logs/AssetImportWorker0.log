@@ -15,7 +15,7 @@ Z:/UNITY/Shadow-of-the-Dungeon/Shadow of the Dungeon
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59430
+61441
 -job-worker-count
 5
 -background-job-worker-count
@@ -59,12 +59,12 @@ Z:/UNITY/Shadow-of-the-Dungeon/Shadow of the Dungeon
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [18532]  Target information:
+Player connection [8776]  Target information:
 
-Player connection [18532]  * "[IP] 192.168.178.43 [Port] 0 [Flags] 2 [Guid] 2951839101 [EditorId] 2951839101 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-VKT7RGT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8776]  * "[IP] 192.168.178.43 [Port] 0 [Flags] 2 [Guid] 3355408983 [EditorId] 3355408983 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-VKT7RGT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [18532] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [18532] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8776] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8776] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,7 +75,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 10.32 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 9.36 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.25f1 (4859ab7b5a49)
 [Subsystems] Discovering subsystems at path Z:/UNITY/Editor/Data/Resources/UnitySubsystems
@@ -91,46 +91,46 @@ Initialize mono
 Mono path[0] = 'Z:/UNITY/Editor/Data/Managed'
 Mono path[1] = 'Z:/UNITY/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'Z:/UNITY/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: Z:/UNITY/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: Z:/UNITY/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.002895 seconds.
-- Loaded All Assemblies, in  0.407 seconds
+Registered in 0.002975 seconds.
+- Loaded All Assemblies, in  0.368 seconds
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.395 seconds
-Domain Reload Profiling: 802ms
-	BeginReloadAssembly (164ms)
+- Finished resetting the current domain, in  0.334 seconds
+Domain Reload Profiling: 701ms
+	BeginReloadAssembly (144ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (151ms)
-		LoadAssemblies (164ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (145ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (147ms)
-			TypeCache.Refresh (146ms)
-				TypeCache.ScanAssembly (133ms)
+		AnalyzeDomain (133ms)
+			TypeCache.Refresh (132ms)
+				TypeCache.ScanAssembly (120ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (395ms)
+	FinalizeReload (334ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (349ms)
+		SetupLoadedEditorAssemblies (285ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (55ms)
+			InitializePlatformSupportModulesInManaged (57ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (7ms)
-			ProcessInitializeOnLoadAttributes (193ms)
-			ProcessInitializeOnLoadMethodAttributes (87ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (159ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -138,10 +138,10 @@ Domain Reload Profiling: 802ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.080 seconds
+- Loaded All Assemblies, in  0.894 seconds
 'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 6.77 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 6.29 ms, found 9 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
@@ -167,62 +167,272 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.974 seconds
-Domain Reload Profiling: 2054ms
-	BeginReloadAssembly (444ms)
+- Finished resetting the current domain, in  0.774 seconds
+Domain Reload Profiling: 1667ms
+	BeginReloadAssembly (371ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (556ms)
-		LoadAssemblies (385ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (455ms)
+		LoadAssemblies (332ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (299ms)
-			TypeCache.Refresh (199ms)
-				TypeCache.ScanAssembly (180ms)
-			BuildScriptInfoCaches (85ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (975ms)
+		AnalyzeDomain (232ms)
+			TypeCache.Refresh (155ms)
+				TypeCache.ScanAssembly (140ms)
+			BuildScriptInfoCaches (65ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (775ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (716ms)
+		SetupLoadedEditorAssemblies (565ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (89ms)
-			ProcessInitializeOnLoadAttributes (446ms)
-			ProcessInitializeOnLoadMethodAttributes (160ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (356ms)
+			ProcessInitializeOnLoadMethodAttributes (135ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 18.20 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 11.18 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 216 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6891 unused Assets / (3.2 MB). Loaded Objects now: 7672.
-Memory consumption went from 193.0 MB to 189.7 MB.
-Total: 15.981800 ms (FindLiveObjects: 1.366800 ms CreateObjectMapping: 1.593000 ms MarkObjects: 9.295600 ms  DeleteObjects: 3.723600 ms)
+Unloading 6891 unused Assets / (4.3 MB). Loaded Objects now: 7672.
+Memory consumption went from 193.1 MB to 188.8 MB.
+Total: 13.551000 ms (FindLiveObjects: 1.291800 ms CreateObjectMapping: 0.706600 ms MarkObjects: 7.997700 ms  DeleteObjects: 3.552200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 946677.778192 seconds.
-  path: Assets/Weapons/3D Low-Poly Swords/Prefabs/Sword3.prefab
-  artifactKey: Guid(bec5dab95cff3064cb268f5c336c7187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapons/3D Low-Poly Swords/Prefabs/Sword3.prefab using Guid(bec5dab95cff3064cb268f5c336c7187) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13c32226d40d85cc1bb31d546c869e58') in 0.9711703 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+  Time since last request: 1112550.882441 seconds.
+  path: Assets/Prefabs/BasicLevelRoom.prefab
+  artifactKey: Guid(098aa3d7c208abd4e8257897bd3540f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasicLevelRoom.prefab using Guid(098aa3d7c208abd4e8257897bd3540f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dfd52014fccb93e0596a1476dfab6dd1') in 0.4009188 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 164
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Weapons/3D Low-Poly Swords/Prefabs/Sword1 Obj.prefab
-  artifactKey: Guid(87fe10a6f9dcbfa4ebe825ebad90a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapons/3D Low-Poly Swords/Prefabs/Sword1 Obj.prefab using Guid(87fe10a6f9dcbfa4ebe825ebad90a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d02e6425a8ddc92c2ba15dfb9e44dd8') in 2.8684106 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+  Time since last request: 10.840803 seconds.
+  path: Assets/PrefabsRooms
+  artifactKey: Guid(c19bc40b29dcffa41890c29635435e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PrefabsRooms using Guid(c19bc40b29dcffa41890c29635435e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52ede524ccb3f447dd7baf754decf2df') in 0.0005095 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.005391 seconds.
+  path: Assets/Weapons/3D Low-Poly Swords
+  artifactKey: Guid(fe91ea7fcea33ee4f993e2899553310c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Weapons/3D Low-Poly Swords using Guid(fe91ea7fcea33ee4f993e2899553310c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ce5da37454d395c9222ea6f86ad4130') in 0.0004341 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.334756 seconds.
+  path: Assets/Weapons/3D Low-Poly Swords/Prefabs
+  artifactKey: Guid(bfffd056970b4864586f687e595a3a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Weapons/3D Low-Poly Swords/Prefabs using Guid(bfffd056970b4864586f687e595a3a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6bca6f5aa141250b711edb0cd6a1c602') in 0.0004193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.631 seconds
+'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 6.38 ms, found 9 plugins.
+Missing types referenced from component UniversalRenderPipelineGlobalSettings on game object UniversalRenderPipelineGlobalSettings:
+	UnityEngine.Rendering.Universal.UniversalRenderPipelineEditorAssets, Unity.RenderPipelines.Universal.Runtime (1 object)
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEditor.XR.Interaction.Toolkit.Analytics.XRIAnalytics..cctor () [0x00000] in .\Library\PackageCache\com.unity.xr.interaction.toolkit\Editor\Analytics\XRIAnalytics.cs:32 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.859 seconds
+Domain Reload Profiling: 1492ms
+	BeginReloadAssembly (212ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (57ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (361ms)
+		LoadAssemblies (298ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (166ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (148ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (859ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (597ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (66ms)
+			ProcessInitializeOnLoadAttributes (428ms)
+			ProcessInitializeOnLoadMethodAttributes (87ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 9.82 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 35 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6891 unused Assets / (5.2 MB). Loaded Objects now: 7719.
+Memory consumption went from 226.9 MB to 221.7 MB.
+Total: 13.622600 ms (FindLiveObjects: 1.255800 ms CreateObjectMapping: 0.747100 ms MarkObjects: 8.028700 ms  DeleteObjects: 3.590200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.630 seconds
+'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 6.91 ms, found 9 plugins.
+Missing types referenced from component UniversalRenderPipelineGlobalSettings on game object UniversalRenderPipelineGlobalSettings:
+	UnityEngine.Rendering.Universal.UniversalRenderPipelineEditorAssets, Unity.RenderPipelines.Universal.Runtime (1 object)
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEditor.XR.Interaction.Toolkit.Analytics.XRIAnalytics..cctor () [0x00000] in .\Library\PackageCache\com.unity.xr.interaction.toolkit\Editor\Analytics\XRIAnalytics.cs:32 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.789 seconds
+Domain Reload Profiling: 1421ms
+	BeginReloadAssembly (195ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (378ms)
+		LoadAssemblies (303ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (176ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (156ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (789ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (550ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (386ms)
+			ProcessInitializeOnLoadMethodAttributes (82ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 12.03 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6890 unused Assets / (6.5 MB). Loaded Objects now: 7722.
+Memory consumption went from 225.1 MB to 218.6 MB.
+Total: 15.501300 ms (FindLiveObjects: 1.352500 ms CreateObjectMapping: 0.879200 ms MarkObjects: 7.568800 ms  DeleteObjects: 5.699900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 323.933227 seconds.
+  path: Assets/Gems and awards
+  artifactKey: Guid(5e6ec1e79f280b546a6f870cc5d9c15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gems and awards using Guid(5e6ec1e79f280b546a6f870cc5d9c15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13b3041268c92eb4437c5b54576c7742') in 0.0123233 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.010940 seconds.
+  path: Assets/Gems and awards/Low poly Gems
+  artifactKey: Guid(c5ad5004f2e3a554c870abb0d29d6d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gems and awards/Low poly Gems using Guid(c5ad5004f2e3a554c870abb0d29d6d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53bedea4db9953051e350aff41042636') in 0.0004555 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.342189 seconds.
+  path: Assets/Gems and awards/Low poly Gems/Prefabs
+  artifactKey: Guid(da0543c10f78e1d44ab3028fd19c9445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gems and awards/Low poly Gems/Prefabs using Guid(da0543c10f78e1d44ab3028fd19c9445) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69662b7c5d112a6891cc482f03381f52') in 0.0004615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.399227 seconds.
+  path: Assets/Gems and awards/Low poly Gems/Texture
+  artifactKey: Guid(7147876516752014687448559f9c20ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gems and awards/Low poly Gems/Texture using Guid(7147876516752014687448559f9c20ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8cd14c9595020a22f8ec9a2a2a7b161a') in 0.0004555 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.431577 seconds.
+  path: Assets/Gems and awards/Low poly Gems/Prefabs/Stone1.prefab
+  artifactKey: Guid(d18be603c12f9784d8fe93db62320530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gems and awards/Low poly Gems/Prefabs/Stone1.prefab using Guid(d18be603c12f9784d8fe93db62320530) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd2739d3c27735e5beb8c60bd691fa2ef') in 0.5147823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Gems and awards/Low poly Gems/Prefabs/Stone6.prefab
+  artifactKey: Guid(fb8d96df226408d4297e717a0e3ea8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gems and awards/Low poly Gems/Prefabs/Stone6.prefab using Guid(fb8d96df226408d4297e717a0e3ea8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5cc961ebc1d930f7babee37c643f5f19') in 0.1237079 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Gems and awards/Low poly Gems/Prefabs/Stone3.prefab
+  artifactKey: Guid(d16f3bb8a6507ba48a164858282c898c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gems and awards/Low poly Gems/Prefabs/Stone3.prefab using Guid(d16f3bb8a6507ba48a164858282c898c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9fd0a681d19434a1aa042c928ef491ca') in 0.1100687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

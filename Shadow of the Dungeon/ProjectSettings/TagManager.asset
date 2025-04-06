@@ -12,6 +12,7 @@ TagManager:
   - Weapon
   - Lamp
   - Magic
+  - Gem
   layers:
   - Default
   - TransparentFX
