@@ -3,11 +3,11 @@ using UnityEngine.AI;
 
 public class Skeleton : MonoBehaviour
 {
-    [SerializeField] NavMeshAgent navMeshAgent;
-    [SerializeField] Transform transformPlayer;
+    [SerializeField] private NavMeshAgent navMeshAgent;
+    [SerializeField] private Transform transformPlayer;
 
 
-    void Update()
+    private void Update()
     {
         navMeshAgent.destination = transformPlayer.position; 
     }
