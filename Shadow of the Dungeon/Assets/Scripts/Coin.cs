@@ -7,6 +7,7 @@ public class Coin : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             Destroy(this.gameObject);
+            Debug.Log("Подобран кристалл");
         }
     }
 }
