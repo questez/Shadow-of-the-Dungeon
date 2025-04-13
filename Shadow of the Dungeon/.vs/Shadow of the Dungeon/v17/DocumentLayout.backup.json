@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\users\\iaros\\documents\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\ui\\returntomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\returntomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\users\\iaros\\documents\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\ui\\settingsreturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\settingsreturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\users\\iaros\\documents\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\ui\\switchscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\switchscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\ui\\changeslidervalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\changeslidervalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\users\\iaros\\documents\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\ui\\quitgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\quitgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\ui\\changelayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\changelayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReturnToMenu.cs",
-              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ReturnToMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ReturnToMenu.cs",
-              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ReturnToMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\ReturnToMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
+              "Title": "SettingsReturn.cs",
+              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\SettingsReturn.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\SettingsReturn.cs",
+              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\SettingsReturn.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\SettingsReturn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T17:43:33.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SwitchScreen.cs",
-              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\SwitchScreen.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\SwitchScreen.cs",
-              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\SwitchScreen.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\SwitchScreen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T17:42:41.916Z",
+              "WhenOpened": "2025-04-13T12:56:24.304Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "QuitGame.cs",
-              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\QuitGame.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\QuitGame.cs",
-              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\QuitGame.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\QuitGame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "Title": "ChangeLayout.cs",
+              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ChangeLayout.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ChangeLayout.cs",
+              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ChangeLayout.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ChangeLayout.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T17:28:24.011Z",
+              "WhenOpened": "2025-04-13T12:46:15.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChangeSliderValue.cs",
+              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ChangeSliderValue.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ChangeSliderValue.cs",
+              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ChangeSliderValue.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ChangeSliderValue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T12:21:58.154Z",
               "EditorCaption": ""
             }
           ]
