@@ -353,3 +353,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 0}
+  Collider1: {fileID: -6638103147857846523}
+  Collider2: {fileID: 6624128154791212033}

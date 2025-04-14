@@ -3,7 +3,19 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class GrabWeapon : MonoBehaviour
 {
-    [SerializeField] GameObject _canvas;
+    [SerializeField] private GameObject _canvas;
+    [SerializeField] private Collider _collider1;
+    [SerializeField] private Collider _collider2;
+    //[SerializeField] private float _damage;
+
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Enemy"))
+    //    {
+    //        collision.gameObject.SetActive(false);
+    //    }
+    //}
+
 
     private void Start()
     {
@@ -18,7 +30,16 @@ public class GrabWeapon : MonoBehaviour
         if (_canvas != null)
         {
             _canvas.SetActive(true);
-        }        
+        }
+        if (_collider1 != null)
+        {
+            _collider1.isTrigger = true;
+        }
+        if (_collider2 != null)
+        {
+            _collider2.isTrigger = true;
+        }
+
         args.interactableObject.transform.SetParent(args.interactorObject.transform);
     }
     public void OnUnGrab(SelectExitEventArgs args)
@@ -27,6 +48,15 @@ public class GrabWeapon : MonoBehaviour
         {
             _canvas.SetActive(false);
         }
+        if (_collider1 != null)
+        {
+            _collider1.isTrigger = false;
+        }
+        if (_collider2 != null)
+        {
+            _collider2.isTrigger = false;
+        }
+        
         args.interactableObject.transform.SetParent(null);
     }
 }

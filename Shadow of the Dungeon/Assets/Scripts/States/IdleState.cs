@@ -2,16 +2,20 @@ using UnityEngine;
 
 public class IdleState : BaseState
 {
-    public override void EnterState()
+    public override void EnterState(EnemyStateManager manager)
     {
-
+        manager.SetSpeed(0);
+        Debug.Log("Вход в idlestate");
     }
-    public override void ExitState()
+    public override void ExitState(EnemyStateManager manager)
     {
-
+        Debug.Log("Выход из idlestate");
     }
-    public override void UpdateState()
+    public override void UpdateState(EnemyStateManager manager)
     {
-
+        if (manager.DistanceToTarget < 10)
+        {
+            manager.SwitchState(manager.chasestate);
+        }
     }
 }
