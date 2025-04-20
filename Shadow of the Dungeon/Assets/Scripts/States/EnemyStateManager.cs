@@ -8,13 +8,13 @@ public class EnemyStateManager : MonoBehaviour
     [SerializeField] private Transform currentTarget;
 
 
-    public float enemyHP;
-    public float enemyspeed;
+    public float EnemyHP;
+    public float Enemyspeed;
 
     private BaseState currentState;
     [NonSerialized] public ChaseState chasestate = new ChaseState(); // [NonSerialized] public поле не высвечивается в Inspector
     [NonSerialized] public IdleState idlestate = new IdleState();
-    [NonSerialized] public AttackState attackstate = new AttackState();
+    [NonSerialized] public AttackState attackstate = new AttackState();   
     [NonSerialized] public DeathState deathstate = new DeathState();    
     
     private void Start()
@@ -53,5 +53,14 @@ public class EnemyStateManager : MonoBehaviour
     public float DistanceToTarget
     {
         get { return (transform.position - currentTarget.position).magnitude; }       
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Weapon"))
+        {
+            //Debug.Log($"Удар произведен по врагу! Ему нанесен урон, равный {_damage}");
+            EnemyHP -= other.gameObject.GetComponent<GrabWeapon>().Damage;
+        }
     }
 }

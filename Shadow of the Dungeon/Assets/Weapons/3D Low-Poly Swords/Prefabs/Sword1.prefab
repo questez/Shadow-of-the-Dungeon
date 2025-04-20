@@ -300,8 +300,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 0}
-  Collider1: {fileID: 2948882460340615694}
-  Collider2: {fileID: 0}
+  _collider1: {fileID: 2948882460340615694}
+  _collider2: {fileID: 0}
+  Damage: 20
 --- !u!1 &7469562839202358085
 GameObject:
   m_ObjectHideFlags: 0

@@ -142,7 +142,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 1.5
+  m_Speed: 0
   m_Acceleration: 500
   avoidancePriority: 50
   m_AngularSpeed: 250
@@ -168,5 +168,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navMeshAgent: {fileID: 5771739632765654303}
   currentTarget: {fileID: 0}
-  enemyHP: 100
-  enemyspeed: 1
+  EnemyHP: 100
+  Enemyspeed: 1.5

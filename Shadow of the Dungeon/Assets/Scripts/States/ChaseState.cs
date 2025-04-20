@@ -5,7 +5,7 @@ public class ChaseState : BaseState
     public override void EnterState(EnemyStateManager manager)
     {
         Debug.Log("¬ход в chasestate");
-        manager.SetSpeed(manager.enemyspeed);
+        manager.SetSpeed(manager.Enemyspeed);
     }
     public override void ExitState(EnemyStateManager manager)
     {

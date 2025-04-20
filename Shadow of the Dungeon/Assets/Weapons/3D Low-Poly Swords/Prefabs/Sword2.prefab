@@ -353,5 +353,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 0}
-  Collider1: {fileID: 856712283749824460}
-  Collider2: {fileID: 1578920933802113311}
+  _collider1: {fileID: 856712283749824460}
+  _collider2: {fileID: 1578920933802113311}
+  Damage: 25

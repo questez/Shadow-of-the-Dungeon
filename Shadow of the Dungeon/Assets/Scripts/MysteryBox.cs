@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class MysteryBox : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Weapon"))
+        if (other.gameObject.CompareTag("Weapon"))
         {
             Destroy(this.gameObject);
         }
