@@ -1,18 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ChangeLayout : MonoBehaviour
+public class ToggleMusic : MonoBehaviour
 {
     [SerializeField] Toggle _toggle;
-    public void ToggleLayout()
+    public void SwitchMusic()
     {
         if (_toggle.isOn == true)
         {
-            Debug.Log("Left-handed layout enabled");
+            Debug.Log("Music enabled");
         }
         else
         {
-            Debug.Log("Left-handed layout disabled");
+            Debug.Log("Music disabled");
         }
     }
 }
