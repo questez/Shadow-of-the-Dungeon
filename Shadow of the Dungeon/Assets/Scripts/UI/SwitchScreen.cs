@@ -4,7 +4,7 @@ public class SwitchScreen : MonoBehaviour
 {
     [SerializeField] UnityEngine.UI.Button _button;
     [SerializeField] GameObject _newScreen;
-    [SerializeField] GameObject _homeScreen;
+    [SerializeField] GameObject _oldScreen;
     private void Start()
     {
         if (_newScreen != null)
@@ -17,7 +17,7 @@ public class SwitchScreen : MonoBehaviour
         if (_newScreen != null)
         {
             _newScreen.SetActive(true);
-            _homeScreen.SetActive(false);
+            _oldScreen.SetActive(false);
         }
     }
     private void Awake()
