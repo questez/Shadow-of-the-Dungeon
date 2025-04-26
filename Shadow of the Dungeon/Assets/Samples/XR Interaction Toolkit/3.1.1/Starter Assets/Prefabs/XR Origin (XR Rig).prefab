@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 942810691211101373}
   - component: {fileID: 5967689310316253315}
   - component: {fileID: 6693052528577237899}
+  - component: {fileID: 3495717608674179280}
   m_Layer: 0
   m_Name: Left Controller
   m_TagString: Untagged
@@ -183,6 +184,20 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+--- !u!114 &3495717608674179280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202364687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b67b2b8784bd3f429f44ab34cab6c6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _canvas: {fileID: 6308348153417956747}
+  _leftHand: {fileID: 202364687}
 --- !u!1 &1670256624
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,6 +2330,11 @@ MonoBehaviour:
 --- !u!4 &2608343171198179026 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 109434732395451517, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
+  m_PrefabInstance: {fileID: 2717491384898552495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6308348153417956747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8231939364320968484, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
   m_PrefabInstance: {fileID: 2717491384898552495}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2761784064811051247
