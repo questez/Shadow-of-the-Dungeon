@@ -1,29 +1,29 @@
 Using pre-set license
 Built from '6000.0/staging' branch; Version is '6000.0.36f1 (9fe3b5f71dbb) revision 10478517'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 16293 MB
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'ru' Physical Memory: 16076 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\6000.0.36f1\Editor\Unity.exe
+D:\IVAN\UNITYEDITOR\6000.0.36f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-D:/ARISTARKHOV/Shadow-of-the-Dungeon/Shadow of the Dungeon
+D:/IVAN/UnityPROJECTS/Shadow-of-the-Dungeon/Shadow of the Dungeon
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52248
+55801
 -job-worker-count
-7
+5
 -background-job-worker-count
 8
 -gc-helper-count
 1
-Successfully changed project path to: D:/ARISTARKHOV/Shadow-of-the-Dungeon/Shadow of the Dungeon
-D:/ARISTARKHOV/Shadow-of-the-Dungeon/Shadow of the Dungeon
+Successfully changed project path to: D:/IVAN/UnityPROJECTS/Shadow-of-the-Dungeon/Shadow of the Dungeon
+D:/IVAN/UnityPROJECTS/Shadow-of-the-Dungeon/Shadow of the Dungeon
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,13 +59,13 @@ D:/ARISTARKHOV/Shadow-of-the-Dungeon/Shadow of the Dungeon
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [6036]  Target information:
+Player connection [8124]  Target information:
 
-Player connection [6036]  * "[IP] 10.112.15.15 [Port] 0 [Flags] 2 [Guid] 325346978 [EditorId] 325346978 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4S8OJHN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8124]  * "[IP] 192.168.8.109 [Port] 0 [Flags] 2 [Guid] 2769895256 [EditorId] 2769895256 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-9J1EOIR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [6036] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [6036] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 7
+Player connection [8124] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8124] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -76,62 +76,64 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 6.38 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 11.67 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.36f1 (9fe3b5f71dbb)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.36f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/ARISTARKHOV/Shadow-of-the-Dungeon/Shadow of the Dungeon/Assets
+[Subsystems] Discovering subsystems at path D:/IVAN/UNITYEDITOR/6000.0.36f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/IVAN/UnityPROJECTS/Shadow-of-the-Dungeon/Shadow of the Dungeon/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
-    Vendor:   NVIDIA
-    VRAM:     5966 MB
-    Driver:   32.0.15.7196
+    Renderer: Intel(R) UHD Graphics (ID=0x46a3)
+    Vendor:   Intel
+    VRAM:     8038 MB
+    Driver:   32.0.101.6129
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.36f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.36f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.36f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
+Mono path[0] = 'D:/IVAN/UNITYEDITOR/6000.0.36f1/Editor/Data/Managed'
+Mono path[1] = 'D:/IVAN/UNITYEDITOR/6000.0.36f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/IVAN/UNITYEDITOR/6000.0.36f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56916
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.36f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.36f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.003175 seconds.
-- Loaded All Assemblies, in  0.393 seconds
+Register platform support module: D:/IVAN/UNITYEDITOR/6000.0.36f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/IVAN/UNITYEDITOR/6000.0.36f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Register platform support module: D:/IVAN/UNITYEDITOR/6000.0.36f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.002174 seconds.
+- Loaded All Assemblies, in  0.434 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 176 ms
+Android Extension - Scanning For ADB Devices 250 ms
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.521 seconds
-Domain Reload Profiling: 912ms
-	BeginReloadAssembly (134ms)
+- Finished resetting the current domain, in  0.666 seconds
+Domain Reload Profiling: 1100ms
+	BeginReloadAssembly (151ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (158ms)
-		LoadAssemblies (132ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (183ms)
+		LoadAssemblies (151ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (155ms)
-			TypeCache.Refresh (153ms)
-				TypeCache.ScanAssembly (140ms)
+		AnalyzeDomain (180ms)
+			TypeCache.Refresh (178ms)
+				TypeCache.ScanAssembly (164ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (521ms)
+	FinalizeReload (666ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (473ms)
+		SetupLoadedEditorAssemblies (630ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (259ms)
+			InitializePlatformSupportModulesInManaged (354ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (51ms)
-			ProcessInitializeOnLoadAttributes (104ms)
-			ProcessInitializeOnLoadMethodAttributes (53ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (142ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -140,11 +142,12 @@ Domain Reload Profiling: 912ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.805 seconds
+- Loaded All Assemblies, in  0.756 seconds
 'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 4.51 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 7.02 ms, found 9 plugins.
 Native extension for Android target not found
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -167,594 +170,224 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.929 seconds
-Domain Reload Profiling: 1732ms
-	BeginReloadAssembly (163ms)
+- Finished resetting the current domain, in  0.965 seconds
+Domain Reload Profiling: 1720ms
+	BeginReloadAssembly (157ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (12ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (11ms)
 	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (557ms)
-		LoadAssemblies (373ms)
+	LoadAllAssembliesAndSetupDomain (519ms)
+		LoadAssemblies (349ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (281ms)
-			TypeCache.Refresh (199ms)
-				TypeCache.ScanAssembly (181ms)
+		AnalyzeDomain (260ms)
+			TypeCache.Refresh (178ms)
+				TypeCache.ScanAssembly (161ms)
 			BuildScriptInfoCaches (65ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (930ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (966ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (765ms)
+		SetupLoadedEditorAssemblies (804ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (11ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (182ms)
-			ProcessInitializeOnLoadAttributes (435ms)
-			ProcessInitializeOnLoadMethodAttributes (126ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (188ms)
+			ProcessInitializeOnLoadAttributes (467ms)
+			ProcessInitializeOnLoadMethodAttributes (132ms)
+			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 8.11 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 4.67 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 229 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6906 unused Assets / (4.9 MB). Loaded Objects now: 7636.
-Memory consumption went from 174.5 MB to 169.6 MB.
-Total: 15.552800 ms (FindLiveObjects: 1.444200 ms CreateObjectMapping: 1.753600 ms MarkObjects: 7.911800 ms  DeleteObjects: 4.441500 ms)
+Unloading 230 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6915 unused Assets / (4.4 MB). Loaded Objects now: 7649.
+Memory consumption went from 171.7 MB to 167.3 MB.
+Total: 9.600600 ms (FindLiveObjects: 1.670200 ms CreateObjectMapping: 0.572100 ms MarkObjects: 4.688800 ms  DeleteObjects: 2.667800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 424265.369251 seconds.
-  path: Assets/Scripts/GrabWeapon.cs
-  artifactKey: Guid(42e6bae41d40512479d258741436260c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GrabWeapon.cs using Guid(42e6bae41d40512479d258741436260c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90b4529b6a8b36b05d49d32bc677b86e') in 0.0069658 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 2140876.267395 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Animations/GiantAnimator.controller
+  artifactKey: Guid(1d3b15394c11b7e4ba3079c557945a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Animations/GiantAnimator.controller using Guid(1d3b15394c11b7e4ba3079c557945a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1f0584b902664491ae16131a32a7b049') in 0.0229713 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(90f1e2722a8d835498ac37781322a949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(90f1e2722a8d835498ac37781322a949) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29f2a07999cc9513328dad521c65d111') in 0.0006338 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 225.064143 seconds.
+  path: Assets/Fonts/MorrisRoman-Black.ttf
+  artifactKey: Guid(1a40d36d477898b49980d4d07a257720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/MorrisRoman-Black.ttf using Guid(1a40d36d477898b49980d4d07a257720) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e84253174dc634633e68d413b2477fb1') in 0.5923107 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
-Received Prepare
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 8.41 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6854 unused Assets / (4.7 MB). Loaded Objects now: 7633.
-Memory consumption went from 139.3 MB to 134.6 MB.
-Total: 16.662900 ms (FindLiveObjects: 1.146300 ms CreateObjectMapping: 1.668800 ms MarkObjects: 9.070100 ms  DeleteObjects: 4.775600 ms)
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Fonts/MorrisRomanAlternate-Black SDF.asset
+  artifactKey: Guid(b8cf684c64c6c6147a2c146e5d2b03c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/MorrisRomanAlternate-Black SDF.asset using Guid(b8cf684c64c6c6147a2c146e5d2b03c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd616c5a00158328514bd9499f1598792') in 0.0416637 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 9.82 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6857 unused Assets / (4.4 MB). Loaded Objects now: 7636.
-Memory consumption went from 139.3 MB to 134.9 MB.
-Total: 12.789600 ms (FindLiveObjects: 0.888600 ms CreateObjectMapping: 1.465700 ms MarkObjects: 6.573800 ms  DeleteObjects: 3.860300 ms)
+Received Import Request.
+  Time since last request: 53.655516 seconds.
+  path: Assets/Textures/FloorTexture.jpg
+  artifactKey: Guid(52737517126e35f479b3d06eb13e16df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/FloorTexture.jpg using Guid(52737517126e35f479b3d06eb13e16df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5aa9aad9db305101973391066d3face1') in 0.0566855 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 7.15 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6858 unused Assets / (4.9 MB). Loaded Objects now: 7637.
-Memory consumption went from 139.3 MB to 134.4 MB.
-Total: 11.401100 ms (FindLiveObjects: 0.985000 ms CreateObjectMapping: 1.684400 ms MarkObjects: 5.199800 ms  DeleteObjects: 3.530700 ms)
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Textures/WallTexture.jpg
+  artifactKey: Guid(dd001b1d9ecc5a147ae3674ec06f83ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/WallTexture.jpg using Guid(dd001b1d9ecc5a147ae3674ec06f83ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce979f957748d956827870052fb0a1a0') in 0.0424319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 8.77 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6859 unused Assets / (5.1 MB). Loaded Objects now: 7638.
-Memory consumption went from 139.3 MB to 134.2 MB.
-Total: 14.949300 ms (FindLiveObjects: 1.002500 ms CreateObjectMapping: 1.550100 ms MarkObjects: 7.262200 ms  DeleteObjects: 5.133600 ms)
+Received Import Request.
+  Time since last request: 87.747618 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Demo Scene/Textures/Floor/Floor_HumanoidGiant01-BaseColor.png
+  artifactKey: Guid(f9825abeb4abb69448f90aacdff0e267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Demo Scene/Textures/Floor/Floor_HumanoidGiant01-BaseColor.png using Guid(f9825abeb4abb69448f90aacdff0e267) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b1340f13e79f433c2628bbb5e8c469a') in 0.0224968 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 8.88 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6860 unused Assets / (4.5 MB). Loaded Objects now: 7639.
-Memory consumption went from 139.3 MB to 134.8 MB.
-Total: 14.693500 ms (FindLiveObjects: 1.015900 ms CreateObjectMapping: 1.370900 ms MarkObjects: 8.327700 ms  DeleteObjects: 3.977700 ms)
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Demo Scene/Textures/Floor/Floor_HumanoidGiant01-Normal.png
+  artifactKey: Guid(6e258fde7b606e14a83c51f25c32aec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Demo Scene/Textures/Floor/Floor_HumanoidGiant01-Normal.png using Guid(6e258fde7b606e14a83c51f25c32aec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9bf8190625c145a41dd832bbd38002f6') in 0.024735 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 8.31 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6861 unused Assets / (4.5 MB). Loaded Objects now: 7640.
-Memory consumption went from 139.3 MB to 134.9 MB.
-Total: 16.903100 ms (FindLiveObjects: 1.254100 ms CreateObjectMapping: 2.018800 ms MarkObjects: 8.420200 ms  DeleteObjects: 5.208300 ms)
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01/Texture01/Giant01_Texture01-AmbientOcclusion.png
+  artifactKey: Guid(751944e8b15f19e46ba5b21980113e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01/Texture01/Giant01_Texture01-AmbientOcclusion.png using Guid(751944e8b15f19e46ba5b21980113e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bafcff2b72d9c542a158a1fdb0263cbb') in 0.0241983 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 8.98 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6863 unused Assets / (4.4 MB). Loaded Objects now: 7642.
-Memory consumption went from 139.3 MB to 134.9 MB.
-Total: 16.058300 ms (FindLiveObjects: 1.023700 ms CreateObjectMapping: 1.453900 ms MarkObjects: 9.867400 ms  DeleteObjects: 3.712200 ms)
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01/Texture01/Giant01_Texture01-BaseColor.png
+  artifactKey: Guid(83152ffb76ff0474182a36e65c69c3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01/Texture01/Giant01_Texture01-BaseColor.png using Guid(83152ffb76ff0474182a36e65c69c3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9aec737587cc343c099935acdbb53a8c') in 0.0383649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 8.57 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6864 unused Assets / (4.6 MB). Loaded Objects now: 7643.
-Memory consumption went from 139.3 MB to 134.8 MB.
-Total: 14.563300 ms (FindLiveObjects: 1.098600 ms CreateObjectMapping: 1.781300 ms MarkObjects: 7.601700 ms  DeleteObjects: 4.080300 ms)
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Materials/Giant01/Giant01_Texture02/Giant01_Texture02.mat
+  artifactKey: Guid(4685a533f6f361945bfee289c553adac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Materials/Giant01/Giant01_Texture02/Giant01_Texture02.mat using Guid(4685a533f6f361945bfee289c553adac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f14fd3be25cd7c98429a184004317627') in 0.1107259 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 8.07 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6860 unused Assets / (4.5 MB). Loaded Objects now: 7639.
-Memory consumption went from 139.3 MB to 134.8 MB.
-Total: 14.125000 ms (FindLiveObjects: 0.997300 ms CreateObjectMapping: 1.291800 ms MarkObjects: 7.875300 ms  DeleteObjects: 3.959000 ms)
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01/Texture01/Recolor/Giant01_Texture01-Recolor02.png
+  artifactKey: Guid(a19a6cf6e664b164d9102c4af6ec947c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01/Texture01/Recolor/Giant01_Texture01-Recolor02.png using Guid(a19a6cf6e664b164d9102c4af6ec947c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5cf4ef81fb543bbee0a1be6be5c6c295') in 0.0321541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 8.54 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6859 unused Assets / (4.5 MB). Loaded Objects now: 7638.
-Memory consumption went from 139.3 MB to 134.9 MB.
-Total: 14.935400 ms (FindLiveObjects: 1.181400 ms CreateObjectMapping: 1.643900 ms MarkObjects: 8.507800 ms  DeleteObjects: 3.600900 ms)
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Materials/Giant01/Giant01_Texture01/Giant01_Texture01 Recolor01.mat
+  artifactKey: Guid(ca3fdb03e34f74345a3306fcd76d2b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Materials/Giant01/Giant01_Texture01/Giant01_Texture01 Recolor01.mat using Guid(ca3fdb03e34f74345a3306fcd76d2b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2d533812333dd662b6eaa9f64aff791') in 0.0318197 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 8.08 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6853 unused Assets / (4.7 MB). Loaded Objects now: 7632.
-Memory consumption went from 139.3 MB to 134.6 MB.
-Total: 17.340800 ms (FindLiveObjects: 1.186200 ms CreateObjectMapping: 1.865500 ms MarkObjects: 9.745500 ms  DeleteObjects: 4.542100 ms)
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01_Flat/Giant01-Texture05_Flat.png
+  artifactKey: Guid(391b90836fb44fd46abb04cfccfe21d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01_Flat/Giant01-Texture05_Flat.png using Guid(391b90836fb44fd46abb04cfccfe21d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa1994ff6e5a4d8f082addc639381a8e') in 0.0360943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.704 seconds
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 4.65 ms, found 9 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.NullReferenceException: Object reference not set to an instance of an object
-  at UnityEditor.XR.Interaction.Toolkit.Analytics.XRIAnalytics..cctor () [0x00000] in .\Library\PackageCache\com.unity.xr.interaction.toolkit@9b07900cb163\Editor\Analytics\XRIAnalytics.cs:32 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Materials/Giant01/Giant01_Texture01/Giant01_Texture01.mat
+  artifactKey: Guid(07234b7ff556d604b973668cb01045f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Materials/Giant01/Giant01_Texture01/Giant01_Texture01.mat using Guid(07234b7ff556d604b973668cb01045f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a12d0b4bf1676eb7e7d213e97ce7e368') in 0.0259348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.973 seconds
-Domain Reload Profiling: 1678ms
-	BeginReloadAssembly (195ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (50ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (437ms)
-		LoadAssemblies (340ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (193ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (168ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (973ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (760ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (177ms)
-			ProcessInitializeOnLoadAttributes (465ms)
-			ProcessInitializeOnLoadMethodAttributes (98ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 7.94 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 36 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6906 unused Assets / (6.2 MB). Loaded Objects now: 7653.
-Memory consumption went from 225.6 MB to 219.4 MB.
-Total: 14.636200 ms (FindLiveObjects: 1.137600 ms CreateObjectMapping: 1.477400 ms MarkObjects: 7.252200 ms  DeleteObjects: 4.767200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.709 seconds
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 4.63 ms, found 9 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.NullReferenceException: Object reference not set to an instance of an object
-  at UnityEditor.XR.Interaction.Toolkit.Analytics.XRIAnalytics..cctor () [0x00000] in .\Library\PackageCache\com.unity.xr.interaction.toolkit@9b07900cb163\Editor\Analytics\XRIAnalytics.cs:32 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01/Texture01/Recolor/Giant01_Texture01-Recolor03.png
+  artifactKey: Guid(378f094dc82144647b285ea683c7a29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01/Texture01/Recolor/Giant01_Texture01-Recolor03.png using Guid(378f094dc82144647b285ea683c7a29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4d9e12eff1ef067adb00cad57f40fda') in 0.0397525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.948 seconds
-Domain Reload Profiling: 1657ms
-	BeginReloadAssembly (192ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (48ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (446ms)
-		LoadAssemblies (334ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (202ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (178ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (948ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (744ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (187ms)
-			ProcessInitializeOnLoadAttributes (439ms)
-			ProcessInitializeOnLoadMethodAttributes (98ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 7.72 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6906 unused Assets / (6.1 MB). Loaded Objects now: 7656.
-Memory consumption went from 224.0 MB to 217.9 MB.
-Total: 13.943000 ms (FindLiveObjects: 1.013500 ms CreateObjectMapping: 1.554700 ms MarkObjects: 7.054800 ms  DeleteObjects: 4.318500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.681 seconds
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 4.88 ms, found 9 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.NullReferenceException: Object reference not set to an instance of an object
-  at UnityEditor.XR.Interaction.Toolkit.Analytics.XRIAnalytics..cctor () [0x00000] in .\Library\PackageCache\com.unity.xr.interaction.toolkit@9b07900cb163\Editor\Analytics\XRIAnalytics.cs:32 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Materials/Giant01/Giant01_Texture02/Giant01_Texture02 Recolor03.mat
+  artifactKey: Guid(93b3a3ff87c67ae4ead2e9f9ef244426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Materials/Giant01/Giant01_Texture02/Giant01_Texture02 Recolor03.mat using Guid(93b3a3ff87c67ae4ead2e9f9ef244426) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e7a2c8f173fa8674fc28bcc18ea54e1d') in 0.0386704 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.969 seconds
-Domain Reload Profiling: 1651ms
-	BeginReloadAssembly (186ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (48ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (423ms)
-		LoadAssemblies (324ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (189ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (165ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (970ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (770ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (181ms)
-			ProcessInitializeOnLoadAttributes (464ms)
-			ProcessInitializeOnLoadMethodAttributes (101ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 7.92 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6906 unused Assets / (6.1 MB). Loaded Objects now: 7659.
-Memory consumption went from 224.0 MB to 217.9 MB.
-Total: 15.021800 ms (FindLiveObjects: 1.085600 ms CreateObjectMapping: 1.589400 ms MarkObjects: 7.677600 ms  DeleteObjects: 4.668000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.691 seconds
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 4.75 ms, found 9 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.NullReferenceException: Object reference not set to an instance of an object
-  at UnityEditor.XR.Interaction.Toolkit.Analytics.XRIAnalytics..cctor () [0x00000] in .\Library\PackageCache\com.unity.xr.interaction.toolkit@9b07900cb163\Editor\Analytics\XRIAnalytics.cs:32 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Materials/Giant01_Flat/Giant01_Texture01_Flat.mat
+  artifactKey: Guid(10d6e0dabeef53d438eb0b1034fbccf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Materials/Giant01_Flat/Giant01_Texture01_Flat.mat using Guid(10d6e0dabeef53d438eb0b1034fbccf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '729f5037c44caeb2e02a1c1de4007e9a') in 0.03155 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.955 seconds
-Domain Reload Profiling: 1646ms
-	BeginReloadAssembly (184ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (46ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (436ms)
-		LoadAssemblies (329ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (198ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (170ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (955ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (758ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (176ms)
-			ProcessInitializeOnLoadAttributes (455ms)
-			ProcessInitializeOnLoadMethodAttributes (106ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 7.71 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6906 unused Assets / (6.1 MB). Loaded Objects now: 7662.
-Memory consumption went from 224.0 MB to 217.9 MB.
-Total: 15.102800 ms (FindLiveObjects: 0.972400 ms CreateObjectMapping: 1.641300 ms MarkObjects: 7.475300 ms  DeleteObjects: 5.012600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.698 seconds
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 4.62 ms, found 9 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.NullReferenceException: Object reference not set to an instance of an object
-  at UnityEditor.XR.Interaction.Toolkit.Analytics.XRIAnalytics..cctor () [0x00000] in .\Library\PackageCache\com.unity.xr.interaction.toolkit@9b07900cb163\Editor\Analytics\XRIAnalytics.cs:32 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01/Texture01/Recolor/Giant01_Texture01-Recolor04.png
+  artifactKey: Guid(29f22e478f74bca489f81a5bad69e5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01/Texture01/Recolor/Giant01_Texture01-Recolor04.png using Guid(29f22e478f74bca489f81a5bad69e5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e860852dcf72e5338d196137ffaa1bf') in 0.0228356 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.940 seconds
-Domain Reload Profiling: 1639ms
-	BeginReloadAssembly (189ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (50ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (437ms)
-		LoadAssemblies (334ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (194ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (170ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (941ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (745ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (177ms)
-			ProcessInitializeOnLoadAttributes (447ms)
-			ProcessInitializeOnLoadMethodAttributes (100ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 7.85 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6906 unused Assets / (6.1 MB). Loaded Objects now: 7665.
-Memory consumption went from 224.0 MB to 217.8 MB.
-Total: 15.275400 ms (FindLiveObjects: 1.091000 ms CreateObjectMapping: 1.695000 ms MarkObjects: 7.613100 ms  DeleteObjects: 4.874800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.752 seconds
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 4.49 ms, found 9 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.NullReferenceException: Object reference not set to an instance of an object
-  at UnityEditor.XR.Interaction.Toolkit.Analytics.XRIAnalytics..cctor () [0x00000] in .\Library\PackageCache\com.unity.xr.interaction.toolkit@9b07900cb163\Editor\Analytics\XRIAnalytics.cs:32 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01_Flat/Giant01-Texture01_Flat.png
+  artifactKey: Guid(7973fbf19c96f97499a5724755a76cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01_Flat/Giant01-Texture01_Flat.png using Guid(7973fbf19c96f97499a5724755a76cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '57826078fe7f915ebad98845a8b1e20e') in 0.025363 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.977 seconds
-Domain Reload Profiling: 1729ms
-	BeginReloadAssembly (193ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (48ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (485ms)
-		LoadAssemblies (381ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (200ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (176ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (977ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (778ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (184ms)
-			ProcessInitializeOnLoadAttributes (466ms)
-			ProcessInitializeOnLoadMethodAttributes (102ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 8.01 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6906 unused Assets / (6.2 MB). Loaded Objects now: 7668.
-Memory consumption went from 224.0 MB to 217.8 MB.
-Total: 15.943700 ms (FindLiveObjects: 1.051000 ms CreateObjectMapping: 1.728800 ms MarkObjects: 7.764200 ms  DeleteObjects: 5.397800 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01_Flat/Giant01-Texture03_Flat.png
+  artifactKey: Guid(7ef3356b31a285e4584999dd469ed81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Textures/Giant01_Flat/Giant01-Texture03_Flat.png using Guid(7ef3356b31a285e4584999dd469ed81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e63d6af83dbd7d35af6107de2421492') in 0.0330719 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 14.657014 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Animations/Giant@Idle01 - Action02_A.fbx
+  artifactKey: Guid(65ace9940e1b9294792c5f575f81da0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Animations/Giant@Idle01 - Action02_A.fbx using Guid(65ace9940e1b9294792c5f575f81da0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a50e60dd12c11651f614e10f260a42d') in 0.0131596 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 113
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Animations/Giant@Idle01 - Action02_B.fbx
+  artifactKey: Guid(b8dcce017a721a641afab18930c77300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Kevin Iglesias/Characters/Humanoid Giant/Animations/Giant@Idle01 - Action02_B.fbx using Guid(b8dcce017a721a641afab18930c77300) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '874eacc1d2a15ce1d0f105c9a84e4e3a') in 0.0048994 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 113
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

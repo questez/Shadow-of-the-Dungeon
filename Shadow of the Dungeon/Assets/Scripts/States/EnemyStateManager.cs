@@ -7,6 +7,9 @@ public class EnemyStateManager : MonoBehaviour
     [SerializeField] private NavMeshAgent navMeshAgent;
     [SerializeField] private Transform currentTarget;
 
+    public float IdleDistance;
+    public float ChaseDistance;
+    public float AttackDistance;
 
     public float EnemyHP;
     public float Enemyspeed;
@@ -59,7 +62,7 @@ public class EnemyStateManager : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Weapon"))
         {
-            //Debug.Log($"Удар произведен по врагу! Ему нанесен урон, равный {_damage}");
+            //Debug.Log($"Удар произведен по врагу! Ему нанесен урон, равный {}");
             EnemyHP -= other.gameObject.GetComponent<GrabWeapon>().Damage;
         }
     }
