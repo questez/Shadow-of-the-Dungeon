@@ -6,7 +6,7 @@ public class GrabWeapon : MonoBehaviour
     [SerializeField] private GameObject _canvas;
     [SerializeField] private Collider _collider1;
     [SerializeField] private Collider _collider2;
-    public float Damage;
+    public float Damage; // добавить чтобы с увеличением скорости урон также увеличивался
     
     private void Start()
     {
