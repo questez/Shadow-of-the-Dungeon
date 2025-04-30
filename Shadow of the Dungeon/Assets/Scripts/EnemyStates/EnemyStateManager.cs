@@ -4,15 +4,16 @@ using UnityEngine.AI;
 
 public class EnemyStateManager : MonoBehaviour
 {
+    
+
+    public Animator EnemyAnimator; 
     [SerializeField] private NavMeshAgent navMeshAgent;
     [SerializeField] private Transform currentTarget;
 
-    public float IdleDistance;
     public float ChaseDistance;
     public float AttackDistance;
 
-    public float EnemyHP;
-    public float Enemyspeed;
+    public float EnemyHP, Enemyspeed, EnemyDamage;
 
     private BaseState currentState;
     [NonSerialized] public ChaseState chasestate = new ChaseState(); // [NonSerialized] public поле не высвечивается в Inspector
@@ -65,5 +66,5 @@ public class EnemyStateManager : MonoBehaviour
             //Debug.Log($"Удар произведен по врагу! Ему нанесен урон, равный {}");
             EnemyHP -= other.gameObject.GetComponent<GrabWeapon>().Damage;
         }
-    }
+    }    
 }

@@ -281,6 +281,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1064622397402323394}
+  - {fileID: 9110601256004388238}
   m_Father: {fileID: 2818375061470230976}
   m_LocalEulerAnglesHint: {x: -37.83667, y: 27.951542, z: -128.53944}
 --- !u!1 &1328878121097728298
@@ -394,7 +395,7 @@ GameObject:
   - component: {fileID: 7795495272314343550}
   m_Layer: 0
   m_Name: Sand Spider
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -482,13 +483,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd57d52512b3f124286f9f13e57fc26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyAnimator: {fileID: 7795495272314343550}
   navMeshAgent: {fileID: 7236537759118804217}
   currentTarget: {fileID: 0}
-  IdleDistance: 0
-  ChaseDistance: 0
-  AttackDistance: 0
+  ChaseDistance: 10
+  AttackDistance: 4
   EnemyHP: 100
   Enemyspeed: 1.5
+  EnemyDamage: 5
 --- !u!195 &7236537759118804217
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1957,6 +1959,59 @@ Transform:
   - {fileID: 6651210465609326507}
   m_Father: {fileID: 8268520676106706306}
   m_LocalEulerAnglesHint: {x: 22.100542, y: 5.0922966, z: 40.58804}
+--- !u!1 &5981927504418479684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3939055306840612394}
+  - component: {fileID: 664110268017813785}
+  m_Layer: 0
+  m_Name: AttackColliderRight
+  m_TagString: Spider
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3939055306840612394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5981927504418479684}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2426908287772648890}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &664110268017813785
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5981927504418479684}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.003
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6220911674996915770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2615,6 +2670,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2362348066599945605}
+  - {fileID: 3939055306840612394}
   m_Father: {fileID: 2818375061470230976}
   m_LocalEulerAnglesHint: {x: -22.110643, y: -15.163673, z: 117.84944}
 --- !u!1 &7360507247872098534
@@ -2808,6 +2864,59 @@ Transform:
   - {fileID: 3217262936297765514}
   m_Father: {fileID: 8217452066502648353}
   m_LocalEulerAnglesHint: {x: 22.762318, y: -5.5856967, z: -43.635708}
+--- !u!1 &7701553434807048863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9110601256004388238}
+  - component: {fileID: 7173696529506722288}
+  m_Layer: 0
+  m_Name: AttackColliderLeft
+  m_TagString: Spider
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9110601256004388238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701553434807048863}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 552630999943034056}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &7173696529506722288
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701553434807048863}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.003
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7738613398927366722
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class IdleState : BaseState
     }
     public override void UpdateState(EnemyStateManager manager)
     {
-        if (manager.DistanceToTarget < 10)
+        if (manager.DistanceToTarget < manager.ChaseDistance)
         {
             manager.SwitchState(manager.chasestate);
         }

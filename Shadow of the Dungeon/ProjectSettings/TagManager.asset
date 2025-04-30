@@ -13,6 +13,8 @@ TagManager:
   - Lamp
   - Magic
   - Gem
+  - Spider
+  - Golem
   layers:
   - Default
   - TransparentFX
