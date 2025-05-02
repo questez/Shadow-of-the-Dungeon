@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -7,7 +8,7 @@ public class GrabWeapon : MonoBehaviour
     [SerializeField] private Collider _collider1;
     [SerializeField] private Collider _collider2;
     public float Damage; // добавить чтобы с увеличением скорости урон также увеличивался
-    
+
     private void Start()
     {
         if (_canvas != null)
@@ -15,6 +16,8 @@ public class GrabWeapon : MonoBehaviour
             _canvas.SetActive(false);
         }
     }
+
+   
     public void OnGrab(SelectEnterEventArgs args)
     {
         if (_canvas != null)

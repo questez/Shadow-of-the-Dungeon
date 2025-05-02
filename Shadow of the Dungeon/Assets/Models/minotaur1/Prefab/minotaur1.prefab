@@ -597,7 +597,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 33c9ee4a234365847b2a66694d208c6e, type: 2}
+  - {fileID: 2100000, guid: b61375ed180cea348a4491db420ae18c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1042,7 +1042,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 33c9ee4a234365847b2a66694d208c6e, type: 2}
+  - {fileID: 2100000, guid: b61375ed180cea348a4491db420ae18c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1428,7 +1428,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 33c9ee4a234365847b2a66694d208c6e, type: 2}
+  - {fileID: 2100000, guid: b61375ed180cea348a4491db420ae18c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1635,7 +1635,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 33c9ee4a234365847b2a66694d208c6e, type: 2}
+  - {fileID: 2100000, guid: b61375ed180cea348a4491db420ae18c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1811,7 +1811,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 33c9ee4a234365847b2a66694d208c6e, type: 2}
+  - {fileID: 2100000, guid: b61375ed180cea348a4491db420ae18c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1955,7 +1955,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 33c9ee4a234365847b2a66694d208c6e, type: 2}
+  - {fileID: 2100000, guid: b61375ed180cea348a4491db420ae18c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3894,9 +3894,11 @@ GameObject:
   - component: {fileID: 4414871117303439920}
   - component: {fileID: 7554159356571382135}
   - component: {fileID: 637350992734585839}
+  - component: {fileID: 5882029382707511640}
+  - component: {fileID: 7602557970457349754}
   m_Layer: 0
   m_Name: minotaur1
-  m_TagString: Untagged
+  m_TagString: Minotaur
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3929,7 +3931,7 @@ Animator:
   m_GameObject: {fileID: 4414871117303439921}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 63e974d9ec82619419e69ae2287be94e, type: 3}
-  m_Controller: {fileID: 9100000, guid: 1ec31ee6b4e699b4c919f9ddd24f6f73, type: 2}
+  m_Controller: {fileID: 9100000, guid: 96943501eca54bb4899b453e9127d4d0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3989,6 +3991,50 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3690705, y: 2.2588773, z: 1.1916378}
   m_Center: {x: 0.011887193, y: 1.1082091, z: 0.1465286}
+--- !u!195 &5882029382707511640
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4414871117303439921}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 0
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 300
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &7602557970457349754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4414871117303439921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd57d52512b3f124286f9f13e57fc26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyAnimator: {fileID: 4414871117303439920}
+  navMeshAgent: {fileID: 5882029382707511640}
+  currentTarget: {fileID: 0}
+  _damageCollider1: {fileID: 1409551142005762325}
+  _damageCollider2: {fileID: 0}
+  ChaseDistance: 10
+  AttackDistance: 2
+  EnemyHP: 100
+  Enemyspeed: 2
+  EnemyDamage: 5
 --- !u!1 &4414871117353324497
 GameObject:
   m_ObjectHideFlags: 0
@@ -4370,7 +4416,8 @@ Transform:
   m_LocalPosition: {x: 0.14518651, y: -0.06310436, z: 0.0036073022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7714336872318886808}
   m_Father: {fileID: 4414871117745987669}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4414871117503948915
@@ -4649,3 +4696,56 @@ Transform:
   - {fileID: 4414871117266451937}
   m_Father: {fileID: 4414871116260526974}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5936637727010544683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7714336872318886808}
+  - component: {fileID: 1409551142005762325}
+  m_Layer: 0
+  m_Name: MinotaurDamager
+  m_TagString: Minotaur
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7714336872318886808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5936637727010544683}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.14724687, y: -0.08619845, z: -0.0128824385, w: 0.9852524}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4414871117438455635}
+  m_LocalEulerAnglesHint: {x: -17, y: -10, z: 0}
+--- !u!65 &1409551142005762325
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5936637727010544683}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.30980372, y: 0.706275, z: 0.6605291}
+  m_Center: {x: 0.052617095, y: -0.07710481, z: 0.7502276}
