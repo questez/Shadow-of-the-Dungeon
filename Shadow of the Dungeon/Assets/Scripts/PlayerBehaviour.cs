@@ -3,6 +3,14 @@ using UnityEngine;
 public class PlayerBehaviour : MonoBehaviour
 {
     public float PlayerHP;
+    [SerializeField] GameObject DeathScreen;
+    private void Awake()
+    {
+        if (DeathScreen != null)
+        {
+            DeathScreen.SetActive(false);
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -27,5 +35,12 @@ public class PlayerBehaviour : MonoBehaviour
             PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
         }
     }
-
+    private void Update()
+    {
+        if (PlayerHP <= 0)
+        {
+            Debug.Log($"Игрок умер");
+            DeathScreen.SetActive(true);
+        }
+    }
 }
