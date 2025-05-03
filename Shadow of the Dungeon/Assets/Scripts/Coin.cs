@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    float _rotationSpeed = 300;
+    private float _rotationSpeed = 300;
     private int countOfCoins = 0;
 
     private void OnCollisionEnter(Collision collision)
