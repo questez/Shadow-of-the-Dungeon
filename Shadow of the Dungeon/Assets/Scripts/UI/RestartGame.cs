@@ -6,7 +6,7 @@ public class RestartGame : MonoBehaviour
     [SerializeField] UnityEngine.UI.Button _button;
     public void Restart()
     {
-        SceneManager.LoadScene(_button.gameObject.scene.name);
+        SceneManager.LoadScene("CommonEnemies");
     }
     private void Awake()
     {

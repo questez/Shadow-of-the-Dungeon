@@ -2,10 +2,10 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    [SerializeField] GameObject DeathScreen;
     [SerializeField] HorizontalLayoutGroup HeartRow;
     [SerializeField] TMP_Text SpellName;
     [SerializeField] TMP_Text PotionName;
@@ -14,17 +14,13 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] TMP_Text CoinValue;
     [SerializeField] TMP_Text ScoreValue;
     public float PlayerHP; // очки здоровья
-    public float PlayerXP = 0f; // очки опыта
+    public int PlayerXP = 0; // очки опыта
     public int PlayerLevel = 0; // уровень игрока
     public int PlayerBalance = 0; // количество собранных кристаллов (баланс)
     [NonSerialized] public string PlayerSpell = "No spell"; // текущее заклинание
     [NonSerialized] public string PlayerPotion = "No potion"; // текуще особое заклинание (зелье)
     private void Awake()
     {
-        if (DeathScreen != null)
-        {
-            DeathScreen.SetActive(false);
-        }
         SpellName.text = PlayerSpell;
         PotionName.text = PlayerPotion;
         LevelValue.text = PlayerLevel.ToString();
@@ -72,8 +68,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (PlayerHP <= 0)
         {
             Debug.Log($"Игрок умер");
-            ScoreValue.text = PlayerXP.ToString();
-            DeathScreen.SetActive(true);
+            SceneManager.LoadScene("InterimScene");
         }
     }
 }
