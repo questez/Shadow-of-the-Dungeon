@@ -1893,6 +1893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
+    - target: {fileID: 2470389341847842039, guid: 4af0b23a176aa20448de7aec3af255e7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2470389341848334551, guid: 4af0b23a176aa20448de7aec3af255e7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
