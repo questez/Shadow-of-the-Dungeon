@@ -8,7 +8,7 @@ public class EnemyStateManager : MonoBehaviour
     [SerializeField] private NavMeshAgent navMeshAgent; 
     [SerializeField] private Transform currentTarget;
     [SerializeField] private Collider _damageCollider1, _damageCollider2; // ссылки на коллайдеры для нанесения урона игроку
-
+    
 
     public float ChaseDistance; // дистанция преследования игрока
     public float AttackDistance; // дистанция атаки на игрока
@@ -55,19 +55,22 @@ public class EnemyStateManager : MonoBehaviour
         get { return (transform.position - currentTarget.position).magnitude; }       
     }
 
-    
-    // проверка, что враг проигрывает анимацию атаки до конца и только потом преследует игрока:
-    //private void CheckAttackTransition() 
-    //{
-    //    Debug.Log($"Distance: {DistanceToTarget}, AttackDist: {AttackDistance}, State: {currentState}");
-    //    if (DistanceToTarget > AttackDistance && currentState == attackstate)
-    //    {
-    //        SwitchState(chasestate);
-    //        Debug.Log("EVENT is working");
-    //    }
-    //    else Debug.Log("EVENT is NOT working");
-    //}
 
+    // проверка, что враг проигрывает анимацию атаки до конца и только потом преследует игрока:
+    private void CheckAttackTransition() // не работает почему-то
+    {
+        Debug.Log($"Distance: {DistanceToTarget}, AttackDist: {AttackDistance}, State: {currentState}");
+        if (DistanceToTarget > AttackDistance)
+        {
+            if (currentState == attackstate)
+            {
+                SwitchState(chasestate);
+                Debug.Log("EVENT is working");
+            }
+        }
+        else Debug.Log("EVENT is NOT working");
+    }
+    
     private void OnOffDamager(int switcher)
     {
         if (switcher == 1)

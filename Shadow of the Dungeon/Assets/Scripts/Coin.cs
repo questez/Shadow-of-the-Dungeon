@@ -3,9 +3,9 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     private float _rotationSpeed = 300;
-    private int countOfCoins = 0;
+    public int countOfCoins = 0;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision) // сбор монет
     {
         if(collision.gameObject.CompareTag("Player"))
         {

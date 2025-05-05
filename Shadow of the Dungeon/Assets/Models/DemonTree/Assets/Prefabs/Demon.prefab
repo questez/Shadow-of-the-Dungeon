@@ -665,8 +665,8 @@ MonoBehaviour:
   EnemyAnimator: {fileID: 95599254065212114}
   navMeshAgent: {fileID: 7421738213347915126}
   currentTarget: {fileID: 0}
-  _damageCollider1: {fileID: 4741877736455872391}
-  _damageCollider2: {fileID: 8826987730760899666}
+  _damageCollider1: {fileID: 4672889012771916884}
+  _damageCollider2: {fileID: 130582178569976610}
   ChaseDistance: 10
   AttackDistance: 4
   EnemyHP: 1000
@@ -2436,7 +2436,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5456846469828611656}
-  - component: {fileID: 8826987730760899666}
+  - component: {fileID: 4672889012771916884}
   m_Layer: 0
   m_Name: DemonDamagerLeft
   m_TagString: Demon
@@ -2459,8 +2459,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4471826431615716}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8826987730760899666
-BoxCollider:
+--- !u!135 &4672889012771916884
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2478,8 +2478,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.007, y: 0.001, z: 0.001}
-  m_Center: {x: 0, y: 0.001, z: 0}
+  m_Radius: 0.003
+  m_Center: {x: 0, y: 0, z: 0.001}
 --- !u!1 &9186878912142053595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,7 +2489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5525388991378029384}
-  - component: {fileID: 4741877736455872391}
+  - component: {fileID: 130582178569976610}
   m_Layer: 0
   m_Name: DemonDamagerRight
   m_TagString: Demon
@@ -2512,8 +2512,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4116355956110140}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4741877736455872391
-BoxCollider:
+--- !u!135 &130582178569976610
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2531,5 +2531,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.007, y: 0.001, z: 0.001}
-  m_Center: {x: 0, y: 0.001, z: 0}
+  m_Radius: 0.003
+  m_Center: {x: 0, y: 0, z: 0.001}
