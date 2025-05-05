@@ -52,7 +52,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6348328343082835519
 Transform:
   m_ObjectHideFlags: 0
@@ -331,4 +331,4 @@ MonoBehaviour:
   _canvas: {fileID: 0}
   _collider1: {fileID: -6638103147857846523}
   _collider2: {fileID: 0}
-  Damage: 35
+  PlayerDamage: 35

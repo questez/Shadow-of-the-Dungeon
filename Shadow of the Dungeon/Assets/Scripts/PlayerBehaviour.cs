@@ -26,6 +26,11 @@ public class PlayerBehaviour : MonoBehaviour
             Debug.Log($"Игроку нанесен урон от Skeleton {other.GetComponentInParent<EnemyStateManager>().EnemyDamage}!");
             PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
         }
+        if (other.gameObject.CompareTag("Demon"))
+        {
+            Debug.Log($"Игроку нанесен урон от Demon {other.GetComponentInParent<EnemyStateManager>().EnemyDamage}!");
+            PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
+        }
     }
 
 }

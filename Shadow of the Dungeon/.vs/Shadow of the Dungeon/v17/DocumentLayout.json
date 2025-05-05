@@ -1,18 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\",
+  "WorkspaceRootPath": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\users\\iaros\\documents\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\ui\\buyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\buyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|d:\\ivan\\unityprojects\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\users\\iaros\\documents\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\ui\\switchscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\switchscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\enemystates\\enemystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemystates\\enemystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\ui\\togglehud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\togglehud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\enemystates\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemystates\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\enemystates\\chasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemystates\\chasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\enemystates\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemystates\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\enemystates\\deathstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemystates\\deathstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\hitenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hitenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\grabweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grabweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,47 +46,118 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BuyItem.cs",
-              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\BuyItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\BuyItem.cs",
-              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\BuyItem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\BuyItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "GrabWeapon.cs",
+              "DocumentMoniker": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\GrabWeapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GrabWeapon.cs",
+              "ToolTip": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\GrabWeapon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GrabWeapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T14:19:31.029Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-05-04T14:31:23.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HitEnemy.cs",
+              "DocumentMoniker": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\HitEnemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HitEnemy.cs",
+              "ToolTip": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\HitEnemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HitEnemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:29:34.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Coin.cs",
+              "DocumentMoniker": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Coin.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Coin.cs",
+              "ToolTip": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Coin.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Coin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:26:22.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerBehaviour.cs",
+              "DocumentMoniker": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerBehaviour.cs",
+              "ToolTip": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerBehaviour.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA3wBUAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:28:28.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SwitchScreen.cs",
-              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\SwitchScreen.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\SwitchScreen.cs",
-              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\SwitchScreen.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\SwitchScreen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Title": "EnemyStateManager.cs",
+              "DocumentMoniker": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
+              "ToolTip": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T14:09:29.836Z",
+              "WhenOpened": "2025-05-04T13:09:46.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ToggleHUD.cs",
-              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ToggleHUD.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ToggleHUD.cs",
-              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ToggleHUD.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\ToggleHUD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IdleState.cs",
+              "DocumentMoniker": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\IdleState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyStates\\IdleState.cs",
+              "ToolTip": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\IdleState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyStates\\IdleState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T16:55:38.312Z",
+              "WhenOpened": "2025-05-04T13:10:09.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChaseState.cs",
+              "DocumentMoniker": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\ChaseState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyStates\\ChaseState.cs",
+              "ToolTip": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\ChaseState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyStates\\ChaseState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:10:03.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AttackState.cs",
+              "DocumentMoniker": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\AttackState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyStates\\AttackState.cs",
+              "ToolTip": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\AttackState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyStates\\AttackState.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:09:56.659Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeathState.cs",
+              "DocumentMoniker": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\DeathState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyStates\\DeathState.cs",
+              "ToolTip": "D:\\IVAN\\UnityPROJECTS\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\DeathState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyStates\\DeathState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:10:06.211Z"
             }
           ]
         }

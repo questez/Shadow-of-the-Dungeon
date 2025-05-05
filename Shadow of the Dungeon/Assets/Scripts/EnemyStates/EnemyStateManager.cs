@@ -41,7 +41,7 @@ public class EnemyStateManager : MonoBehaviour
     private void Update()
     {
         //Debug.Log(DistanceToTarget);
-        navMeshAgent.destination = currentTarget.position;
+        navMeshAgent.destination = currentTarget.position; // отслеживание позиции игрока
         currentState.UpdateState(this);        
     }
 
@@ -55,14 +55,7 @@ public class EnemyStateManager : MonoBehaviour
         get { return (transform.position - currentTarget.position).magnitude; }       
     }
 
-    private void OnTriggerEnter(Collider other) // нанесение урона от игрока врагу
-    {
-        if (other.gameObject.CompareTag("Weapon"))
-        {
-            //Debug.Log($"Удар произведен по врагу! Ему нанесен урон, равный {}");
-            EnemyHP -= other.gameObject.GetComponent<GrabWeapon>().Damage;
-        }
-    }
+    
     // проверка, что враг проигрывает анимацию атаки до конца и только потом преследует игрока:
     //private void CheckAttackTransition() 
     //{

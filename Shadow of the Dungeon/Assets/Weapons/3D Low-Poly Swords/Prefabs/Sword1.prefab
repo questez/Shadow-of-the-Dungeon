@@ -279,7 +279,7 @@ MonoBehaviour:
   _canvas: {fileID: 0}
   _collider1: {fileID: 4277066275375776230}
   _collider2: {fileID: 0}
-  Damage: 20
+  PlayerDamage: 20
 --- !u!65 &4277066275375776230
 BoxCollider:
   m_ObjectHideFlags: 0

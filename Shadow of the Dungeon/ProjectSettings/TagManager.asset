@@ -17,6 +17,7 @@ TagManager:
   - Golem
   - Skeleton
   - Minotaur
+  - Demon
   layers:
   - Default
   - TransparentFX

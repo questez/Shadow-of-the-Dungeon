@@ -6,12 +6,12 @@ public class ChaseState : BaseState
     {
         Debug.Log("Вход в chasestate");
         manager.SetSpeed(manager.Enemyspeed);
-        manager.EnemyAnimator.SetBool("IsChase", true);
+        if (manager.CompareTag("Demon") == false) { manager.EnemyAnimator.SetBool("IsChase", true); }
     }
     public override void ExitState(EnemyStateManager manager)
     {
         Debug.Log("Выход из chasestate");
-        manager.EnemyAnimator.SetBool("IsChase", false);
+        if (manager.CompareTag("Demon") == false) { manager.EnemyAnimator.SetBool("IsChase", false); }
     }
     public override void UpdateState(EnemyStateManager manager)
     {

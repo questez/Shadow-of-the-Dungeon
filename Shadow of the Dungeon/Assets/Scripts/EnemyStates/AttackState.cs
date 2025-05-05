@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class AttackState : BaseState
 {
-    private string golemAttack, spiderAttack, skeletonAttack, minotaurAttack; 
+    private string golemAttack, spiderAttack, skeletonAttack, minotaurAttack, demonAttack; 
     public override void EnterState(EnemyStateManager manager)
     {        
         Debug.Log("Вход в attackstate");
         manager.SetSpeed(0);
         if (manager.CompareTag("Spider"))
         {
-            spiderAttack = SpiderCurrentAttack;
+            spiderAttack = "IsAttack";
             manager.EnemyAnimator.SetBool(spiderAttack, true);
         } 
         if (manager.CompareTag("Golem"))
@@ -27,6 +27,11 @@ public class AttackState : BaseState
             skeletonAttack = "IsAttack";
             manager.EnemyAnimator.SetBool(skeletonAttack, true);
         }
+        if (manager.CompareTag("Demon"))
+        {
+            demonAttack = "IsAttack";
+            manager.EnemyAnimator.SetBool(demonAttack, true);
+        }
     }
 
     public override void ExitState(EnemyStateManager manager)
@@ -36,6 +41,7 @@ public class AttackState : BaseState
         if (manager.CompareTag("Spider")) manager.EnemyAnimator.SetBool(spiderAttack, false);
         if (manager.CompareTag("Minotaur")) manager.EnemyAnimator.SetBool(minotaurAttack, false);
         if (manager.CompareTag("Skeleton")) manager.EnemyAnimator.SetBool(skeletonAttack, false);
+        if (manager.CompareTag("Demon")) manager.EnemyAnimator.SetBool(demonAttack, false);
     }
     public override void UpdateState(EnemyStateManager manager)
     {
@@ -49,18 +55,8 @@ public class AttackState : BaseState
         }
     }   
     
-    // Свойства (prop) анимаций атак для различных типов врагов:
+    // Свойства (prop) анимаций атак для врагов, имеющих несколько вариантов воспроизведения:
 
-    // "Spider":
-    private string SpiderCurrentAttack
-    {
-        get
-        {
-            string[] attack_list = { "IsAttack1", "IsAttack2" };
-            System.Random rand = new System.Random();
-            return attack_list[rand.Next(0, 2)];
-        }
-    }
     // "Minotaur":
     private string MinotaurCurrentAttack
     {
