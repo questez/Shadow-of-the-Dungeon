@@ -135,15 +135,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8
+      value: 7.92
       objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -323,8 +323,8 @@ MonoBehaviour:
   _damageCollider2: {fileID: 0}
   ChaseDistance: 10
   AttackDistance: 2
-  EnemyHP: 100
-  Enemyspeed: 2
+  EnemyHP: 200
+  Enemyspeed: 3
   EnemyDamage: 6
 --- !u!4 &2470389341848334517 stripped
 Transform:
