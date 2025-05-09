@@ -630,6 +630,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564848478}
   m_CullTransparentMesh: 1
+--- !u!114 &614040942 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1530699167834441368, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 1429026992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &750926102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,6 +1621,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
   m_PrefabInstance: {fileID: 1429026992}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &940731241 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1178791450436251564, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 1429026992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &950395269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,6 +1866,10 @@ PrefabInstance:
     - target: {fileID: 917008026336092160, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 942810691211101373, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_StartingInteractionOverridesMap.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 950175637189515454, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Layer
@@ -2455,6 +2481,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3486456660740065663, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495717608674179280, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3533369827395663398, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
@@ -3478,6 +3508,14 @@ PrefabInstance:
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 573681995488226036, guid: d06f47b88fe44034492bfaf38147f3b6, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 940731241}
+    - target: {fileID: 573681995488226036, guid: d06f47b88fe44034492bfaf38147f3b6, type: 3}
+      propertyPath: _coinValue
+      value: 
+      objectReference: {fileID: 614040942}
     - target: {fileID: 645686454845409132, guid: d06f47b88fe44034492bfaf38147f3b6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3566,6 +3604,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Title
       objectReference: {fileID: 0}
+    - target: {fileID: 1435672665207029892, guid: d06f47b88fe44034492bfaf38147f3b6, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 940731241}
+    - target: {fileID: 1435672665207029892, guid: d06f47b88fe44034492bfaf38147f3b6, type: 3}
+      propertyPath: _coinValue
+      value: 
+      objectReference: {fileID: 614040942}
     - target: {fileID: 1682865460213116930, guid: d06f47b88fe44034492bfaf38147f3b6, type: 3}
       propertyPath: m_text
       value: Name
@@ -4102,9 +4148,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.525
       objectReference: {fileID: 0}
+    - target: {fileID: 7322576888698440511, guid: d06f47b88fe44034492bfaf38147f3b6, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 940731241}
+    - target: {fileID: 7322576888698440511, guid: d06f47b88fe44034492bfaf38147f3b6, type: 3}
+      propertyPath: _coinValue
+      value: 
+      objectReference: {fileID: 614040942}
     - target: {fileID: 7390225913206825103, guid: d06f47b88fe44034492bfaf38147f3b6, type: 3}
       propertyPath: m_text
-      value: Buy x1
+      value: Buy
       objectReference: {fileID: 0}
     - target: {fileID: 7438348638180532029, guid: d06f47b88fe44034492bfaf38147f3b6, type: 3}
       propertyPath: m_Name
