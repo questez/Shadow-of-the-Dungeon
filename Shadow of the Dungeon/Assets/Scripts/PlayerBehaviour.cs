@@ -12,7 +12,6 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] TMP_Text LevelValue;
     [SerializeField] TMP_Text ExperienceValue;
     [SerializeField] TMP_Text CoinValue;
-    [SerializeField] TMP_Text ScoreValue;
     public float PlayerHP; // очки здоровья
     public int PlayerXP = 0; // очки опыта
     public int PlayerLevel = 0; // уровень игрока
@@ -26,18 +25,7 @@ public class PlayerBehaviour : MonoBehaviour
         LevelValue.text = PlayerLevel.ToString();
         ExperienceValue.text = PlayerXP.ToString();
         CoinValue.text = PlayerBalance.ToString();
-        //int heartCount = (int)(PlayerHP / 20);
-        //int i = 0;
-        //foreach (var h in HeartRow.GetComponents<Image>())
-        //{
-        //    h.gameObject.SetActive(false);
-        //    i++;
-        //    Debug.Log(i);
-        //    if (i > 5)
-        //    {
-        //        break;
-        //    }
-        //}
+        SetHearts();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -62,6 +50,33 @@ public class PlayerBehaviour : MonoBehaviour
             Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от Skeleton!");
             PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
         }
+        SetHearts();
+    }
+    private void SetHearts()
+    {
+        int heartCount = (int)(PlayerHP / 20);
+        Image[] hearts = HeartRow.GetComponentsInChildren<Image>();
+        foreach(Image h in hearts)
+        {
+            h.enabled = false;
+        }
+        for (int i = 0; i < heartCount; i++)
+        {
+            hearts[i].enabled = true;
+            hearts[i].fillAmount = 1f;
+        }
+        if (PlayerHP % 20 != 0)
+        {
+            if (PlayerHP % 20 < 11)
+            {
+                hearts[heartCount].fillAmount = 0.5f;
+            }
+            hearts[heartCount].enabled = true;
+        }
+        if (PlayerHP < 0)
+        {
+            hearts[0].enabled = false;
+        }
     }
     private void Update()
     {
@@ -70,5 +85,6 @@ public class PlayerBehaviour : MonoBehaviour
             Debug.Log($"Игрок умер");
             SceneManager.LoadScene("InterimScene");
         }
+
     }
 }

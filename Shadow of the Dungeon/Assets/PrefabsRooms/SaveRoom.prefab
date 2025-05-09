@@ -148,6 +148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 7254089235119941390}
   _text: {fileID: 5652211042850465101}
+  _priceText: {fileID: 657682039792185747}
+  _player: {fileID: 0}
 --- !u!1 &485116460769598972
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +406,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 81550785064977032}
   _text: {fileID: 3610191444073240574}
+  _priceText: {fileID: 0}
+  _player: {fileID: 0}
 --- !u!1 &1038110132339878462
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +692,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 6339714785936555332}
   _text: {fileID: 8424825183626439156}
+  _priceText: {fileID: 0}
+  _player: {fileID: 0}
 --- !u!1 &1187036959455024451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,6 +1053,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 2555285872986696882}
   _text: {fileID: 4444229801677034364}
+  _priceText: {fileID: 1421941829071845935}
+  _player: {fileID: 0}
 --- !u!1 &2313554239531109825
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,6 +3209,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 4366499825194275846}
   _text: {fileID: 4463194903135298401}
+  _priceText: {fileID: 3298756833538758393}
+  _player: {fileID: 0}
 --- !u!1 &5812872747495371839
 GameObject:
   m_ObjectHideFlags: 0
