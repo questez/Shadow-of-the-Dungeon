@@ -12,10 +12,10 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] TMP_Text LevelValue;
     [SerializeField] TMP_Text ExperienceValue;
     [SerializeField] TMP_Text CoinValue;
-    public float PlayerHP; // очки здоровья
-    public int PlayerXP = 0; // очки опыта
-    public int PlayerLevel = 0; // уровень игрока
-    public int PlayerBalance = 0; // количество собранных кристаллов (баланс)
+    [NonSerialized] public float PlayerHP = 100f; // очки здоровья
+    [NonSerialized] public int PlayerXP = 0; // очки опыта
+    [NonSerialized] public int PlayerLevel = 0; // уровень игрока
+    [NonSerialized] public int PlayerBalance = 100; // количество собранных кристаллов (баланс)
     [NonSerialized] public string PlayerSpell = "No spell"; // текущее заклинание
     [NonSerialized] public string PlayerPotion = "No potion"; // текуще особое заклинание (зелье)
     private void Awake()

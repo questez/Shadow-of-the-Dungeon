@@ -8,6 +8,7 @@ public class BuyItem : MonoBehaviour
     [SerializeField] UnityEngine.UI.Button _button;
     [SerializeField] TMP_Text _text;
     [SerializeField] TMP_Text _priceText;
+    [SerializeField] TMP_Text _coinValue;
     [SerializeField] XROrigin _player;
     private bool _isAvailible = true;
     private PlayerBehaviour _pb;
@@ -21,6 +22,7 @@ public class BuyItem : MonoBehaviour
             Debug.Log($"Bought {_text.text}");
             _isAvailible = false;
             _pb.PlayerBalance -= _itemPrice;
+            _coinValue.text = _pb.PlayerBalance.ToString();
         }
     }
     private void Awake()

@@ -1098,10 +1098,6 @@ MonoBehaviour:
   LevelValue: {fileID: 4606641861153253707}
   ExperienceValue: {fileID: 286219438515749644}
   CoinValue: {fileID: 1530699167834441368}
-  PlayerHP: 100
-  PlayerXP: 0
-  PlayerLevel: 0
-  PlayerBalance: 0
 --- !u!136 &1348444129684481937
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1219,7 +1215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8418786636219059989
 Transform:
   m_ObjectHideFlags: 0
@@ -1728,7 +1724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7951184429302108679
 Transform:
   m_ObjectHideFlags: 0
