@@ -1,4 +1,5 @@
 using System;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -6,7 +7,7 @@ public class EnemyStateManager : MonoBehaviour
 {  
     public Animator EnemyAnimator; 
     [SerializeField] private NavMeshAgent navMeshAgent; 
-    [SerializeField] private Transform currentTarget;
+    private Transform currentEnemyTarget;
     [SerializeField] private Collider _damageCollider1, _damageCollider2; // ссылки на коллайдеры для нанесения урона игроку
     
 
@@ -23,6 +24,7 @@ public class EnemyStateManager : MonoBehaviour
     
     private void Start()
     {
+        currentEnemyTarget = FindAnyObjectByType<XROrigin>().transform;
         if (_damageCollider1 != null) { _damageCollider1.enabled = false; } // при начале работы по умолчанию коллайдеры отключены
         if (_damageCollider2 != null) { _damageCollider2.enabled = false; }
         SwitchState(idlestate);
@@ -41,7 +43,7 @@ public class EnemyStateManager : MonoBehaviour
     private void Update()
     {
         //Debug.Log(DistanceToTarget);
-        navMeshAgent.destination = currentTarget.position; // отслеживание позиции игрока
+        navMeshAgent.destination = currentEnemyTarget.position; // отслеживание позиции игрока
         currentState.UpdateState(this);        
     }
 
@@ -52,7 +54,7 @@ public class EnemyStateManager : MonoBehaviour
 
     public float DistanceToTarget // расчет дистанции до игрока
     {
-        get { return (transform.position - currentTarget.position).magnitude; }       
+        get { return (transform.position - currentEnemyTarget.position).magnitude; }       
     }
 
 

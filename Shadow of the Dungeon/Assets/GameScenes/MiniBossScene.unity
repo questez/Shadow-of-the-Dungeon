@@ -415,6 +415,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3886289145792908606, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 3bbec32afbd16d5419d76ae167d40942, type: 2}
     - target: {fileID: 6333303022440277606, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
       propertyPath: m_Name
       value: BasicLevelRoom
@@ -435,6 +439,10 @@ PrefabInstance:
     - target: {fileID: 4414871117303439921, guid: aef9a3e063e740f4d8100584de73ceb4, type: 3}
       propertyPath: m_Name
       value: minotaur1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414871117303439921, guid: aef9a3e063e740f4d8100584de73ceb4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4414871117303439923, guid: aef9a3e063e740f4d8100584de73ceb4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -749,7 +757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3935502388852806242, guid: 507c7d1b0e368b842ba5573567a7049e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4101188564497826917, guid: 507c7d1b0e368b842ba5573567a7049e, type: 3}
       propertyPath: m_LocalPosition.x

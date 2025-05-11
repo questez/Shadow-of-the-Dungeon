@@ -4,18 +4,10 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class GrabWeapon : MonoBehaviour
 {
-    [SerializeField] private GameObject _canvas;
-    [SerializeField] private Collider _collider1;
-    [SerializeField] private Collider _collider2;
-    public float PlayerDamage; // добавить чтобы с увеличением скорости урон также увеличивался
-
-    private void Start()
-    {
-        if (_canvas != null)
-        {
-            _canvas.SetActive(false);
-        }
-    }
+    [SerializeField] Collider _collider1;
+    [SerializeField] Collider _collider2;
+    [SerializeField] GameObject _canvas;
+    public float PlayerDamage; // добавить чтобы с увеличением скорости урон также увеличивался    
 
    
     public void OnGrab(SelectEnterEventArgs args)
@@ -36,10 +28,7 @@ public class GrabWeapon : MonoBehaviour
     }
     public void OnUnGrab(SelectExitEventArgs args)
     {
-        if (_canvas != null)
-        {
-            _canvas.SetActive(false);
-        }
+        
         if (_collider1 != null)
         {
             _collider1.isTrigger = false;

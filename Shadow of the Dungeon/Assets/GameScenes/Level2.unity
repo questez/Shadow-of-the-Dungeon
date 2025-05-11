@@ -932,6 +932,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 146652029462691080, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 340747324776597923, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 458417210811960491, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049667039265606449, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520291748681908918, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3007243635690120779, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -980,9 +1000,37 @@ PrefabInstance:
       propertyPath: m_NavMeshData
       value: 
       objectReference: {fileID: 23800000, guid: c0da2ea201253574e8af311c22106ad4, type: 2}
+    - target: {fileID: 4016142207565947118, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210130900506946253, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276855113081131682, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6302820378389659077, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6333303022440277606, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
       propertyPath: m_Name
       value: BasicLevelRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771305246055391374, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8698820297847549442, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814568694685962967, guid: 098aa3d7c208abd4e8257897bd3540f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
