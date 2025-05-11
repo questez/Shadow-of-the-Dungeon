@@ -12,6 +12,9 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] TMP_Text LevelValue;
     [SerializeField] TMP_Text ExperienceValue;
     [SerializeField] TMP_Text CoinValue;
+    [SerializeField] Canvas PauseScreen;
+    [NonSerialized] private bool isPaused;
+    [NonSerialized] private XRIDefaultInputActions input;
     [NonSerialized] public float PlayerHP = 100f; // очки здоровья
     [NonSerialized] public int PlayerXP = 0; // очки опыта
     [NonSerialized] public int PlayerLevel = 0; // уровень игрока
@@ -20,11 +23,15 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public string PlayerPotion = "No potion"; // текуще особое заклинание (зелье)
     private void Awake()
     {
+        isPaused = false;
+        input = new XRIDefaultInputActions();
+        input.XRILeftInteraction.Pause.performed += ctx => TogglePause();
         SpellName.text = PlayerSpell;
         PotionName.text = PlayerPotion;
         LevelValue.text = PlayerLevel.ToString();
         ExperienceValue.text = PlayerXP.ToString();
         CoinValue.text = PlayerBalance.ToString();
+        PauseScreen.enabled = false;
         SetHearts();
     }
 
@@ -52,6 +59,16 @@ public class PlayerBehaviour : MonoBehaviour
         }
         SetHearts();
     }
+    private void OnEnable()
+    {
+        input.Enable();
+    }
+
+    private void OnDisable()
+    {
+        input.Disable();
+    }
+
     private void SetHearts()
     {
         int heartCount = (int)(PlayerHP / 20);
@@ -76,6 +93,23 @@ public class PlayerBehaviour : MonoBehaviour
         if (PlayerHP < 0)
         {
             hearts[0].enabled = false;
+        }
+    }
+    public void TogglePause()
+    {
+        if (this.gameObject.scene.name != "MainMenu" && this.gameObject.scene.name != "InterimScene")
+        {
+            PauseScreen.enabled = !PauseScreen.enabled;
+            if (!isPaused)
+            {
+                Time.timeScale = 0f;
+                isPaused = true;
+            }
+            else
+            {
+                Time.timeScale = 1f;
+                isPaused = false;
+            }
         }
     }
     private void Update()

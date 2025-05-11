@@ -1,22 +1,22 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RestartGame : MonoBehaviour
+public class PauseExit : MonoBehaviour
 {
     [SerializeField] UnityEngine.UI.Button _button;
     private string _sceneName;
     private void Awake()
     {
         _sceneName = gameObject.scene.name;
-        _button.onClick.AddListener(Restart);
-        if (_sceneName == "StartRoom" || _sceneName == "SaveZone")
+        _button.onClick.AddListener(Exit);
+        if (_sceneName == "StartRoom")
         {
             _button.interactable = false;
         }
     }
-    private void Restart()
+    private void Exit()
     {
-        SceneManager.LoadScene(_sceneName);
+        SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1f;
     }
 }
