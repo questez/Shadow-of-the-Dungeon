@@ -1424,7 +1424,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyAnimator: {fileID: 2470389341840547705}
   navMeshAgent: {fileID: 403736928747798408}
-  currentEnemyTarget: {fileID: 0}
   _damageCollider1: {fileID: 8646485635644790063}
   _damageCollider2: {fileID: 0}
   ChaseDistance: 10
@@ -1573,7 +1572,7 @@ GameObject:
   - component: {fileID: 8646485635644790063}
   m_Layer: 0
   m_Name: SkeletonDamager
-  m_TagString: Skeleton
+  m_TagString: SkeletonDamager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

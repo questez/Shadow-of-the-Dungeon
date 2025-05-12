@@ -665,7 +665,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyAnimator: {fileID: 95599254065212114}
   navMeshAgent: {fileID: 7421738213347915126}
-  currentTarget: {fileID: 0}
   _damageCollider1: {fileID: 4672889012771916884}
   _damageCollider2: {fileID: 130582178569976610}
   ChaseDistance: 10
@@ -2467,7 +2466,7 @@ GameObject:
   - component: {fileID: 4672889012771916884}
   m_Layer: 0
   m_Name: DemonDamagerLeft
-  m_TagString: Demon
+  m_TagString: DemonDamager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2520,7 +2519,7 @@ GameObject:
   - component: {fileID: 130582178569976610}
   m_Layer: 0
   m_Name: DemonDamagerRight
-  m_TagString: Demon
+  m_TagString: DemonDamager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

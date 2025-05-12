@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class AttackState : BaseState
 {
-    private string golemAttack, spiderAttack, skeletonAttack, minotaurAttack, demonAttack; 
+    string golemAttack, spiderAttack, skeletonAttack, minotaurAttack, demonAttack; 
     public override void EnterState(EnemyStateManager manager)
     {        
         Debug.Log("¬ход в attackstate");

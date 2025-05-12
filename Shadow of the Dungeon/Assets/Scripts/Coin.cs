@@ -14,7 +14,7 @@ public class Coin : MonoBehaviour
             Debug.Log($"Собрана монетка! Текущее количество: {countOfCoins}.");
         }
     }
-
+    
     private void Update()
     {
         transform.Rotate(0, _rotationSpeed * Time.deltaTime, 0);

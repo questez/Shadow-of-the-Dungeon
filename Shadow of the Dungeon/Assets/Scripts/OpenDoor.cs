@@ -20,7 +20,7 @@ public class OpenDoor : MonoBehaviour
             if (name_scene.StartsWith('L'))
             {
                 int next = SceneManager.GetActiveScene().buildIndex + 1;
-                SceneManager.LoadScene(next);
+                if (next <= SceneManager.sceneCountInBuildSettings) SceneManager.LoadScene(next);
             }     
             else if (name_scene == "StartRoom")
             {

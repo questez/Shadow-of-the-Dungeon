@@ -978,7 +978,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyAnimator: {fileID: 7835011179915219999}
   navMeshAgent: {fileID: 4832241498979765107}
-  currentTarget: {fileID: 0}
   _damageCollider1: {fileID: 6500402722080443917}
   _damageCollider2: {fileID: 1742688704284577256}
   ChaseDistance: 10
@@ -1309,7 +1308,7 @@ GameObject:
   - component: {fileID: 6500402722080443917}
   m_Layer: 0
   m_Name: GolemDamagerLeft
-  m_TagString: Golem
+  m_TagString: GolemDamager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1717,7 +1716,7 @@ GameObject:
   - component: {fileID: 1742688704284577256}
   m_Layer: 0
   m_Name: GolemDamagerRight
-  m_TagString: Golem
+  m_TagString: GolemDamager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

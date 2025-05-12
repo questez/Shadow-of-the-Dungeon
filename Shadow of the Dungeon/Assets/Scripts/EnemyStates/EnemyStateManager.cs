@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyStateManager : MonoBehaviour
-{  
-    public Animator EnemyAnimator; 
-    [SerializeField] private NavMeshAgent navMeshAgent; 
+{
     private Transform currentEnemyTarget;
+    public Animator EnemyAnimator; 
+    [SerializeField] private NavMeshAgent navMeshAgent;     
     [SerializeField] private Collider _damageCollider1, _damageCollider2; // ссылки на коллайдеры для нанесения урона игроку
     
 
@@ -87,4 +87,6 @@ public class EnemyStateManager : MonoBehaviour
         }
     }
     
+    
+
 }

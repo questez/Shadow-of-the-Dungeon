@@ -498,7 +498,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyAnimator: {fileID: 7795495272314343550}
   navMeshAgent: {fileID: 7236537759118804217}
-  currentTarget: {fileID: 0}
   _damageCollider1: {fileID: 664110268017813785}
   _damageCollider2: {fileID: 7173696529506722288}
   ChaseDistance: 10
@@ -1986,7 +1985,7 @@ GameObject:
   - component: {fileID: 664110268017813785}
   m_Layer: 0
   m_Name: AttackColliderRight
-  m_TagString: Spider
+  m_TagString: SpiderDamager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2891,7 +2890,7 @@ GameObject:
   - component: {fileID: 7173696529506722288}
   m_Layer: 0
   m_Name: AttackColliderLeft
-  m_TagString: Spider
+  m_TagString: SpiderDamager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

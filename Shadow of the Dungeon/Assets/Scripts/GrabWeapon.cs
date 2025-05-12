@@ -1,11 +1,12 @@
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class GrabWeapon : MonoBehaviour
 {
-    [SerializeField] Collider _collider1;
-    [SerializeField] Collider _collider2;
+    [SerializeField] Collider weaponCollider;
+    [SerializeField] Collider _stonetableCollider;
     [SerializeField] GameObject _canvas;
     public float PlayerDamage; // добавить чтобы с увеличением скорости урон также увеличивался    
 
@@ -16,27 +17,27 @@ public class GrabWeapon : MonoBehaviour
         {
             _canvas.SetActive(true);
         }
-        if (_collider1 != null)
+        if (weaponCollider != null)
         {
-            _collider1.isTrigger = true;
+            weaponCollider.isTrigger = true;
         }
-        if (_collider2 != null)
+        if (_stonetableCollider != null)
         {
-            _collider2.isTrigger = true;
+            _stonetableCollider.attachedRigidbody.isKinematic = false;
+            _stonetableCollider.isTrigger = true;
+            
+            
         }
         args.interactableObject.transform.SetParent(args.interactorObject.transform);
     }
     public void OnUnGrab(SelectExitEventArgs args)
     {
         
-        if (_collider1 != null)
+        if (weaponCollider != null)
         {
-            _collider1.isTrigger = false;
+            weaponCollider.isTrigger = false;
         }
-        if (_collider2 != null)
-        {
-            _collider2.isTrigger = false;
-        }        
+               
         args.interactableObject.transform.SetParent(null);
     }
 }

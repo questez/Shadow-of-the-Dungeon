@@ -276,9 +276,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e6bae41d40512479d258741436260c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponCollider: {fileID: 4277066275375776230}
+  _stonetableCollider: {fileID: 0}
   _canvas: {fileID: 0}
-  _collider1: {fileID: 4277066275375776230}
-  _collider2: {fileID: 0}
   PlayerDamage: 20
 --- !u!65 &4277066275375776230
 BoxCollider:

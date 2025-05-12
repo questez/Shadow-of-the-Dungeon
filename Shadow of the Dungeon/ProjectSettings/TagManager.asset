@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Enemy
   - Enviroment
   - Floor
   - Door
@@ -18,6 +17,11 @@ TagManager:
   - Skeleton
   - Minotaur
   - Demon
+  - SpiderDamager
+  - GolemDamager
+  - SkeletonDamager
+  - MinotaurDamager
+  - DemonDamager
   layers:
   - Default
   - TransparentFX
