@@ -21,6 +21,7 @@ public class BuyItem : MonoBehaviour
         {
             Debug.Log($"Bought {_text.text}");
             _isAvailible = false;
+            _button.interactable = false;
             _pb.PlayerBalance -= _itemPrice;
             _coinValue.text = _pb.PlayerBalance.ToString();
         }

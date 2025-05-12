@@ -18,7 +18,7 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public float PlayerHP = 100f; // очки здоровья
     [NonSerialized] public int PlayerXP = 0; // очки опыта
     [NonSerialized] public int PlayerLevel = 0; // уровень игрока
-    [NonSerialized] public int PlayerBalance = 100; // количество собранных кристаллов (баланс)
+    [NonSerialized] public int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
     [NonSerialized] public string PlayerSpell = "No spell"; // текущее заклинание
     [NonSerialized] public string PlayerPotion = "No potion"; // текуще особое заклинание (зелье)
     private void Awake()
