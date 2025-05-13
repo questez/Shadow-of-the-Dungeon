@@ -97,7 +97,7 @@ public class PlayerBehaviour : MonoBehaviour
     }
     public void TogglePause()
     {
-        if (this.gameObject.scene.name != "MainMenu" && this.gameObject.scene.name != "InterimScene")
+        if (this.gameObject.scene.name != "MainMenu" && this.gameObject.scene.name != "DeathScene")
         {
             PauseScreen.enabled = !PauseScreen.enabled;
             if (!isPaused)
@@ -117,7 +117,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (PlayerHP <= 0)
         {
             Debug.Log($"Игрок умер");
-            SceneManager.LoadScene("InterimScene");
+            SceneManager.LoadScene("DeathScene");
         }
 
     }
