@@ -37,22 +37,22 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Spider"))
+        if (other.gameObject.CompareTag("SpiderDamager"))
         {
             Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от Spider!");
             PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
         }
-        if (other.gameObject.CompareTag("Golem"))
+        if (other.gameObject.CompareTag("GolemDamager"))
         {
             Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от Golem!");
             PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
         }
-        if (other.gameObject.CompareTag("Minotaur"))
+        if (other.gameObject.CompareTag("MinotaurDamager"))
         {
             Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от Minotaur!");
             PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
         }
-        if (other.gameObject.CompareTag("Skeleton"))
+        if (other.gameObject.CompareTag("SkeletonDamager"))
         {
             Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от Skeleton!");
             PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;

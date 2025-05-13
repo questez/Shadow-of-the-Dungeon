@@ -10,6 +10,6 @@ public class DeathRestart : MonoBehaviour
     }
     private void Restart()
     {
-        SceneManager.LoadScene("CommonEnemies");
+        SceneManager.LoadScene("Level1");
     }
 }
