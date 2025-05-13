@@ -7,7 +7,7 @@ public class BuySword : MonoBehaviour
     [SerializeField] UnityEngine.UI.Button _button;
     [SerializeField] MonoBehaviour GrabInteractible;
     [SerializeField] TMP_Text _coinValue;
-    [SerializeField] XROrigin _player;
+    XROrigin _player;
     private PlayerBehaviour _pb;
     private int _swordPrice;
     public void Buy()
@@ -32,6 +32,7 @@ public class BuySword : MonoBehaviour
         }
         _button.onClick.AddListener(Buy);
         GrabInteractible.enabled = false;
-        _pb = _player.GetComponentInParent<PlayerBehaviour>();
+        _player = FindAnyObjectByType<XROrigin>();
+        _pb = _player.GetComponentInParent<PlayerBehaviour>();        
     }
 }

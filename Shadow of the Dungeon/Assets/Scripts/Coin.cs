@@ -6,11 +6,11 @@ public class Coin : MonoBehaviour
     private float _rotationSpeed = 300;
     [SerializeField] TMP_Text CoinValue;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("Player"))
         {
-            PlayerBehaviour pb = collision.gameObject.GetComponent<PlayerBehaviour>();
+            PlayerBehaviour pb = other.gameObject.GetComponent<PlayerBehaviour>();
             pb.PlayerBalance++;
             Destroy(this.gameObject);
             Debug.Log($"Собрана монетка! Текущее количество: {pb.PlayerBalance}.");

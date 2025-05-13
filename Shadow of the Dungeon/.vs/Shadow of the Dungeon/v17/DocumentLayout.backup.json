@@ -3,32 +3,12 @@
   "WorkspaceRootPath": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|d:\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\ui\\restartgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\restartgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|d:\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\ui\\deathrestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\deathrestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|d:\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\ui\\deathrestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\deathrestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\ui\\togglehud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\togglehud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\ui\\buyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\buyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\ui\\buysword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\buysword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,92 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "DeathRestart.cs",
               "DocumentMoniker": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\DeathRestart.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\DeathRestart.cs",
               "ToolTip": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\DeathRestart.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\DeathRestart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T13:46:26.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RestartGame.cs",
-              "DocumentMoniker": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\RestartGame.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\RestartGame.cs",
-              "ToolTip": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\RestartGame.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\RestartGame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T13:46:16.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Coin.cs",
-              "DocumentMoniker": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Coin.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Coin.cs",
-              "ToolTip": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Coin.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Coin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T13:40:43.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ToggleHUD.cs",
-              "DocumentMoniker": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ToggleHUD.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ToggleHUD.cs",
-              "ToolTip": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ToggleHUD.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\ToggleHUD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T13:05:58.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BuyItem.cs",
-              "DocumentMoniker": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\BuyItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\BuyItem.cs",
-              "ToolTip": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\BuyItem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\BuyItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T06:53:17.191Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BuySword.cs",
-              "DocumentMoniker": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\BuySword.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\BuySword.cs",
-              "ToolTip": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\BuySword.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\BuySword.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T06:52:38.192Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "PlayerBehaviour.cs",
               "DocumentMoniker": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerBehaviour.cs",
               "ToolTip": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerBehaviour.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCcAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T14:44:57.543Z",
               "EditorCaption": ""
