@@ -1,20 +1,23 @@
+using TMPro;
 using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
     private float _rotationSpeed = 300;
-    public int countOfCoins = 0;
+    [SerializeField] TMP_Text CoinValue;
 
-    private void OnCollisionEnter(Collision collision) // сбор монет
+    private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            countOfCoins++;
+            PlayerBehaviour pb = collision.gameObject.GetComponent<PlayerBehaviour>();
+            pb.PlayerBalance++;
             Destroy(this.gameObject);
-            Debug.Log($"Собрана монетка! Текущее количество: {countOfCoins}.");
+            Debug.Log($"Собрана монетка! Текущее количество: {pb.PlayerBalance}.");
+            CoinValue.text = pb.PlayerBalance.ToString();
         }
     }
-    
+
     private void Update()
     {
         transform.Rotate(0, _rotationSpeed * Time.deltaTime, 0);
