@@ -10143,7 +10143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4000010583859816
 Transform:
   m_ObjectHideFlags: 0
@@ -16137,8 +16137,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.23970278, z: 0, w: 0.97084635}
   m_LocalPosition: {x: 10.72, y: 6.763029e-19, z: -0.30457976}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.3999999, y: 1.4, z: 1.3999999}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4000011684221606}
   - {fileID: 4000013874342526}
@@ -16179,6 +16179,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f8b63423d517c4cb4cd0b97985fb2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boxAnimator: {fileID: 95000011159147032}
+  box: {fileID: 1000014204504060}
+  boxCrashed: {fileID: 1000011714421220}
+  coin: {fileID: 4448123184397291684, guid: d18be603c12f9784d8fe93db62320530, type: 3}
 --- !u!65 &628353555218701464
 BoxCollider:
   m_ObjectHideFlags: 0

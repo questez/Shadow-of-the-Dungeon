@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    private float _rotationSpeed = 300;
-    [SerializeField] TMP_Text CoinValue;
+    float _rotationSpeed = 300f;
+    [SerializeField] TMP_Text CoinValue;   
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,6 +20,6 @@ public class Coin : MonoBehaviour
 
     private void Update()
     {
-        transform.Rotate(0, _rotationSpeed * Time.deltaTime, 0);
+        transform.Rotate(0, _rotationSpeed * Time.deltaTime, 0);        
     }
 }
