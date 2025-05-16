@@ -23,5 +23,9 @@ public class ChaseState : BaseState
         {
             manager.SwitchState(manager.attackstate);
         }
+        if (manager.EnemyHP <= 0)
+        {
+            manager.SwitchState(manager.deathstate);
+        }
     }
 }

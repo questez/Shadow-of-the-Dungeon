@@ -13,14 +13,19 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] TMP_Text ExperienceValue;
     [SerializeField] TMP_Text CoinValue;
     [SerializeField] Canvas PauseScreen;
+
     [NonSerialized] private bool isPaused;
     [NonSerialized] private XRIDefaultInputActions input;
-    [NonSerialized] public float PlayerHP = 100f; // очки здоровья
+    [NonSerialized] public float PlayerHP = 10000000000f; // очки здоровья
     [NonSerialized] public int PlayerXP = 0; // очки опыта
     [NonSerialized] public int PlayerLevel = 0; // уровень игрока
     [NonSerialized] public int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
     [NonSerialized] public string PlayerSpell = "No spell"; // текущее заклинание
-    [NonSerialized] public string PlayerPotion = "No potion"; // текуще особое заклинание (зелье)
+    [NonSerialized] public string PlayerPotion = "No potion"; // текущее особое заклинание (зелье)
+
+    public int KillCounter; // счетчик убийств
+    public int MaxKillsInLevel; // максимальное количество убитых врагов на сцене
+
     private void Awake()
     {
         isPaused = false;

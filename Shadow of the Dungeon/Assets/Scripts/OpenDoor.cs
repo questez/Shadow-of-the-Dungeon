@@ -19,8 +19,9 @@ public class OpenDoor : MonoBehaviour
             string name_scene = SceneManager.GetActiveScene().name;
             if (name_scene.StartsWith('L'))
             {
-                int next = SceneManager.GetActiveScene().buildIndex + 1;
-                if (next <= SceneManager.sceneCountInBuildSettings) SceneManager.LoadScene(next);
+                //int next = SceneManager.GetActiveScene().buildIndex + 1;
+                //if (next <= SceneManager.sceneCountInBuildSettings)
+                SceneManager.LoadScene("SaveZone");
             }     
             else if (name_scene == "StartRoom")
             {

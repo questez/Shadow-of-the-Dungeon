@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -8,16 +9,15 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] int MaxNumberOfEnemies;
     float timer = 0f;
 
-
-    // можно в принципе сделать триггерную зону
     private void Update()
     {
         TimerSpawn();
-        Debug.Log($"Количество {enemy.name} равно {currentNumberOfEnemies} ");
+        Debug.Log($"Количество {enemy.name} равно {currentNumberOfEnemies}");
     }
 
     private void TimerSpawn()
     {
+
         timer += Time.deltaTime;
 
         if ((timer >= spawnTimeInterval) && (currentNumberOfEnemies < MaxNumberOfEnemies))

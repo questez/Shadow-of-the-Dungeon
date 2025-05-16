@@ -1428,7 +1428,7 @@ MonoBehaviour:
   _damageCollider2: {fileID: 0}
   ChaseDistance: 10
   AttackDistance: 2
-  EnemyHP: 200
+  EnemyHP: 40
   Enemyspeed: 2
   EnemyDamage: 6
 --- !u!1 &2470389341847842041
