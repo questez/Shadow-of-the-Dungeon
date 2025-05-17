@@ -15,11 +15,8 @@ public class GrabWeapon : MonoBehaviour
 
     private void Start()
     {
-        if (enemySpawner != null)
-        {
-            enemySpawner = GameObject.Find("EnemySpawnManager");
-            enemySpawner.SetActive(false);
-        }        
+        enemySpawner = GameObject.Find("EnemySpawnManager");
+        if (enemySpawner != null) enemySpawner.SetActive(false);              
     }
 
     public void OnGrab(SelectEnterEventArgs args)

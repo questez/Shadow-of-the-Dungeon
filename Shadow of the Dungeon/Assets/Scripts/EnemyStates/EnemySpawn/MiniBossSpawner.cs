@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class MiniBossSpawner : MonoBehaviour
@@ -37,7 +36,6 @@ public class MiniBossSpawner : MonoBehaviour
             return false;
         }
     }
-
 
     private int currentNumberOfEnemies
     {

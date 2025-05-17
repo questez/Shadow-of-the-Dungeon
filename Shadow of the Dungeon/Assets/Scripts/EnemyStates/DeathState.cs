@@ -9,6 +9,10 @@ public class DeathState : BaseState
         {
             MonoBehaviour.FindAnyObjectByType<GameManager>().isMiniBossDefeated = true;
         }
+        if (manager.CompareTag("Demon"))
+        {
+            MonoBehaviour.FindAnyObjectByType<GameManager>().isFinalBossDefeated = true;
+        }
         MonoBehaviour.FindAnyObjectByType<PlayerBehaviour>().KillCounter++;
         Debug.Log("¬ход в deathstate");
 

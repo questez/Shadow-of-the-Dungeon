@@ -16,7 +16,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     [NonSerialized] private bool isPaused;
     [NonSerialized] private XRIDefaultInputActions input;
-    [NonSerialized] public float PlayerHP = 10000000000f; // очки здоровья
+    public float PlayerHP = 100f; // очки здоровья
     [NonSerialized] public int PlayerXP = 0; // очки опыта
     [NonSerialized] public int PlayerLevel = 0; // уровень игрока
     [NonSerialized] public int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
