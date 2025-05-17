@@ -41,3 +41,7 @@ ehthumbs.db
 Thumbs.db
 *.vsidx
 *.vsidx
+*.log
+*.json
+Shadow of the Dungeon/UserSettings/Layouts/default-6000.dwlt
+Shadow of the Dungeon/UserSettings/EditorUserSettings.asset

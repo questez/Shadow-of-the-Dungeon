@@ -112,6 +112,45 @@ public class PlayerBehaviour : MonoBehaviour
             }
         }
     }
+
+    public void CheckLevel()
+    {
+        if (PlayerXP >= 20)
+        {
+            PlayerLevel = 1;
+            LevelValue.text = "1";
+            PlayerHP = 120;
+            SetHearts();
+        }
+        if (PlayerXP >= 40)
+        {
+            PlayerLevel = 2;
+            LevelValue.text = "2";
+            PlayerHP = 140;
+            SetHearts();
+        }
+        if (PlayerXP >= 80)
+        {
+            PlayerLevel = 3;
+            LevelValue.text = "3";
+            PlayerHP = 160;
+            SetHearts();
+        }
+        if (PlayerXP >= 160)
+        {
+            PlayerLevel = 4;
+            LevelValue.text = "4";
+            PlayerHP = 180;
+            SetHearts();
+        }
+        if (PlayerXP >= 320)
+        {
+            PlayerLevel = 5;
+            LevelValue.text = "5";
+            PlayerHP = 200;
+            SetHearts();
+        }
+    }
     private void Update()
     {
         if (PlayerHP <= 0)
@@ -119,6 +158,6 @@ public class PlayerBehaviour : MonoBehaviour
             Debug.Log($"Игрок умер");
             SceneManager.LoadScene("DeathScene");
         }
-
+        CheckLevel();
     }
 }
