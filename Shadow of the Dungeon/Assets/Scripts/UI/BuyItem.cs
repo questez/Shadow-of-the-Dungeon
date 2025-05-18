@@ -13,7 +13,6 @@ public class BuyItem : MonoBehaviour
     [SerializeField] TMP_Text _potionText;
     [SerializeField] TMP_Text _priceText;
     [SerializeField] TMP_Text _coinText;
-    [SerializeField] XROrigin _player;
     private PlayerBehaviour _pb;
     private int _itemPrice;
 
@@ -58,7 +57,7 @@ public class BuyItem : MonoBehaviour
     private void Awake()
     {
         _button.onClick.AddListener(Buy);
-        _pb = _player.GetComponentInParent<PlayerBehaviour>();
+        _pb = FindAnyObjectByType<PlayerBehaviour>();
         _itemPrice = Convert.ToInt32(_priceText.text);
     }
 }
