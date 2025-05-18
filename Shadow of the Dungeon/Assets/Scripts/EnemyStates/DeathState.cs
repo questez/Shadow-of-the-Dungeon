@@ -1,8 +1,7 @@
 using UnityEngine;
 
 public class DeathState : BaseState
-{
-   
+{    
     public override void EnterState(EnemyStateManager manager)
     {
         if (manager.CompareTag("Minotaur") || manager.CompareTag("Golem"))
@@ -20,7 +19,7 @@ public class DeathState : BaseState
         { 
             manager.EnemyAnimator.SetTrigger("IsDeath");
         }
-        MonoBehaviour.Destroy(manager.gameObject, 4f);
+        MonoBehaviour.Destroy(manager.gameObject, 4f);        
     }
 
     public override void ExitState(EnemyStateManager manager) { }

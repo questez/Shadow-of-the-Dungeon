@@ -1,21 +1,13 @@
 using TMPro;
-using Unity.VisualScripting;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    PlayerBehaviour pb;
     float _rotationSpeed = 300f;
-    TMP_Text CoinValue;
+    
 
-    [SerializeField] AudioSource _coinSound;
-
-    private void Awake()
-    {
-        pb = FindAnyObjectByType<XROrigin>().GetComponent<PlayerBehaviour>();
-        CoinValue = GameObject.Find("CoinValue").GetComponent<TMP_Text>();
-    }
+    [SerializeField] AudioSource _coinSound;    
 
     //private void Start()
     //{
@@ -26,12 +18,13 @@ public class Coin : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Player"))
-        {            
+        {
+            PlayerBehaviour pb = other.gameObject.GetComponent<PlayerBehaviour>();
             pb.PlayerBalance++;
             _coinSound.Play();
             Destroy(this.gameObject, _coinSound.clip.length);            
             Debug.Log($"Собрана монетка! Текущее количество: {pb.PlayerBalance}.");
-            CoinValue.text = pb.PlayerBalance.ToString();
+            pb.CoinValue.text = pb.PlayerBalance.ToString();
         }
     }
 

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,7 +6,7 @@ public class OpenDoor : MonoBehaviour
 {
     public Collider doorTrigger;
 
-    static int lastLevelindex;
+    [NonSerialized] public static int lastLevelindex;
     string name_scene;
     private void Awake()
     {

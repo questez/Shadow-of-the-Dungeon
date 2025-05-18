@@ -15,7 +15,7 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] TMP_Text PotionName;
     [SerializeField] TMP_Text LevelValue;
     [SerializeField] TMP_Text ExperienceValue;
-    [SerializeField] TMP_Text CoinValue;
+    public TMP_Text CoinValue;
     [SerializeField] Canvas PauseScreen;
 
     [NonSerialized] private bool isPaused;

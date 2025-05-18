@@ -19,9 +19,15 @@ public class GrabWeapon : MonoBehaviour
     private void Start()
     {
         musicSource = GameObject.FindGameObjectWithTag("MusicSource");
-        musicInLevel = musicSource.GetComponent<AudioSource>();
+        if (musicSource != null)
+        {
+            musicInLevel = musicSource.GetComponent<AudioSource>();
+        }        
         enemySpawner = GameObject.Find("EnemySpawnManager");
-        if (enemySpawner != null) enemySpawner.SetActive(false);              
+        if (enemySpawner != null)
+        {
+            enemySpawner.SetActive(false);
+        }               
     }
 
     public void OnGrab(SelectEnterEventArgs args)

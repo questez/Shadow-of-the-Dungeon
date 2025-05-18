@@ -8,7 +8,7 @@ public class BoxSpawner : MonoBehaviour
     public void SpawnBox()
     {
         System.Random rand = new System.Random();
-        int index = rand.Next(0, spawnpoints.Length + 1);
+        int index = rand.Next(0, spawnpoints.Length);
         Instantiate(mysteryBox, spawnpoints[index].position, spawnpoints[index].rotation);
     }
 }

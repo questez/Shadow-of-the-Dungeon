@@ -19,7 +19,6 @@ public class MysteryBox : MonoBehaviour
         coinPosition = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);
     }
 
-
     private void OnTriggerEnter(Collider other)
     {        
         if (other.gameObject.CompareTag("Weapon") && !isCrashed)

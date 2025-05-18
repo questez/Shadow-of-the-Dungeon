@@ -643,6 +643,7 @@ MonoBehaviour:
   navMeshAgent: {fileID: 7421738213347915126}
   _damageCollider1: {fileID: 4672889012771916884}
   _damageCollider2: {fileID: 130582178569976610}
+  coin: {fileID: 4448123184397291684, guid: d18be603c12f9784d8fe93db62320530, type: 3}
   ChaseDistance: 10
   AttackDistance: 4
   EnemyHP: 1000

@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         FinishLevel();
-    }
+    }    
 
     private void FinishLevel()
     {
