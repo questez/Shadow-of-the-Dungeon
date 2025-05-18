@@ -6,6 +6,8 @@ public class StartMessage : MonoBehaviour
     [SerializeField] Button _continueButton;
     [SerializeField] GameObject startMessage, startMessage2;
 
+    [SerializeField] AudioSource _clickSound;
+
 
     private void Awake()
     {
@@ -17,6 +19,7 @@ public class StartMessage : MonoBehaviour
 
     public void CloseStartMessage()
     {
+        _clickSound.Play();
         FindAnyObjectByType<OpenDoor>().doorTrigger.enabled = true;
         startMessage.SetActive(false);
         startMessage2.SetActive(true);

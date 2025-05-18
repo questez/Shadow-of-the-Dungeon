@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MiniBossSpawner : MonoBehaviour
+public class MiniBossSpawner: MonoBehaviour
 {
     [SerializeField] GameObject miniBoss;
     [SerializeField] Transform spawnPoint;

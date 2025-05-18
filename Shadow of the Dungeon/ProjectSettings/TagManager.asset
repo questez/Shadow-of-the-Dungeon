@@ -22,6 +22,7 @@ TagManager:
   - SkeletonDamager
   - MinotaurDamager
   - DemonDamager
+  - MusicSource
   layers:
   - Default
   - TransparentFX

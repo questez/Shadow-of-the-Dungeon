@@ -3,6 +3,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class GrabWeapon : MonoBehaviour
 {
+    GameObject musicSource;
+    AudioSource musicInLevel;
+
     [SerializeField] Collider weaponCollider; // коллайдер оружия
     [SerializeField] Collider _stonetableCollider; // коллайдер стола, на котором лежит меч в начале уровня
     [SerializeField] GameObject _canvas;
@@ -15,6 +18,8 @@ public class GrabWeapon : MonoBehaviour
 
     private void Start()
     {
+        musicSource = GameObject.FindGameObjectWithTag("MusicSource");
+        musicInLevel = musicSource.GetComponent<AudioSource>();
         enemySpawner = GameObject.Find("EnemySpawnManager");
         if (enemySpawner != null) enemySpawner.SetActive(false);              
     }
@@ -31,6 +36,7 @@ public class GrabWeapon : MonoBehaviour
         }
         if (_stonetableCollider != null && enemySpawner != null && !islevelStarted)
         {
+            musicInLevel.Play();
             _stonetableCollider.attachedRigidbody.isKinematic = false;
             _stonetableCollider.isTrigger = true;
             enemySpawner.SetActive(true);

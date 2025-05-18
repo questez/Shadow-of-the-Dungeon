@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+    Vector3 lastPos;
+
+    [SerializeField] AudioSource _walkSound;
+
     [SerializeField] HorizontalLayoutGroup HeartRow;
     [SerializeField] TMP_Text SpellName;
     [SerializeField] TMP_Text PotionName;
@@ -22,7 +26,7 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
     [NonSerialized] public string PlayerSpell = "No spell"; // текущее заклинание
     [NonSerialized] public string PlayerPotion = "No potion"; // текущее особое заклинание (зелье)
-
+       
     public int KillCounter; // счетчик убийств
     public int MaxKillsInLevel; // максимальное количество убитых врагов на сцене
 
@@ -119,11 +123,27 @@ public class PlayerBehaviour : MonoBehaviour
     }
     private void Update()
     {
+        isDeath();
+        //isMoving();
+    }
+
+    private void isMoving()
+    {
+        Vector3 currPos = transform.position;
+        if ((currPos.magnitude - lastPos.magnitude) > 0)
+        {
+            _walkSound.Play();
+        }
+        lastPos = currPos;
+    }
+
+    private void isDeath()
+    {
         if (PlayerHP <= 0)
         {
             Debug.Log($"Игрок умер");
             SceneManager.LoadScene("DeathScene");
         }
-
     }
+
 }

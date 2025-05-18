@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     [NonSerialized] public bool isMiniBossDefeated = false;
     [NonSerialized] public bool isFinalBossDefeated = false;
     bool isBoxSpawned = false;
-    // можно сделать границу для врагов лучше, чтобы они не сталкивались со столбами, либо поиграться с компонентами
+    
     private void Update()
     {
         FinishLevel();
@@ -20,14 +20,12 @@ public class GameManager : MonoBehaviour
         {
             if ((isFinalBossDefeated || isMiniBossDefeated) && !isBoxSpawned)
             {
+                GameObject musicSource = GameObject.FindGameObjectWithTag("MusicSource");
+                musicSource.SetActive(false);
                 GameObject.FindGameObjectWithTag("Door").GetComponent<OpenDoor>().doorTrigger.enabled = true;
                 FindAnyObjectByType<BoxSpawner>().SpawnBox();
                 isBoxSpawned = true;
             }          
-        }
-        
-    }
-
-
-    
+        }        
+    }    
 }

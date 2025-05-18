@@ -5,8 +5,11 @@ using UnityEngine.Playables;
 public class QuitGame : MonoBehaviour
 {
     [SerializeField] UnityEngine.UI.Button _button;
+
+    [SerializeField] AudioSource _clickSound;
     public void Quit()
     {
+        _clickSound.Play();
         EditorApplication.isPlaying = false;
         Application.Quit();
     }

@@ -1,18 +1,35 @@
 using TMPro;
+using Unity.VisualScripting;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+    PlayerBehaviour pb;
     float _rotationSpeed = 300f;
-    [SerializeField] TMP_Text CoinValue;   
+    TMP_Text CoinValue;
+
+    [SerializeField] AudioSource _coinSound;
+
+    private void Awake()
+    {
+        pb = FindAnyObjectByType<XROrigin>().GetComponent<PlayerBehaviour>();
+        CoinValue = GameObject.Find("CoinValue").GetComponent<TMP_Text>();
+    }
+
+    //private void Start()
+    //{
+    //    ChangeSliderValue soundvalue = gameObject.AddComponent<ChangeSliderValue>();
+    //    _coinSound.volume = soundvalue.SoundValue;
+    //}
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Player"))
-        {
-            PlayerBehaviour pb = other.gameObject.GetComponent<PlayerBehaviour>();
+        {            
             pb.PlayerBalance++;
-            Destroy(this.gameObject);
+            _coinSound.Play();
+            Destroy(this.gameObject, _coinSound.clip.length);            
             Debug.Log($"Собрана монетка! Текущее количество: {pb.PlayerBalance}.");
             CoinValue.text = pb.PlayerBalance.ToString();
         }

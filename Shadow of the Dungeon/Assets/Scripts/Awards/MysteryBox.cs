@@ -7,6 +7,8 @@ public class MysteryBox : MonoBehaviour
     [SerializeField] GameObject boxCrashed;
     [SerializeField] GameObject coin;
 
+    [SerializeField] AudioSource boxCrashSound;
+
     Vector3 coinPosition;
     bool isCrashed = false;
 
@@ -26,8 +28,9 @@ public class MysteryBox : MonoBehaviour
             Instantiate(coin, coinPosition, transform.rotation);
             box.SetActive(false);
             boxCrashed.SetActive(true);
-            boxAnimator.SetTrigger("Crash");            
-            Destroy(this.gameObject, 1f);
+            boxAnimator.SetTrigger("Crash");      
+            boxCrashSound.Play();
+            Destroy(this.gameObject, boxCrashSound.clip.length);
         }
     }
 }
