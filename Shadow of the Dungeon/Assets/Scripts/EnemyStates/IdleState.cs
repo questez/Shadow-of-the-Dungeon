@@ -17,5 +17,9 @@ public class IdleState : BaseState
         {
             manager.SwitchState(manager.chasestate);
         }
+        if (manager.EnemyHP <= 0)
+        {
+            manager.SwitchState(manager.deathstate);
+        }
     }
 }

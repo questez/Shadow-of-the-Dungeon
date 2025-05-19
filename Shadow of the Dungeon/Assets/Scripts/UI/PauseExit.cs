@@ -4,12 +4,10 @@ using UnityEngine.SceneManagement;
 public class PauseExit : MonoBehaviour
 {
     [SerializeField] UnityEngine.UI.Button _button;
-    private string _sceneName;
     private void Awake()
     {
-        _sceneName = gameObject.scene.name;
         _button.onClick.AddListener(Exit);
-        if (_sceneName == "StartRoom")
+        if (gameObject.scene.name == "StartRoom")
         {
             _button.interactable = false;
         }

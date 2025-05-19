@@ -565,11 +565,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4364649805840150}
   - component: {fileID: 95599254065212114}
-  - component: {fileID: 7619010474508118401}
   - component: {fileID: 5296156691050109149}
   - component: {fileID: 8775269232287400623}
   - component: {fileID: 7421738213347915126}
-  - component: {fileID: 7339322352456682458}
+  - component: {fileID: 9050812841651001104}
   m_Layer: 0
   m_Name: Demon
   m_TagString: Demon
@@ -616,29 +615,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!136 &7619010474508118401
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1264443996888144}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2
-  m_Height: 5
-  m_Direction: 1
-  m_Center: {x: 0, y: 2, z: 0}
 --- !u!114 &5296156691050109149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,6 +643,7 @@ MonoBehaviour:
   navMeshAgent: {fileID: 7421738213347915126}
   _damageCollider1: {fileID: 4672889012771916884}
   _damageCollider2: {fileID: 130582178569976610}
+  coin: {fileID: 4448123184397291684, guid: d18be603c12f9784d8fe93db62320530, type: 3}
   ChaseDistance: 10
   AttackDistance: 4
   EnemyHP: 1000
@@ -681,7 +658,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1264443996888144}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 1.5
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -691,36 +668,30 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: 1.9
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!54 &7339322352456682458
-Rigidbody:
+--- !u!65 &9050812841651001104
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264443996888144}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 4.9, z: 2}
+  m_Center: {x: 0, y: 0.51, z: 0}
 --- !u!1 &1271822325240758
 GameObject:
   m_ObjectHideFlags: 0

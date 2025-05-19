@@ -6,21 +6,30 @@ using UnityEngine.SceneManagement;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+    Vector3 lastPos;
+
+    [SerializeField] AudioSource _walkSound;
+
     [SerializeField] HorizontalLayoutGroup HeartRow;
-    [SerializeField] TMP_Text SpellName;
-    [SerializeField] TMP_Text PotionName;
-    [SerializeField] TMP_Text LevelValue;
-    [SerializeField] TMP_Text ExperienceValue;
-    [SerializeField] TMP_Text CoinValue;
+    public TMP_Text SpellName;
+    public TMP_Text PotionName;
+    public TMP_Text LevelValue;
+    public TMP_Text ExperienceValue;
+    public TMP_Text CoinValue;
     [SerializeField] Canvas PauseScreen;
+
     [NonSerialized] private bool isPaused;
     [NonSerialized] private XRIDefaultInputActions input;
-    [NonSerialized] public float PlayerHP = 100f; // очки здоровь€
+    public float PlayerHP = 100f; // очки здоровь€
     [NonSerialized] public int PlayerXP = 0; // очки опыта
     [NonSerialized] public int PlayerLevel = 0; // уровень игрока
     [NonSerialized] public int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
     [NonSerialized] public string PlayerSpell = "No spell"; // текущее заклинание
-    [NonSerialized] public string PlayerPotion = "No potion"; // текуще особое заклинание (зелье)
+    [NonSerialized] public string PlayerPotion = "No potion"; // текущее особое заклинание (зелье)
+       
+    public int KillCounter; // счетчик убийств
+    public int MaxKillsInLevel; // максимальное количество убитых врагов на сцене
+
     private void Awake()
     {
         isPaused = false;
@@ -37,28 +46,14 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("SpiderDamager"))
+        if (other.gameObject.tag.Contains("Damager"))
         {
-            Debug.Log($"»гроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от Spider!");
+            Debug.Log($"»гроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от {other.gameObject.tag}!");
             PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
+            SetHearts();
         }
-        if (other.gameObject.CompareTag("GolemDamager"))
-        {
-            Debug.Log($"»гроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от Golem!");
-            PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
-        }
-        if (other.gameObject.CompareTag("MinotaurDamager"))
-        {
-            Debug.Log($"»гроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от Minotaur!");
-            PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
-        }
-        if (other.gameObject.CompareTag("SkeletonDamager"))
-        {
-            Debug.Log($"»гроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от Skeleton!");
-            PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
-        }
-        SetHearts();
     }
+
     private void OnEnable()
     {
         input.Enable();
@@ -112,52 +107,29 @@ public class PlayerBehaviour : MonoBehaviour
             }
         }
     }
-
-    public void CheckLevel()
-    {
-        if (PlayerXP >= 20)
-        {
-            PlayerLevel = 1;
-            LevelValue.text = "1";
-            PlayerHP = 120;
-            SetHearts();
-        }
-        if (PlayerXP >= 40)
-        {
-            PlayerLevel = 2;
-            LevelValue.text = "2";
-            PlayerHP = 140;
-            SetHearts();
-        }
-        if (PlayerXP >= 80)
-        {
-            PlayerLevel = 3;
-            LevelValue.text = "3";
-            PlayerHP = 160;
-            SetHearts();
-        }
-        if (PlayerXP >= 160)
-        {
-            PlayerLevel = 4;
-            LevelValue.text = "4";
-            PlayerHP = 180;
-            SetHearts();
-        }
-        if (PlayerXP >= 320)
-        {
-            PlayerLevel = 5;
-            LevelValue.text = "5";
-            PlayerHP = 200;
-            SetHearts();
-        }
-    }
     private void Update()
+    {
+        isDeath();
+        //isMoving();
+    }
+
+    private void isMoving()
+    {
+        Vector3 currPos = transform.position;
+        if ((currPos.magnitude - lastPos.magnitude) > 0)
+        {
+            _walkSound.Play();
+        }
+        lastPos = currPos;
+    }
+
+    private void isDeath()
     {
         if (PlayerHP <= 0)
         {
             Debug.Log($"»грок умер");
             SceneManager.LoadScene("DeathScene");
         }
-        CheckLevel();
     }
+
 }

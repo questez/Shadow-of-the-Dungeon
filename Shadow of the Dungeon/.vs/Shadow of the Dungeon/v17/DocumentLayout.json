@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\",
+  "WorkspaceRootPath": "C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\ui\\deathrestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\deathrestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\arist2025\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\ui\\buysword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\buysword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\enemystates\\enemystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemystates\\enemystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\enemystates\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemystates\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\ui\\buyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\buyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +30,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DeathRestart.cs",
-              "DocumentMoniker": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\DeathRestart.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\DeathRestart.cs",
-              "ToolTip": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\DeathRestart.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\DeathRestart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AttackState.cs",
+              "DocumentMoniker": "C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\AttackState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyStates\\AttackState.cs",
+              "ToolTip": "C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\AttackState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyStates\\AttackState.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwDcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T13:46:26.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T13:54:06.288Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlayerBehaviour.cs",
-              "DocumentMoniker": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerBehaviour.cs",
-              "ToolTip": "D:\\Github\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerBehaviour.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAA4AAAAAAAAAA==",
+              "Title": "EnemyStateManager.cs",
+              "DocumentMoniker": "C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
+              "ToolTip": "C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T14:44:57.543Z",
+              "WhenOpened": "2025-05-19T13:50:44.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BuySword.cs",
+              "DocumentMoniker": "C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\BuySword.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\BuySword.cs",
+              "ToolTip": "C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\BuySword.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\BuySword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T13:45:57.611Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BuyItem.cs",
+              "DocumentMoniker": "C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\BuyItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\BuyItem.cs",
+              "ToolTip": "C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\BuyItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\BuyItem.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T13:27:59.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerBehaviour.cs",
+              "DocumentMoniker": "C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerBehaviour.cs",
+              "ToolTip": "C:\\ARIST2025\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerBehaviour.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T13:45:55.043Z"
             }
           ]
         }

@@ -6,11 +6,13 @@ using UnityEngine.AI;
 public class EnemyStateManager : MonoBehaviour
 {
     private Transform currentEnemyTarget;
-    public Animator EnemyAnimator;
-    [NonSerialized] public PlayerBehaviour pb;
-    [SerializeField] public TMPro.TMP_Text experienceText;
+    public PlayerBehaviour pb;
+    public Animator EnemyAnimator; 
     [SerializeField] private NavMeshAgent navMeshAgent;     
     [SerializeField] private Collider _damageCollider1, _damageCollider2; // ссылки на коллайдеры для нанесения урона игроку
+
+    [SerializeField] GameObject coin;
+    bool isCoinSpawned = false;
 
     public float ChaseDistance; // дистанция преследования игрока
     public float AttackDistance; // дистанция атаки на игрока
@@ -25,7 +27,7 @@ public class EnemyStateManager : MonoBehaviour
     
     private void Start()
     {
-        pb = FindAnyObjectByType<XROrigin>().GetComponentInParent<PlayerBehaviour>();
+        pb = FindAnyObjectByType<PlayerBehaviour>();
         currentEnemyTarget = FindAnyObjectByType<XROrigin>().transform;
         if (_damageCollider1 != null) { _damageCollider1.enabled = false; } // при начале работы по умолчанию коллайдеры отключены
         if (_damageCollider2 != null) { _damageCollider2.enabled = false; }
@@ -46,7 +48,12 @@ public class EnemyStateManager : MonoBehaviour
     {
         //Debug.Log(DistanceToTarget);
         navMeshAgent.destination = currentEnemyTarget.position; // отслеживание позиции игрока
-        currentState.UpdateState(this);        
+        currentState.UpdateState(this);  
+        
+        if (currentState == deathstate && !isCoinSpawned)
+        {
+            SpawnCoin();
+        }
     }
 
     public void SetSpeed(float newSpeed) // контроль скорости врага
@@ -57,24 +64,14 @@ public class EnemyStateManager : MonoBehaviour
     public float DistanceToTarget // расчет дистанции до игрока
     {
         get { return (transform.position - currentEnemyTarget.position).magnitude; }       
-    }
-
-
-    // проверка, что враг проигрывает анимацию атаки до конца и только потом преследует игрока:
-    private void CheckAttackTransition() // не работает почему-то
-    {
-        Debug.Log($"Distance: {DistanceToTarget}, AttackDist: {AttackDistance}, State: {currentState}");
-        if (DistanceToTarget > AttackDistance)
-        {
-            if (currentState == attackstate)
-            {
-                SwitchState(chasestate);
-                Debug.Log("EVENT is working");
-            }
-        }
-        else Debug.Log("EVENT is NOT working");
-    }
+    }    
     
+    private void SpawnCoin()
+    {
+        Instantiate(coin, new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z), transform.rotation);
+        isCoinSpawned = true;
+    }
+
     private void OnOffDamager(int switcher)
     {
         if (switcher == 1)

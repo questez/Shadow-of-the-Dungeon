@@ -1,12 +1,10 @@
-using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class AttackState : BaseState
 {
-    
     string golemAttack, spiderAttack, skeletonAttack, minotaurAttack, demonAttack; 
     public override void EnterState(EnemyStateManager manager)
-    {
+    {        
         Debug.Log("¬ход в attackstate");
         manager.SetSpeed(0);
         if (manager.CompareTag("Spider"))
@@ -55,7 +53,7 @@ public class AttackState : BaseState
         {
             manager.SwitchState(manager.deathstate);
             manager.pb.PlayerXP += 5;
-            manager.experienceText.text = manager.pb.PlayerXP.ToString();
+            manager.pb.ExperienceValue.text = manager.pb.PlayerXP.ToString();
         }
     }   
     
