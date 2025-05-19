@@ -1058,7 +1058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab3c1c503827934b8e5e90f8814667b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  miniBoss: {fileID: 4414871117303439921, guid: aef9a3e063e740f4d8100584de73ceb4, type: 3}
+  miniBoss: {fileID: 3935502388852806242, guid: 507c7d1b0e368b842ba5573567a7049e, type: 3}
   spawnPoint: {fileID: 2063195592}
 --- !u!1001 &2068225215144228357
 PrefabInstance:

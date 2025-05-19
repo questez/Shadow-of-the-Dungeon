@@ -17,11 +17,12 @@ public class MysteryBox : MonoBehaviour
         boxCrashed.SetActive(false);
         box.SetActive(true);
         coinPosition = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);
+
     }
 
     private void OnTriggerEnter(Collider other)
     {        
-        if (other.gameObject.CompareTag("Weapon") && !isCrashed)
+        if (other.gameObject.CompareTag("Weapon") && !isCrashed && FindAnyObjectByType<GrabWeapon>().rb.linearVelocity.magnitude > 1f)
         {
             isCrashed = true;
             Instantiate(coin, coinPosition, transform.rotation);

@@ -1240,7 +1240,6 @@ MonoBehaviour:
   PauseScreen: {fileID: 4560345899052267715}
   PlayerHP: 100
   KillCounter: 0
-  MaxKillsInLevel: 3
 --- !u!82 &6422600887289108950
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3467,22 +3466,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2777823292164928127, guid: 1392f805216c47742996d4742c80721c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3381299006331274950, guid: 1392f805216c47742996d4742c80721c, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3381299006331274950, guid: 1392f805216c47742996d4742c80721c, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3381299006331274950, guid: 1392f805216c47742996d4742c80721c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3381299006331274950, guid: 1392f805216c47742996d4742c80721c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -5,6 +6,8 @@ public class GrabWeapon : MonoBehaviour
 {
     GameObject musicSource;
     AudioSource musicInLevel;
+
+    [NonSerialized] public Rigidbody rb;
 
     [SerializeField] Collider weaponCollider; // коллайдер оружия
     [SerializeField] Collider _stonetableCollider; // коллайдер стола, на котором лежит меч в начале уровня
@@ -18,6 +21,7 @@ public class GrabWeapon : MonoBehaviour
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody>();
         musicSource = GameObject.FindGameObjectWithTag("MusicSource");
         if (musicSource != null)
         {
@@ -59,5 +63,10 @@ public class GrabWeapon : MonoBehaviour
         }
                
         args.interactableObject.transform.SetParent(null);
+    }
+
+    void Update()
+    {
+        Debug.Log(rb.linearVelocity.magnitude);
     }
 }

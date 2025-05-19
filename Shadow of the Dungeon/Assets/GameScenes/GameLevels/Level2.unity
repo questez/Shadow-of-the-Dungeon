@@ -232,7 +232,7 @@ MonoBehaviour:
   enemy: {fileID: 2470389341847842039, guid: 38b71bf543b67704a935179603f6a67c, type: 3}
   spawnPoint: {fileID: 481769253}
   spawnTimeInterval: 5
-  MaxNumberOfEnemies: 2
+  MaxNumberOfEnemies: 3
 --- !u!1001 &508248488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -272,6 +272,10 @@ PrefabInstance:
     - target: {fileID: 1315462803781723764, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530699167834441368, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_margin.z
+      value: 3.419646
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Name
