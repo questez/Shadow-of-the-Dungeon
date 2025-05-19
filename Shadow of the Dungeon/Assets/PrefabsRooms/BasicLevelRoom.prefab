@@ -521,6 +521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 63381425046585587}
   - component: {fileID: 1481501125408133880}
+  - component: {fileID: 998998573653478822}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -555,6 +556,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b939da45e9efcb4cb362d4f0eabc84c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelEndCanvas: {fileID: 0}
+--- !u!114 &998998573653478822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6914936747513488278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00296e2ce0db672429d3e060fd4695f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _continueButton: {fileID: 0}
+  levelEndMessage: {fileID: 0}
 --- !u!1 &7394494575530188720
 GameObject:
   m_ObjectHideFlags: 0
