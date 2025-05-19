@@ -11,10 +11,10 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] AudioSource _walkSound;
 
     [SerializeField] HorizontalLayoutGroup HeartRow;
-    [SerializeField] TMP_Text SpellName;
-    [SerializeField] TMP_Text PotionName;
-    [SerializeField] TMP_Text LevelValue;
-    [SerializeField] TMP_Text ExperienceValue;
+    public TMP_Text SpellName;
+    public TMP_Text PotionName;
+    public TMP_Text LevelValue;
+    public TMP_Text ExperienceValue;
     public TMP_Text CoinValue;
     [SerializeField] Canvas PauseScreen;
 
@@ -46,28 +46,14 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("SpiderDamager"))
+        if (other.gameObject.tag.Contains("Damager"))
         {
-            Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от Spider!");
+            Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от {other.gameObject.tag}!");
             PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
+            SetHearts();
         }
-        if (other.gameObject.CompareTag("GolemDamager"))
-        {
-            Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от Golem!");
-            PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
-        }
-        if (other.gameObject.CompareTag("MinotaurDamager"))
-        {
-            Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от Minotaur!");
-            PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
-        }
-        if (other.gameObject.CompareTag("SkeletonDamager"))
-        {
-            Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от Skeleton!");
-            PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
-        }
-        SetHearts();
     }
+
     private void OnEnable()
     {
         input.Enable();

@@ -11,7 +11,11 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        levelEndCanvas.SetActive(false);
+        levelEndCanvas = GameObject.Find("LevelEndCanvas");
+        if (levelEndCanvas != null)
+        {
+            levelEndCanvas.SetActive(false);
+        } 
     }
 
     private void Update()

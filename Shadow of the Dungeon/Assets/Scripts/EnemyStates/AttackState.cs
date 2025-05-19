@@ -51,7 +51,9 @@ public class AttackState : BaseState
         }
         if (manager.EnemyHP <= 0)
         {
-            manager.SwitchState(manager.deathstate);            
+            manager.SwitchState(manager.deathstate);
+            manager.pb.PlayerXP += 5;
+            manager.pb.ExperienceValue.text = manager.pb.PlayerXP.ToString();
         }
     }   
     
