@@ -6,21 +6,21 @@ public class GameManager : MonoBehaviour
 {
     [NonSerialized] public bool isMiniBossDefeated = false;
     [NonSerialized] public bool isFinalBossDefeated = false;
-    bool isBoxSpawned = false;
-    [SerializeField] GameObject levelEndCanvas;
-
+    bool isBoxSpawned = false, isWorkingMessage = false;
+    
+    LevelEndMessage levelEndMessage;
     private void Start()
     {
-        levelEndCanvas = GameObject.Find("LevelEndCanvas");
-        if (levelEndCanvas != null)
-        {
-            levelEndCanvas.SetActive(false);
-        } 
+        levelEndMessage = GetComponent<LevelEndMessage>();        
     }
 
     private void Update()
     {
         FinishLevel();
+        if (isWorkingMessage)
+        {
+            levelEndMessage.collected_coins.text = levelEndMessage.pb.PlayerBalanceInLevel.ToString(); ;
+        }
     }    
 
     private void FinishLevel()
@@ -30,7 +30,8 @@ public class GameManager : MonoBehaviour
         {
             if ((isFinalBossDefeated || isMiniBossDefeated) && !isBoxSpawned)
             {
-                levelEndCanvas.SetActive(true);
+                isWorkingMessage = true;
+                levelEndMessage.ShowMessage();
                 GameObject musicSource = GameObject.FindGameObjectWithTag("MusicSource");
                 musicSource.SetActive(false);
                 GameObject.FindGameObjectWithTag("Door").GetComponent<OpenDoor>().doorTrigger.enabled = true;

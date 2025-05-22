@@ -18,17 +18,19 @@ public class PlayerBehaviour : MonoBehaviour
     public TMP_Text CoinValue;
     [SerializeField] Canvas PauseScreen;
 
-    [NonSerialized] private bool isPaused;
-    [NonSerialized] private XRIDefaultInputActions input;
+    private bool isPaused;
+    private XRIDefaultInputActions input;
     public float PlayerHP = 100f; // очки здоровья
     [NonSerialized] public int PlayerXP = 0; // очки опыта
+    [NonSerialized] public int PlayerXPInLevel = 0; // очки опыта, собранные на конкретном уровне
     [NonSerialized] public int PlayerLevel = 0; // уровень игрока
     [NonSerialized] public int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
+    [NonSerialized] public int PlayerBalanceInLevel = 0; // количество собранных кристаллов на конкретном уровне
     [NonSerialized] public string PlayerSpell = "No spell"; // текущее заклинание
     [NonSerialized] public string PlayerPotion = "No potion"; // текущее особое заклинание (зелье)
        
     public int KillCounter; // счетчик убийств
-    [NonSerialized] public int MaxKillsInLevel1 = 5; // максимальное количество убитых врагов на Level1
+    [NonSerialized] public int MaxKillsInLevel1 = 0; // максимальное количество убитых врагов на Level1
     [NonSerialized] public int MaxKillsInLevel2 = 7; // максимальное количество убитых врагов на Level2
     [NonSerialized] public int MaxKillsInLevel3 = 9; // максимальное количество убитых врагов на Level3
     [NonSerialized] public int MaxKillsInLevel4 = 12; // максимальное количество убитых врагов на Level4
@@ -113,6 +115,7 @@ public class PlayerBehaviour : MonoBehaviour
     private void Update()
     {
         isDeath();
+        CheckLevel();
         //isMoving();
     }
 
@@ -135,4 +138,42 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
-}
+    private void CheckLevel()
+    {
+        if (PlayerXP >= 20)
+        {
+            PlayerLevel = 1;
+            LevelValue.text = "1";
+            PlayerHP = 120;
+            SetHearts();
+        }
+        if (PlayerXP >= 40)
+        {
+            PlayerLevel = 2;
+            LevelValue.text = "2";
+            PlayerHP = 140;
+            SetHearts();
+        }
+        if (PlayerXP >= 80)
+        {
+            PlayerLevel = 3;
+            LevelValue.text = "3";
+            PlayerHP = 160;
+            SetHearts();
+        }
+        if (PlayerXP >= 160)
+        {
+            PlayerLevel = 4;
+            LevelValue.text = "4";
+            PlayerHP = 180;
+            SetHearts();
+        }
+        if (PlayerXP >= 320)
+        {
+            PlayerLevel = 5;
+            LevelValue.text = "5";
+            PlayerHP = 200;
+            SetHearts();            
+        }       
+    }
+}   

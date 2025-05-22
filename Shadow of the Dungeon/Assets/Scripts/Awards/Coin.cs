@@ -21,6 +21,7 @@ public class Coin : MonoBehaviour
         {
             PlayerBehaviour pb = other.gameObject.GetComponent<PlayerBehaviour>();
             pb.PlayerBalance++;
+            pb.PlayerBalanceInLevel++;
             _coinSound.Play();
             Destroy(this.gameObject, _coinSound.clip.length);            
             Debug.Log($"Собрана монетка! Текущее количество: {pb.PlayerBalance}.");

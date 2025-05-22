@@ -13,9 +13,11 @@ public class BuyItem : MonoBehaviour
     private PlayerBehaviour _pb;
     private int _itemPrice;
 
+    [SerializeField] AudioSource _clickSound;
 
     public void Buy()
     {
+        _clickSound.Play();
         if (_pb.PlayerBalance >= _itemPrice)
         {
             switch (_itemText.text)

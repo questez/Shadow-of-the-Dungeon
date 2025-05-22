@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class EnemyStateManager : MonoBehaviour
 {
     private Transform currentEnemyTarget;
-    public PlayerBehaviour pb;
+    [NonSerialized] public PlayerBehaviour pb;
     public Animator EnemyAnimator; 
     [SerializeField] private NavMeshAgent navMeshAgent;     
     [SerializeField] private Collider _damageCollider1, _damageCollider2; // ссылки на коллайдеры для нанесения урона игроку

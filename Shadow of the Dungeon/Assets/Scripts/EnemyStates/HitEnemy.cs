@@ -1,8 +1,7 @@
 using UnityEngine;
 
 public class HitEnemy : MonoBehaviour
-{
-    
+{   
 
     private void OnTriggerEnter(Collider other) // нанесение урона от игрока врагу
     {

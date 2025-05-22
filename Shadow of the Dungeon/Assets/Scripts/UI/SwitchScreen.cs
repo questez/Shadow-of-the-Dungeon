@@ -6,7 +6,7 @@ public class SwitchScreen : MonoBehaviour
     [SerializeField] GameObject _newScreen;
     [SerializeField] GameObject _oldScreen;
 
-    //[SerializeField] AudioSource _clickSound;
+    [SerializeField] AudioSource _clickSound;
     private void Start()
     {
         if (_newScreen != null)
@@ -18,7 +18,7 @@ public class SwitchScreen : MonoBehaviour
     {
         if (_newScreen != null)
         {
-            //_clickSound.Play();
+            _clickSound.Play();
             _newScreen.SetActive(true);
             _oldScreen.SetActive(false);
         }
