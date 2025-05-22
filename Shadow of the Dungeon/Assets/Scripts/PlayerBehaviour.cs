@@ -26,13 +26,61 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
     [NonSerialized] public string PlayerSpell = "No spell"; // текущее заклинание
     [NonSerialized] public string PlayerPotion = "No potion"; // текущее особое заклинание (зелье)
-       
+
     public int KillCounter; // счетчик убийств
+    [NonSerialized] public float ExtraDamage = 0f;
     [NonSerialized] public int MaxKillsInLevel1 = 5; // максимальное количество убитых врагов на Level1
     [NonSerialized] public int MaxKillsInLevel2 = 7; // максимальное количество убитых врагов на Level2
     [NonSerialized] public int MaxKillsInLevel3 = 9; // максимальное количество убитых врагов на Level3
     [NonSerialized] public int MaxKillsInLevel4 = 12; // максимальное количество убитых врагов на Level4
 
+    public void TogglePause()
+    {
+        if (this.gameObject.scene.name != "MainMenu" && this.gameObject.scene.name != "DeathScene")
+        {
+            PauseScreen.enabled = !PauseScreen.enabled;
+            if (!isPaused)
+            {
+                Time.timeScale = 0f;
+                isPaused = true;
+            }
+            else
+            {
+                Time.timeScale = 1f;
+                isPaused = false;
+            }
+        }
+    }
+    public void CheckPlayerLevel()
+    {
+        if (PlayerXP >= 40 && PlayerXP < 80)
+        {
+            PlayerLevel = 1;
+            ExtraDamage = 2.5f;
+        }
+        if (PlayerXP >= 80 && PlayerXP < 160)
+        {
+            PlayerLevel = 2;
+            ExtraDamage = 5f;
+        }
+        if (PlayerXP >= 160 && PlayerXP < 320)
+        {
+            PlayerLevel = 3;
+            ExtraDamage = 7.5f;
+        }
+        if (PlayerXP >= 320 && PlayerXP < 640)
+        {
+            PlayerLevel = 4;
+            ExtraDamage = 10f;
+        }
+        if (PlayerXP >= 640 && PlayerXP < 1280)
+        {
+            PlayerLevel = 5;
+            ExtraDamage = 12.5f;
+        }
+        LevelValue.text = PlayerLevel.ToString();
+        Debug.Log($"Достигнут уровень {PlayerLevel}");
+    }
     private void Awake()
     {
         isPaused = false;
@@ -44,29 +92,23 @@ public class PlayerBehaviour : MonoBehaviour
         ExperienceValue.text = PlayerXP.ToString();
         CoinValue.text = PlayerBalance.ToString();
         PauseScreen.enabled = false;
-        SetHearts();
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Contains("Damager"))
         {
             Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от {other.gameObject.tag}!");
             PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
-            SetHearts();
         }
     }
-
     private void OnEnable()
     {
         input.Enable();
     }
-
     private void OnDisable()
     {
         input.Disable();
     }
-
     private void SetHearts()
     {
         int heartCount = (int)(PlayerHP / 20);
@@ -93,29 +135,11 @@ public class PlayerBehaviour : MonoBehaviour
             hearts[0].enabled = false;
         }
     }
-    public void TogglePause()
-    {
-        if (this.gameObject.scene.name != "MainMenu" && this.gameObject.scene.name != "DeathScene")
-        {
-            PauseScreen.enabled = !PauseScreen.enabled;
-            if (!isPaused)
-            {
-                Time.timeScale = 0f;
-                isPaused = true;
-            }
-            else
-            {
-                Time.timeScale = 1f;
-                isPaused = false;
-            }
-        }
-    }
     private void Update()
     {
         isDeath();
         //isMoving();
     }
-
     private void isMoving()
     {
         Vector3 currPos = transform.position;
@@ -125,14 +149,13 @@ public class PlayerBehaviour : MonoBehaviour
         }
         lastPos = currPos;
     }
-
     private void isDeath()
     {
+        SetHearts();
         if (PlayerHP <= 0)
         {
             Debug.Log($"Игрок умер");
             SceneManager.LoadScene("DeathScene");
         }
     }
-
 }
