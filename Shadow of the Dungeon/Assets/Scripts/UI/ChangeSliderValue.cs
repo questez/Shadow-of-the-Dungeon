@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ChangeSliderValue: MonoBehaviour
 {
-    [SerializeField] TMP_Text _text;
+    [SerializeField] TextMeshProUGUI _text;
     [SerializeField] Slider _slider;
     [SerializeField] AudioSource SoundSource;
     [SerializeField] AudioSource MusicSource;

@@ -7,9 +7,8 @@ public class BuyItem : MonoBehaviour
     [SerializeField] GameObject _currentItemRow;
     [SerializeField] GameObject _nextItemRow;
     [SerializeField] UnityEngine.UI.Button _button;
-    [SerializeField] TMP_Text _itemText;
-    [SerializeField] TMP_Text _priceText;
-    private bool _isAvailible = true;
+    [SerializeField] TextMeshProUGUI _itemText;
+    [SerializeField] TextMeshProUGUI _priceText;
     private PlayerBehaviour _pb;
     private int _itemPrice;
 
@@ -23,10 +22,14 @@ public class BuyItem : MonoBehaviour
                 case "Lightning x5":
                     _pb.PlayerSpell = "Lighning";
                     _pb.SpellName.text = "Lighning";
+                    _pb.PlayerSpellCount = 5;
+                    _pb.SpellCountText.text = _pb.PlayerSpellCount.ToString();
                     break;
                 case "Fireball x5":
                     _pb.PlayerSpell = "Fireball";
                     _pb.SpellName.text = "Fireball";
+                    _pb.PlayerSpellCount = 5;
+                    _pb.SpellCountText.text = _pb.PlayerSpellCount.ToString();
                     break;
                 case "Strength x1":
                     _pb.PlayerPotion = "Strength";
@@ -45,6 +48,7 @@ public class BuyItem : MonoBehaviour
                     break;
             }
             Debug.Log($"Bought {_itemText.text}");
+            _pb.SpellCountText.enabled = true;
             _pb.PlayerBalance -= _itemPrice;
             _pb.CoinValue.text = _pb.PlayerBalance.ToString();
             _currentItemRow.SetActive(false);

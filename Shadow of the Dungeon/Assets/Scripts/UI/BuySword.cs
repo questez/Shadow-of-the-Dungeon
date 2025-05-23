@@ -6,16 +6,6 @@ public class BuySword : MonoBehaviour
     [SerializeField] MonoBehaviour GrabInteractible;
     private PlayerBehaviour _pb;
     private int _swordPrice;
-    public void Buy()
-    {
-        if (_pb.PlayerBalance >= _swordPrice)
-        {
-            _button.gameObject.SetActive(false);
-            GrabInteractible.enabled = true;
-            _pb.PlayerBalance -= _swordPrice;
-            _pb.CoinValue.text = _pb.PlayerBalance.ToString();
-        }
-    }
     private void Awake()
     {
         if (gameObject.name == "Sword2")
@@ -29,5 +19,15 @@ public class BuySword : MonoBehaviour
         _button.onClick.AddListener(Buy);
         GrabInteractible.enabled = false;
         _pb = FindAnyObjectByType<PlayerBehaviour>();
+    }
+    public void Buy()
+    {
+        if (_pb.PlayerBalance >= _swordPrice)
+        {
+            _button.gameObject.SetActive(false);
+            GrabInteractible.enabled = true;
+            _pb.PlayerBalance -= _swordPrice;
+            _pb.CoinValue.text = _pb.PlayerBalance.ToString();
+        }
     }
 }

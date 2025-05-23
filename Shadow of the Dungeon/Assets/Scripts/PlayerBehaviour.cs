@@ -11,19 +11,42 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] AudioSource _walkSound;
 
     [SerializeField] HorizontalLayoutGroup HeartRow;
-    public TMP_Text SpellName;
-    public TMP_Text PotionName;
-    public TMP_Text LevelValue;
-    public TMP_Text ExperienceValue;
-    public TMP_Text CoinValue;
+    public TextMeshProUGUI SpellName;
+    public TextMeshProUGUI SpellCountText;
+    public TextMeshProUGUI PotionName;
+    public TextMeshProUGUI LevelValue;
+    public TextMeshProUGUI ExperienceValue;
+    public TextMeshProUGUI CoinValue;
     [SerializeField] Canvas PauseScreen;
 
     [NonSerialized] private bool isPaused;
     [NonSerialized] private XRIDefaultInputActions input;
-    public float PlayerHP = 100f; // очки здоровья
+    [NonSerialized] private static float maxPlayerHP = 100f;
+    [NonSerialized] private static float playerHP = maxPlayerHP; // очки здоровья;
+    [NonSerialized] private static int maxPlayerSpellCount = 5;
+    public float PlayerHP
+    {
+        get => playerHP;
+        set
+        {
+            if (value > maxPlayerHP)
+            {
+                playerHP = maxPlayerHP;
+            }
+            else if (value < 0)
+            {
+                playerHP = 0;
+            }
+            else
+            {
+                playerHP = value;
+            }
+        }
+    }
     [NonSerialized] public int PlayerXP = 0; // очки опыта
     [NonSerialized] public int PlayerLevel = 0; // уровень игрока
     [NonSerialized] public int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
+    [NonSerialized] public int PlayerSpellCount= maxPlayerSpellCount;
     [NonSerialized] public string PlayerSpell = "No spell"; // текущее заклинание
     [NonSerialized] public string PlayerPotion = "No potion"; // текущее особое заклинание (зелье)
 
@@ -57,27 +80,39 @@ public class PlayerBehaviour : MonoBehaviour
         {
             PlayerLevel = 1;
             ExtraDamage = 2.5f;
+            maxPlayerHP = 120;
+            maxPlayerSpellCount = 6;
         }
         if (PlayerXP >= 80 && PlayerXP < 160)
         {
             PlayerLevel = 2;
             ExtraDamage = 5f;
+            maxPlayerHP = 140;
+            maxPlayerSpellCount = 7;
         }
         if (PlayerXP >= 160 && PlayerXP < 320)
         {
             PlayerLevel = 3;
             ExtraDamage = 7.5f;
+            maxPlayerHP = 160;
+            maxPlayerSpellCount = 8;
         }
         if (PlayerXP >= 320 && PlayerXP < 640)
         {
             PlayerLevel = 4;
             ExtraDamage = 10f;
+            maxPlayerHP = 180;
+            maxPlayerSpellCount = 9;
         }
         if (PlayerXP >= 640 && PlayerXP < 1280)
         {
             PlayerLevel = 5;
             ExtraDamage = 12.5f;
+            maxPlayerHP = 200;
+            maxPlayerSpellCount = 10;
         }
+        PlayerHP += 20;
+        PlayerSpellCount += 1;
         LevelValue.text = PlayerLevel.ToString();
         Debug.Log($"Достигнут уровень {PlayerLevel}");
     }
@@ -87,11 +122,13 @@ public class PlayerBehaviour : MonoBehaviour
         input = new XRIDefaultInputActions();
         input.XRILeftInteraction.Pause.performed += ctx => TogglePause();
         SpellName.text = PlayerSpell;
+        SpellCountText.text = PlayerSpellCount.ToString();
         PotionName.text = PlayerPotion;
         LevelValue.text = PlayerLevel.ToString();
         ExperienceValue.text = PlayerXP.ToString();
         CoinValue.text = PlayerBalance.ToString();
         PauseScreen.enabled = false;
+        PlayerSpellCount = maxPlayerSpellCount;
     }
     private void OnTriggerEnter(Collider other)
     {
