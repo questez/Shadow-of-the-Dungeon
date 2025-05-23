@@ -327,13 +327,6 @@ ModelImporter:
         floatParameter: 0
         intParameter: 1
         messageOptions: 0
-      - time: 0.44598696
-        functionName: CheckAttackTransition
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: cd57d52512b3f124286f9f13e57fc26a, type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
       - time: 0.5176264
         functionName: OnOffDamager
         data: 

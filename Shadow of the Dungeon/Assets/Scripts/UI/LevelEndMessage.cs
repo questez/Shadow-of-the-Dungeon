@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class LevelEndMessage : MonoBehaviour
 {
+    AudioSource clickSound;
+
     [SerializeField] Button _continueButton;
     [SerializeField] Canvas levelEndCanvas;
 
@@ -16,6 +18,7 @@ public class LevelEndMessage : MonoBehaviour
 
     private void Awake()
     {        
+        clickSound = levelEndCanvas.GetComponentInChildren<AudioSource>();
         _continueButton.onClick.AddListener(CloseMessage);
         levelEndCanvas.enabled = false;
         pb = FindAnyObjectByType<XROrigin>().GetComponent<PlayerBehaviour>();
@@ -30,6 +33,7 @@ public class LevelEndMessage : MonoBehaviour
 
     public void CloseMessage()
     {
+        clickSound.Play();
         levelEndCanvas.enabled = false;        
     }
 }

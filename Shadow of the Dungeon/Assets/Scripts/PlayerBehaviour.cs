@@ -7,9 +7,10 @@ using UnityEngine.SceneManagement;
 public class PlayerBehaviour : MonoBehaviour
 {
     Vector3 lastPos;
-    float movementThreshold = 0.01f; // Минимальное смещение
+    float movementThreshold = 0.008f; // минимальное смещение для звука ходьбы
 
-    [SerializeField] AudioSource walkingSound;
+    AudioSource walkingSound;
+    [SerializeField] AudioSource clickPauseButton;
 
     [SerializeField] HorizontalLayoutGroup HeartRow;
     public TMP_Text SpellName;
@@ -33,11 +34,12 @@ public class PlayerBehaviour : MonoBehaviour
     public int KillCounter; // счетчик убийств
     [NonSerialized] public int MaxKillsInLevel1 = 5; // максимальное количество убитых врагов на Level1
     [NonSerialized] public int MaxKillsInLevel2 = 7; // максимальное количество убитых врагов на Level2
-    [NonSerialized] public int MaxKillsInLevel3 = 9; // максимальное количество убитых врагов на Level3
+    [NonSerialized] public int MaxKillsInLevel3 = 0; // максимальное количество убитых врагов на Level3
     [NonSerialized] public int MaxKillsInLevel4 = 12; // максимальное количество убитых врагов на Level4
 
     private void Awake()
     {
+        walkingSound = GetComponent<AudioSource>();
         lastPos = transform.position;
         isPaused = false;
         input = new XRIDefaultInputActions();
@@ -98,17 +100,18 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
     public void TogglePause()
-    {
+    {        
         if (this.gameObject.scene.name != "MainMenu" && this.gameObject.scene.name != "DeathScene")
         {
             PauseScreen.enabled = !PauseScreen.enabled;
             if (!isPaused)
-            {
+            {                
                 Time.timeScale = 0f;
                 isPaused = true;
             }
             else
             {
+                clickPauseButton.Play();
                 Time.timeScale = 1f;
                 isPaused = false;
             }
@@ -131,7 +134,7 @@ public class PlayerBehaviour : MonoBehaviour
             walkingSound.Play();
             Debug.Log("WALKINGSOUND!");
         }
-        else if (walkingSound.isPlaying && !isMoving)
+        else if (!isMoving && walkingSound.isPlaying)
         {
             walkingSound.Stop();
             Debug.Log("STOPSOUND!");

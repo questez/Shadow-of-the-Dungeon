@@ -10,8 +10,8 @@ public class ChangeSliderValue: MonoBehaviour
     [SerializeField] AudioSource SoundSource;
     [SerializeField] AudioSource MusicSource;
 
-    [NonSerialized] public float SoundValue;
-    [NonSerialized] public float MusicValue;
+    [NonSerialized] public static float SoundValue;
+    [NonSerialized] public static float MusicValue;    
 
     public void ChangeValue()
     {

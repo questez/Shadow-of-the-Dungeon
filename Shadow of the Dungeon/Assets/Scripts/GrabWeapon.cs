@@ -26,6 +26,7 @@ public class GrabWeapon : MonoBehaviour
         if (musicSource != null)
         {
             musicInLevel = musicSource.GetComponent<AudioSource>();
+            musicInLevel.volume = ChangeSliderValue.MusicValue;
         }        
         enemySpawner = GameObject.Find("EnemySpawnManager");
         if (enemySpawner != null)
@@ -65,8 +66,8 @@ public class GrabWeapon : MonoBehaviour
         args.interactableObject.transform.SetParent(null);
     }
 
-    void Update()
-    {
-        Debug.Log(rb.linearVelocity.magnitude);
-    }
+    //void Update()
+    //{
+    //    Debug.Log(rb.linearVelocity.magnitude);
+    //}
 }

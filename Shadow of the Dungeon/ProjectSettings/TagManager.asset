@@ -23,6 +23,7 @@ TagManager:
   - MinotaurDamager
   - DemonDamager
   - MusicSource
+  - SoundSource
   layers:
   - Default
   - TransparentFX
