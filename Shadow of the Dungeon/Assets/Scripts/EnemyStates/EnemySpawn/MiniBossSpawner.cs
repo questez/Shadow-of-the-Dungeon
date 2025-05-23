@@ -28,7 +28,7 @@ public class MiniBossSpawner: MonoBehaviour
             switch (SceneManager.GetActiveScene().name)
             {
                 case "Level1":
-                    if (FindAnyObjectByType<PlayerBehaviour>().KillCounter > FindAnyObjectByType<PlayerBehaviour>().MaxKillsInLevel1)
+                    if (FindAnyObjectByType<PlayerBehaviour>().KillCounter >= FindAnyObjectByType<PlayerBehaviour>().MaxKillsInLevel1)
                     {
                         EnemySpawner[] allNEnemySpawners = FindObjectsByType<EnemySpawner>(FindObjectsInactive.Include, FindObjectsSortMode.None);
                         foreach (var spawner in allNEnemySpawners)
@@ -39,7 +39,7 @@ public class MiniBossSpawner: MonoBehaviour
                     }
                     break;
                 case "Level2":
-                    if (FindAnyObjectByType<PlayerBehaviour>().KillCounter > FindAnyObjectByType<PlayerBehaviour>().MaxKillsInLevel2)
+                    if (FindAnyObjectByType<PlayerBehaviour>().KillCounter >= FindAnyObjectByType<PlayerBehaviour>().MaxKillsInLevel2)
                     {
                         EnemySpawner[] allNEnemySpawners = FindObjectsByType<EnemySpawner>(FindObjectsInactive.Include, FindObjectsSortMode.None);
                         foreach (var spawner in allNEnemySpawners)
@@ -50,7 +50,7 @@ public class MiniBossSpawner: MonoBehaviour
                     }
                     break;
                 case "Level3":
-                    if (FindAnyObjectByType<PlayerBehaviour>().KillCounter > FindAnyObjectByType<PlayerBehaviour>().MaxKillsInLevel3)
+                    if (FindAnyObjectByType<PlayerBehaviour>().KillCounter >= FindAnyObjectByType<PlayerBehaviour>().MaxKillsInLevel3)
                     {
                         EnemySpawner[] allNEnemySpawners = FindObjectsByType<EnemySpawner>(FindObjectsInactive.Include, FindObjectsSortMode.None);
                         foreach (var spawner in allNEnemySpawners)
@@ -61,7 +61,7 @@ public class MiniBossSpawner: MonoBehaviour
                     }
                     break;
                 case "Level4":
-                    if (FindAnyObjectByType<PlayerBehaviour>().KillCounter > FindAnyObjectByType<PlayerBehaviour>().MaxKillsInLevel4)
+                    if (FindAnyObjectByType<PlayerBehaviour>().KillCounter >= FindAnyObjectByType<PlayerBehaviour>().MaxKillsInLevel4)
                     {
                         EnemySpawner[] allNEnemySpawners = FindObjectsByType<EnemySpawner>(FindObjectsInactive.Include, FindObjectsSortMode.None);
                         foreach (var spawner in allNEnemySpawners)

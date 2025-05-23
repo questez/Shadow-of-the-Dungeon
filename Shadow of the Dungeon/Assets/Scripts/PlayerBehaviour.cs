@@ -30,7 +30,7 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public string PlayerPotion = "No potion"; // текущее особое заклинание (зелье)
        
     public int KillCounter; // счетчик убийств
-    [NonSerialized] public int MaxKillsInLevel1 = 0; // максимальное количество убитых врагов на Level1
+    [NonSerialized] public int MaxKillsInLevel1 = 5; // максимальное количество убитых врагов на Level1
     [NonSerialized] public int MaxKillsInLevel2 = 7; // максимальное количество убитых врагов на Level2
     [NonSerialized] public int MaxKillsInLevel3 = 9; // максимальное количество убитых врагов на Level3
     [NonSerialized] public int MaxKillsInLevel4 = 12; // максимальное количество убитых врагов на Level4
