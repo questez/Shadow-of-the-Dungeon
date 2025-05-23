@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class BuySword : MonoBehaviour
 {
+    [SerializeField] AudioSource _clickSound;
     [SerializeField] UnityEngine.UI.Button _button;
     [SerializeField] MonoBehaviour GrabInteractible;
     private PlayerBehaviour _pb;
     private int _swordPrice;
     public void Buy()
     {
+        _clickSound.Play();
         if (_pb.PlayerBalance >= _swordPrice)
         {
             _button.gameObject.SetActive(false);

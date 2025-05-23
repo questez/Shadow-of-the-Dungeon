@@ -1434,7 +1434,7 @@ MonoBehaviour:
   _button: {fileID: 552241354}
   _itemText: {fileID: 323197616}
   _priceText: {fileID: 1048478897}
-  _clickSound: {fileID: 0}
+  _clickSound: {fileID: 771255751}
 --- !u!114 &552241354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1719,7 +1719,7 @@ GameObject:
   - component: {fileID: 771255750}
   - component: {fileID: 771255751}
   m_Layer: 0
-  m_Name: ClickSound (1)
+  m_Name: ClickBuySound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1750,8 +1750,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3ae3baa9ab3ff254d89fc15db5c53a51, type: 3}
-  m_Resource: {fileID: 8300000, guid: 3ae3baa9ab3ff254d89fc15db5c53a51, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ceb8f458ff60d7b41ae9d7fababf3bf6, type: 3}
+  m_Resource: {fileID: 8300000, guid: ceb8f458ff60d7b41ae9d7fababf3bf6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.6
   m_Pitch: 1
@@ -1894,7 +1894,7 @@ MonoBehaviour:
   _button: {fileID: 788244477}
   _itemText: {fileID: 1284560209}
   _priceText: {fileID: 227549947}
-  _clickSound: {fileID: 0}
+  _clickSound: {fileID: 771255751}
 --- !u!114 &788244477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3433,6 +3433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4c44514711c2842bf9e2d37ad6e032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _clickSound: {fileID: 771255751}
   _button: {fileID: 1822127398}
   GrabInteractible: {fileID: 996690708}
 --- !u!1 &1048478896
@@ -4559,7 +4560,7 @@ MonoBehaviour:
   _button: {fileID: 1945503796}
   _itemText: {fileID: 1203500027}
   _priceText: {fileID: 14066577}
-  _clickSound: {fileID: 0}
+  _clickSound: {fileID: 771255751}
 --- !u!114 &1945503796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4899,6 +4900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4c44514711c2842bf9e2d37ad6e032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _clickSound: {fileID: 771255751}
   _button: {fileID: 44694181}
   GrabInteractible: {fileID: 2099890368}
 --- !u!1 &19844381371469198
@@ -5163,7 +5165,7 @@ MonoBehaviour:
   _button: {fileID: 5536045703477878621}
   _itemText: {fileID: 5601180884982327354}
   _priceText: {fileID: 6740931605077597602}
-  _clickSound: {fileID: 1444415669}
+  _clickSound: {fileID: 771255751}
 --- !u!114 &1581047275235029556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8116,7 +8118,7 @@ MonoBehaviour:
   _button: {fileID: 5997988478809335785}
   _itemText: {fileID: 5613177549942741031}
   _priceText: {fileID: 7201485361270911348}
-  _clickSound: {fileID: 1444415669}
+  _clickSound: {fileID: 771255751}
 --- !u!224 &8700637959276547127
 RectTransform:
   m_ObjectHideFlags: 0

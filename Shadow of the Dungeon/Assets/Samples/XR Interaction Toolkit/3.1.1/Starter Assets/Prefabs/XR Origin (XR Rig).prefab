@@ -1230,7 +1230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ebe6d555c471744867dad8127dd74e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _walkSound: {fileID: 6422600887289108950}
+  walkingSound: {fileID: 6422600887289108950}
   HeartRow: {fileID: 6148766528249617212}
   SpellName: {fileID: 2914573680893064918}
   PotionName: {fileID: 3618284526243125833}
@@ -1247,15 +1247,15 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717954561962503725}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f21a2bc46b2a78b4c8baa28a96e4dcf2, type: 3}
-  m_Resource: {fileID: 8300000, guid: f21a2bc46b2a78b4c8baa28a96e4dcf2, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: fb025ad532869f141a49fdb4e0810d5a, type: 3}
+  m_Resource: {fileID: 8300000, guid: fb025ad532869f141a49fdb4e0810d5a, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3466,6 +3466,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2777823292164928127, guid: 1392f805216c47742996d4742c80721c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381299006331274950, guid: 1392f805216c47742996d4742c80721c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381299006331274950, guid: 1392f805216c47742996d4742c80721c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381299006331274950, guid: 1392f805216c47742996d4742c80721c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381299006331274950, guid: 1392f805216c47742996d4742c80721c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}

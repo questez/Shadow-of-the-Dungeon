@@ -7,8 +7,9 @@ using UnityEngine.SceneManagement;
 public class PlayerBehaviour : MonoBehaviour
 {
     Vector3 lastPos;
+    float movementThreshold = 0.01f; // Минимальное смещение
 
-    [SerializeField] AudioSource _walkSound;
+    [SerializeField] AudioSource walkingSound;
 
     [SerializeField] HorizontalLayoutGroup HeartRow;
     public TMP_Text SpellName;
@@ -37,6 +38,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void Awake()
     {
+        lastPos = transform.position;
         isPaused = false;
         input = new XRIDefaultInputActions();
         input.XRILeftInteraction.Pause.performed += ctx => TogglePause();
@@ -116,17 +118,24 @@ public class PlayerBehaviour : MonoBehaviour
     {
         isDeath();
         CheckLevel();
-        //isMoving();
+        PlayWalkingSound();
     }
 
-    private void isMoving()
+    private void PlayWalkingSound()
     {
-        Vector3 currPos = transform.position;
-        if ((currPos.magnitude - lastPos.magnitude) > 0)
+        float distanceMoved = Vector3.Distance(lastPos, transform.position);
+        bool isMoving = distanceMoved > movementThreshold;
+        lastPos = transform.position;
+        if (isMoving && !walkingSound.isPlaying)
         {
-            _walkSound.Play();
+            walkingSound.Play();
+            Debug.Log("WALKINGSOUND!");
         }
-        lastPos = currPos;
+        else if (walkingSound.isPlaying && !isMoving)
+        {
+            walkingSound.Stop();
+            Debug.Log("STOPSOUND!");
+        }
     }
 
     private void isDeath()
