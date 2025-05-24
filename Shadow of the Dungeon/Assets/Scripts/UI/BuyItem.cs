@@ -9,48 +9,41 @@ public class BuyItem : MonoBehaviour
     [SerializeField] UnityEngine.UI.Button _button;
     [SerializeField] TextMeshProUGUI _itemText;
     [SerializeField] TextMeshProUGUI _priceText;
-    private PlayerBehaviour _pb;
     private int _itemPrice;
 
 
     public void Buy()
     {
-        if (_pb.PlayerBalance >= _itemPrice)
+        if (PlayerBehaviour.PlayerBalance >= _itemPrice)
         {
             switch (_itemText.text)
             {
                 case "Lightning x5":
-                    _pb.PlayerSpell = "Lighning";
-                    _pb.SpellName.text = "Lighning";
-                    _pb.PlayerSpellCount = 5;
-                    _pb.SpellCountText.text = _pb.PlayerSpellCount.ToString();
+                    PlayerBehaviour.PlayerSpell = "Lighning";
+                    PlayerBehaviour.PlayerSpellCount = PlayerBehaviour.maxPlayerSpellCount;
                     break;
                 case "Fireball x5":
-                    _pb.PlayerSpell = "Fireball";
-                    _pb.SpellName.text = "Fireball";
-                    _pb.PlayerSpellCount = 5;
-                    _pb.SpellCountText.text = _pb.PlayerSpellCount.ToString();
+                    PlayerBehaviour.PlayerSpell = "Fireball";
+                    PlayerBehaviour.PlayerSpellCount = PlayerBehaviour.maxPlayerSpellCount;
                     break;
                 case "Strength x1":
-                    _pb.PlayerPotion = "Strength";
-                    _pb.PotionName.text = "Strength";
+                    PlayerBehaviour.PlayerPotion = "Strength";
+                    PlayerBehaviour.HasPotion = true;
                     break;
                 case "Healing x1":
-                    _pb.PlayerSpell = "Healing";
-                    _pb.PotionName.text = "Healing";
+                    PlayerBehaviour.PlayerPotion = "Healing";
+                    PlayerBehaviour.HasPotion = true;
                     break;
                 case "Endurance x1":
-                    _pb.PlayerSpell = "Endurance";
-                    _pb.PotionName.text = "Endurance";
+                    PlayerBehaviour.PlayerPotion = "Endurance";
+                    PlayerBehaviour.HasPotion = true;
                     break;
                 default:
                     Debug.Log("Неверный ввод");
                     break;
             }
             Debug.Log($"Bought {_itemText.text}");
-            _pb.SpellCountText.enabled = true;
-            _pb.PlayerBalance -= _itemPrice;
-            _pb.CoinValue.text = _pb.PlayerBalance.ToString();
+            PlayerBehaviour.PlayerBalance -= _itemPrice;
             _currentItemRow.SetActive(false);
             _nextItemRow.SetActive(true);
         }
@@ -58,7 +51,6 @@ public class BuyItem : MonoBehaviour
     private void Awake()
     {
         _button.onClick.AddListener(Buy);
-        _pb = FindAnyObjectByType<PlayerBehaviour>();
         _itemPrice = Convert.ToInt32(_priceText.text);
     }
 }

@@ -1070,6 +1070,15 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Use Potion"",
+                    ""type"": ""Button"",
+                    ""id"": ""8ad796d3-22b1-481e-bf8e-4f53560d623b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1334,6 +1343,17 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Cast Spell"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1e528e53-fa0f-4bb6-a2ed-9c8ef195e5d3"",
+                    ""path"": ""<XRController>{LeftHand}/{SecondaryButton}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Use Potion"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -3453,6 +3473,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         m_XRILeftInteraction_ScaleOverTime = m_XRILeftInteraction.FindAction("Scale Over Time", throwIfNotFound: true);
         m_XRILeftInteraction_Pause = m_XRILeftInteraction.FindAction("Pause", throwIfNotFound: true);
         m_XRILeftInteraction_CastSpell = m_XRILeftInteraction.FindAction("Cast Spell", throwIfNotFound: true);
+        m_XRILeftInteraction_UsePotion = m_XRILeftInteraction.FindAction("Use Potion", throwIfNotFound: true);
         // XRI Left Locomotion
         m_XRILeftLocomotion = asset.FindActionMap("XRI Left Locomotion", throwIfNotFound: true);
         m_XRILeftLocomotion_TeleportMode = m_XRILeftLocomotion.FindAction("Teleport Mode", throwIfNotFound: true);
@@ -4034,6 +4055,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
     private readonly InputAction m_XRILeftInteraction_ScaleOverTime;
     private readonly InputAction m_XRILeftInteraction_Pause;
     private readonly InputAction m_XRILeftInteraction_CastSpell;
+    private readonly InputAction m_XRILeftInteraction_UsePotion;
     /// <summary>
     /// Provides access to input actions defined in input action map "XRI Left Interaction".
     /// </summary>
@@ -4097,6 +4119,10 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         /// Provides access to the underlying input action "XRILeftInteraction/CastSpell".
         /// </summary>
         public InputAction @CastSpell => m_Wrapper.m_XRILeftInteraction_CastSpell;
+        /// <summary>
+        /// Provides access to the underlying input action "XRILeftInteraction/UsePotion".
+        /// </summary>
+        public InputAction @UsePotion => m_Wrapper.m_XRILeftInteraction_UsePotion;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -4162,6 +4188,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @CastSpell.started += instance.OnCastSpell;
             @CastSpell.performed += instance.OnCastSpell;
             @CastSpell.canceled += instance.OnCastSpell;
+            @UsePotion.started += instance.OnUsePotion;
+            @UsePotion.performed += instance.OnUsePotion;
+            @UsePotion.canceled += instance.OnUsePotion;
         }
 
         /// <summary>
@@ -4212,6 +4241,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @CastSpell.started -= instance.OnCastSpell;
             @CastSpell.performed -= instance.OnCastSpell;
             @CastSpell.canceled -= instance.OnCastSpell;
+            @UsePotion.started -= instance.OnUsePotion;
+            @UsePotion.performed -= instance.OnUsePotion;
+            @UsePotion.canceled -= instance.OnUsePotion;
         }
 
         /// <summary>
@@ -5639,6 +5671,13 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnCastSpell(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Use Potion" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUsePotion(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "XRI Left Locomotion" which allows adding and removing callbacks.

@@ -4,7 +4,6 @@ public class BuySword : MonoBehaviour
 {
     [SerializeField] UnityEngine.UI.Button _button;
     [SerializeField] MonoBehaviour GrabInteractible;
-    private PlayerBehaviour _pb;
     private int _swordPrice;
     private void Awake()
     {
@@ -18,16 +17,14 @@ public class BuySword : MonoBehaviour
         }
         _button.onClick.AddListener(Buy);
         GrabInteractible.enabled = false;
-        _pb = FindAnyObjectByType<PlayerBehaviour>();
     }
     public void Buy()
     {
-        if (_pb.PlayerBalance >= _swordPrice)
+        if (PlayerBehaviour.PlayerBalance >= _swordPrice)
         {
             _button.gameObject.SetActive(false);
             GrabInteractible.enabled = true;
-            _pb.PlayerBalance -= _swordPrice;
-            _pb.CoinValue.text = _pb.PlayerBalance.ToString();
+            PlayerBehaviour.PlayerBalance -= _swordPrice;
         }
     }
 }

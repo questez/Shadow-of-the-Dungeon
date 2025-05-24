@@ -6,7 +6,6 @@ public class MysteryBox : MonoBehaviour
     [SerializeField] GameObject box;
     [SerializeField] GameObject boxCrashed;
     [SerializeField] GameObject coin;
-
     [SerializeField] AudioSource boxCrashSound;
 
     Vector3 coinPosition;

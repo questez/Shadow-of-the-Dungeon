@@ -67,6 +67,6 @@ public class GrabWeapon : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(rb.linearVelocity.magnitude);
+        //Debug.Log(rb.linearVelocity.magnitude);
     }
 }

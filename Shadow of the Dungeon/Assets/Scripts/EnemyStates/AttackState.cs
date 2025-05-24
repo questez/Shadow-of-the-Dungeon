@@ -48,9 +48,8 @@ public class AttackState : BaseState
         if (manager.EnemyHP <= 0)
         {
             manager.SwitchState(manager.deathstate);
-            manager.pb.PlayerXP += enemyXP;
-            manager.pb.CheckPlayerLevel();
-            manager.pb.ExperienceValue.text = manager.pb.PlayerXP.ToString();
+            PlayerBehaviour.PlayerXP += enemyXP;
+            PlayerBehaviour.CheckPlayerLevel();
         }
     }   
     

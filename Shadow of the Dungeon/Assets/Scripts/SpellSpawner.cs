@@ -6,11 +6,9 @@ public class SpellSpawner : MonoBehaviour
     [SerializeField] GameObject spell;
     [SerializeField] Transform spawnpoint;
     [NonSerialized] private XRIDefaultInputActions input;
-    [NonSerialized] private PlayerBehaviour pb;
     private void Awake()
     {
-        pb = FindAnyObjectByType<PlayerBehaviour>();
-        input = new XRIDefaultInputActions();
+        input = PlayerBehaviour.input;
         input.XRILeftInteraction.CastSpell.performed += ctx => SpawnSpell();
     }
     private void OnEnable()
@@ -23,10 +21,10 @@ public class SpellSpawner : MonoBehaviour
     }
     private void SpawnSpell()
     {
-        if (pb.PlayerSpellCount > 0)
+        if (PlayerBehaviour.PlayerSpellCount > 0)
         {
             Instantiate(spell, spawnpoint);
-            pb.PlayerSpellCount--;
+            PlayerBehaviour.PlayerSpellCount--;
         }
         else
         {

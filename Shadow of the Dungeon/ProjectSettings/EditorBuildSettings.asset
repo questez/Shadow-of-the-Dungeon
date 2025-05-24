@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/GameScenes/GameLevels/LevelFinal.unity
     guid: 4bb49a28f8ca2094c8e43bc850812c1b
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 68bc5b65fcca1b8459d7097c24a4da05, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 57b088e9e2ebd4441b82284ac1f4c11f, type: 2}
   m_UseUCBPForAssetBundles: 0
