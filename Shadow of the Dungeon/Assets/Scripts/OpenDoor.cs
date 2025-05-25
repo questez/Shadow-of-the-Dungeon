@@ -33,7 +33,7 @@ public class OpenDoor : MonoBehaviour
             }     
             else if (name_scene == "StartRoom")
             {
-                SceneManager.LoadScene("Level1");
+                SceneManager.LoadScene("Level 1");
             }
             else if (name_scene == "SaveZone" && (lastLevelindex + 1) <= SceneManager.sceneCountInBuildSettings)
             {

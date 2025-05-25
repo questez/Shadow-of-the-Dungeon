@@ -20,12 +20,12 @@ public class Coin : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             PlayerBehaviour pb = other.gameObject.GetComponent<PlayerBehaviour>();
-            pb.PlayerBalance++;
+            PlayerBehaviour.PlayerBalance++;
             pb.PlayerBalanceInLevel++;
             _coinSound.Play();
             Destroy(this.gameObject, _coinSound.clip.length);            
-            Debug.Log($"Собрана монетка! Текущее количество: {pb.PlayerBalance}.");
-            pb.CoinValue.text = pb.PlayerBalance.ToString();
+            Debug.Log($"Собрана монетка! Текущее количество: {PlayerBehaviour.PlayerBalance}.");
+            pb.CoinValue.text = PlayerBehaviour.PlayerBalance.ToString();
         }
     }
 

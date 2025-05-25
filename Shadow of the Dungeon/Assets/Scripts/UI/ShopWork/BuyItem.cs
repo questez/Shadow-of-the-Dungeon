@@ -8,18 +8,17 @@ public class BuyItem : MonoBehaviour
     [SerializeField] GameObject _nextItemRow;
     [SerializeField] UnityEngine.UI.Button _button;
     [SerializeField] TMP_Text _itemText;
-    [SerializeField] TMP_Text _priceText;
-    private bool _isAvailible = true;
+    [SerializeField] TMP_Text _priceText;    
     private PlayerBehaviour _pb;
     private int _itemPrice;
 
     [SerializeField] AudioSource _clickSound;
 
-    public void Buy()
-    {
-        _clickSound.Play();
-        if (_pb.PlayerBalance >= _itemPrice)
+    public void BuyMagic()
+    {        
+        if (PlayerBehaviour.PlayerBalance >= _itemPrice)
         {
+            _clickSound.Play();
             switch (_itemText.text)
             {
                 case "Lightning x5":
@@ -47,15 +46,15 @@ public class BuyItem : MonoBehaviour
                     break;
             }
             Debug.Log($"Bought {_itemText.text}");
-            _pb.PlayerBalance -= _itemPrice;
-            _pb.CoinValue.text = _pb.PlayerBalance.ToString();
+            PlayerBehaviour.PlayerBalance -= _itemPrice;
+            _pb.CoinValue.text = PlayerBehaviour.PlayerBalance.ToString();
             _currentItemRow.SetActive(false);
             _nextItemRow.SetActive(true);
         }
     }
     private void Awake()
     {
-        _button.onClick.AddListener(Buy);
+        _button.onClick.AddListener(BuyMagic);
         _pb = FindAnyObjectByType<PlayerBehaviour>();
         _itemPrice = Convert.ToInt32(_priceText.text);
     }

@@ -27,7 +27,7 @@ public class MiniBossSpawner: MonoBehaviour
         {
             switch (SceneManager.GetActiveScene().name)
             {
-                case "Level1":
+                case "Level 1":
                     if (FindAnyObjectByType<PlayerBehaviour>().KillCounter >= FindAnyObjectByType<PlayerBehaviour>().MaxKillsInLevel1)
                     {
                         EnemySpawner[] allNEnemySpawners = FindObjectsByType<EnemySpawner>(FindObjectsInactive.Include, FindObjectsSortMode.None);
@@ -38,7 +38,7 @@ public class MiniBossSpawner: MonoBehaviour
                         return true;
                     }
                     break;
-                case "Level2":
+                case "Level 2":
                     if (FindAnyObjectByType<PlayerBehaviour>().KillCounter >= FindAnyObjectByType<PlayerBehaviour>().MaxKillsInLevel2)
                     {
                         EnemySpawner[] allNEnemySpawners = FindObjectsByType<EnemySpawner>(FindObjectsInactive.Include, FindObjectsSortMode.None);
@@ -49,7 +49,7 @@ public class MiniBossSpawner: MonoBehaviour
                         return true;
                     }
                     break;
-                case "Level3":
+                case "Level 3":
                     if (FindAnyObjectByType<PlayerBehaviour>().KillCounter >= FindAnyObjectByType<PlayerBehaviour>().MaxKillsInLevel3)
                     {
                         EnemySpawner[] allNEnemySpawners = FindObjectsByType<EnemySpawner>(FindObjectsInactive.Include, FindObjectsSortMode.None);
@@ -60,7 +60,7 @@ public class MiniBossSpawner: MonoBehaviour
                         return true;
                     }
                     break;
-                case "Level4":
+                case "Level 4":
                     if (FindAnyObjectByType<PlayerBehaviour>().KillCounter >= FindAnyObjectByType<PlayerBehaviour>().MaxKillsInLevel4)
                     {
                         EnemySpawner[] allNEnemySpawners = FindObjectsByType<EnemySpawner>(FindObjectsInactive.Include, FindObjectsSortMode.None);

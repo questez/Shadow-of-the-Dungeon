@@ -673,6 +673,7 @@ Transform:
   - {fileID: 2702846554168031565}
   - {fileID: 63381425046585587}
   - {fileID: 2034613513686325065}
+  - {fileID: 4758144837041834383}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6914936747513488278
@@ -922,6 +923,58 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.320225, y: 10, z: 31.836058}
   m_Center: {x: 13.660112, y: 5, z: 0.45320797}
+--- !u!1 &7535558491127274394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4758144837041834383}
+  - component: {fileID: 8371814279471079599}
+  m_Layer: 0
+  m_Name: WeaponSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4758144837041834383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535558491127274394}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.4902202, y: -0.5095922, z: 0.5095922, w: 0.4902202}
+  m_LocalPosition: {x: -3.5, y: 1.5, z: -11.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3007243635690120779}
+  m_LocalEulerAnglesHint: {x: 90, y: -92.22, z: 0}
+--- !u!114 &8371814279471079599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535558491127274394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8954df98a658f4f4885733da62f0d43c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startLevelButton: {fileID: 0}
+  startLevelCanvas: {fileID: 0}
+  currentLevelText: {fileID: 0}
+  Swords:
+  - {fileID: 5181494411761360807, guid: 7efe259af5fe2f14a90724d2c5bc60d5, type: 3}
+  - {fileID: 8604547404196383025, guid: 3f7ed2a5772d4e541bf6187f56a3afa1, type: 3}
+  - {fileID: 6003890195484591237, guid: bec5dab95cff3064cb268f5c336c7187, type: 3}
+  spawnPoint: {fileID: 4758144837041834383}
 --- !u!1 &7622035777633669790
 GameObject:
   m_ObjectHideFlags: 0
