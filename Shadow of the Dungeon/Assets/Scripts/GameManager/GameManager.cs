@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static int lastLevelindex = 0;
+
     [NonSerialized] public bool isMiniBossDefeated = false;
     [NonSerialized] public bool isFinalBossDefeated = false;
     bool isBoxSpawned = false, isWorkingMessage = false;
@@ -11,6 +13,10 @@ public class GameManager : MonoBehaviour
     LevelEndMessage levelEndMessage;
     private void Start()
     {
+        if (SceneManager.GetActiveScene().name.StartsWith('L'))
+        {
+            lastLevelindex = SceneManager.GetActiveScene().buildIndex;
+        }
         levelEndMessage = GetComponent<LevelEndMessage>();        
     }
 
@@ -19,7 +25,7 @@ public class GameManager : MonoBehaviour
         FinishLevel();
         if (isWorkingMessage)
         {
-            levelEndMessage.collected_coins.text = levelEndMessage.pb.PlayerBalanceInLevel.ToString(); ;
+            levelEndMessage.collected_coins.text = levelEndMessage.pb.PlayerBalanceInLevel.ToString();
         }
     }    
 

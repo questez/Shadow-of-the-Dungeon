@@ -5,20 +5,15 @@ using UnityEngine.SceneManagement;
 public class OpenDoor : MonoBehaviour
 {
     public Collider doorTrigger;
-
-    [NonSerialized] public static int lastLevelindex;
+    
     string name_scene;
     private void Awake()
     {
         name_scene = SceneManager.GetActiveScene().name;
     }
     private void Start()
-    {
-        if (name_scene.StartsWith('L'))
-        {
-            lastLevelindex = SceneManager.GetActiveScene().buildIndex;
-        }          
-        if (doorTrigger != null && SceneManager.GetActiveScene().name != "SaveZone")
+    {                  
+        if (doorTrigger != null && name_scene != "SaveZone")
         {
             doorTrigger.enabled = false;
         }
@@ -30,14 +25,15 @@ public class OpenDoor : MonoBehaviour
             if (name_scene.StartsWith('L'))
             {                
                 SceneManager.LoadScene("SaveZone");
+                SavingSystem.SaveFinishedLevel(GameManager.lastLevelindex + 1);
             }     
             else if (name_scene == "StartRoom")
             {
                 SceneManager.LoadScene("Level 1");
             }
-            else if (name_scene == "SaveZone" && (lastLevelindex + 1) <= SceneManager.sceneCountInBuildSettings)
+            else if (name_scene == "SaveZone" && (GameManager.lastLevelindex + 1) <= SceneManager.sceneCountInBuildSettings)
             {
-                SceneManager.LoadScene(lastLevelindex + 1);
+                SceneManager.LoadScene(GameManager.lastLevelindex + 1);
             }
         }        
     }

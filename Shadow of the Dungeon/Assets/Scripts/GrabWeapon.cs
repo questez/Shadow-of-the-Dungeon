@@ -71,6 +71,8 @@ public class GrabWeapon : MonoBehaviour
         args.interactableObject.transform.SetParent(null);
     }
 
+    public bool HitTrack { get => rb.linearVelocity.magnitude > 0; } // скорость меча для фиксации попадания
+
     //void Update()
     //{
     //    Debug.Log(rb.linearVelocity.magnitude);

@@ -23,7 +23,7 @@ public class MysteryBox : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {        
-        if (other.gameObject.CompareTag("Weapon") && !isCrashed && FindAnyObjectByType<GrabWeapon>().rb.linearVelocity.magnitude > 1f)
+        if (other.gameObject.CompareTag("Weapon") && !isCrashed && FindAnyObjectByType<GrabWeapon>().HitTrack)
         {
             isCrashed = true;
             Instantiate(coin, coinPosition1, transform.rotation);

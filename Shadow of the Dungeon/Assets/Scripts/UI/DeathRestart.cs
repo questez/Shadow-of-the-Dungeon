@@ -12,6 +12,6 @@ public class DeathRestart : MonoBehaviour
     private void Restart()
     {
         _clickSound.Play();
-        SceneManager.LoadScene(OpenDoor.lastLevelindex);
+        SceneManager.LoadScene(GameManager.lastLevelindex);
     }
 }

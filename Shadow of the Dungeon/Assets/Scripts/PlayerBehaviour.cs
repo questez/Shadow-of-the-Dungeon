@@ -22,14 +22,15 @@ public class PlayerBehaviour : MonoBehaviour
 
     private bool isPaused;
     private XRIDefaultInputActions input;
+
     public float PlayerHP = 100f; // очки здоровья
-    [NonSerialized] public static int PlayerXP = 0; // очки опыта
-    [NonSerialized] public int PlayerXPInLevel = 0; // очки опыта, собранные на конкретном уровне
-    [NonSerialized] public static int PlayerLevel = 0; // уровень игрока
-    [NonSerialized] public static int PlayerBalance = 0; // количество собранных кристаллов (баланс)
-    [NonSerialized] public int PlayerBalanceInLevel = 0; // количество собранных кристаллов на конкретном уровне
-    [NonSerialized] public string PlayerSpell = "No spell"; // текущее заклинание
-    [NonSerialized] public string PlayerPotion = "No potion"; // текущее особое заклинание (зелье)
+    public static int PlayerXP = 0; // очки опыта
+    public int PlayerXPInLevel = 0; // очки опыта, собранные на конкретном уровне
+    public static int PlayerLevel = 0; // уровень игрока
+    public static int PlayerBalance = 0; // количество собранных кристаллов (баланс)
+    public int PlayerBalanceInLevel = 0; // количество собранных кристаллов на конкретном уровне
+    public string PlayerSpell = "No spell"; // текущее заклинание
+    public string PlayerPotion = "No potion"; // текущее особое заклинание (зелье)
        
     public int KillCounter; // счетчик убийств
     [NonSerialized] public int MaxKillsInLevel1 = 5; // максимальное количество убитых врагов на Level1
@@ -37,7 +38,7 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public int MaxKillsInLevel3 = 9; // максимальное количество убитых врагов на Level3
     [NonSerialized] public int MaxKillsInLevel4 = 12; // максимальное количество убитых врагов на Level4
 
-    [NonSerialized] public static int EquippedSwordIndex = 0; // индекс надетого меча (0 = Sword1, 1 = Sword2, 2 = Sword3)
+    public static int EquippedSwordIndex = 0; // индекс надетого меча (0 = Sword1, 1 = Sword2, 2 = Sword3)
 
     private void Awake()
     {

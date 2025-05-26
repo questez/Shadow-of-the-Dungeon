@@ -13,6 +13,7 @@ public class StartGame : MonoBehaviour
     public void StartNewGame()
     {
         _clickSound.Play();
+        SavingSystem.DeleteAllSaves();
         SceneManager.LoadScene("StartRoom");
     }
 }
