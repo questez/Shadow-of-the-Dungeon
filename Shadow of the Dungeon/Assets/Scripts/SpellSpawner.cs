@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SpellSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject spell;
+    [SerializeField] GameObject fireball;
+    [SerializeField] GameObject lightning;
     [SerializeField] Transform spawnpoint;
     [NonSerialized] private XRIDefaultInputActions input;
     private void Start()
@@ -24,7 +25,17 @@ public class SpellSpawner : MonoBehaviour
     {
         if (PlayerBehaviour.PlayerSpellCount > 0)
         {
-            StartCoroutine(FireBall());
+            switch (PlayerBehaviour.PlayerSpell)
+            {
+                case "Fireball":
+                    StartCoroutine(Fireball());
+                    break;
+                case "Lightning":
+                    StartCoroutine(Lightning());
+                    break;
+                default:
+                    break;
+            }
             PlayerBehaviour.PlayerSpellCount--;
         }
         else
@@ -32,16 +43,28 @@ public class SpellSpawner : MonoBehaviour
             Debug.Log("Нет заклинаний");
         }
     }
-    IEnumerator FireBall()
+    IEnumerator Fireball()
     {
-        GameObject currentSpell = Instantiate(spell, spawnpoint.position, spawnpoint.rotation);
+        GameObject currentSpell = Instantiate(fireball, spawnpoint.position, spawnpoint.rotation);
         currentSpell.GetComponent<Rigidbody>().AddForce(spawnpoint.forward*1f, ForceMode.Impulse);
-        input.Disable();
+        input.XRILeftInteraction.CastSpell.Disable();
         yield return new WaitForSecondsRealtime(5);
         if (currentSpell != null)
         {
             Destroy(currentSpell);
         }
-        input.Enable();
+        input.XRILeftInteraction.CastSpell.Enable();
+    }
+    IEnumerator Lightning()
+    {
+        GameObject currentSpell = Instantiate(lightning, spawnpoint.position, spawnpoint.rotation);
+        input.XRILeftInteraction.CastSpell.Disable();
+        yield return new WaitForSecondsRealtime(1);
+        if (currentSpell != null)
+        {
+            Destroy(currentSpell);
+        }
+        yield return new WaitForSecondsRealtime(4);
+        input.XRILeftInteraction.CastSpell.Enable();
     }
 }

@@ -208,7 +208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308890975f3d44a4fa0122020a60a602, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 582227584337622951, guid: 6d61e5a5ada026a4ab985c454ceaafe1, type: 3}
+  fireball: {fileID: 582227584337622951, guid: 6d61e5a5ada026a4ab985c454ceaafe1, type: 3}
+  lightning: {fileID: 3958596659431381315, guid: c50f9e2c685970e4c8ebcd5fc8c7b3e4, type: 3}
   spawnpoint: {fileID: 4053753462044954893}
 --- !u!1 &1670256624
 GameObject:
@@ -3364,6 +3365,10 @@ PrefabInstance:
     - target: {fileID: 1739119692779790093, guid: 1392f805216c47742996d4742c80721c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844450340660925138, guid: 1392f805216c47742996d4742c80721c, type: 3}
+      propertyPath: m_Spacing
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 1964027610021519493, guid: 1392f805216c47742996d4742c80721c, type: 3}
       propertyPath: m_AnchoredPosition.x

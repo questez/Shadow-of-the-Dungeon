@@ -19,7 +19,7 @@ public class BuyItem : MonoBehaviour
             switch (_itemText.text)
             {
                 case "Lightning x5":
-                    PlayerBehaviour.PlayerSpell = "Lighning";
+                    PlayerBehaviour.PlayerSpell = "Lightning";
                     PlayerBehaviour.PlayerSpellCount = PlayerBehaviour.maxPlayerSpellCount;
                     break;
                 case "Fireball x5":
