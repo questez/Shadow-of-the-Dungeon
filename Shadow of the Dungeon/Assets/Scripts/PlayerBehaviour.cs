@@ -36,7 +36,7 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public static string PlayerSpell = "Fireball"; // текущее заклинание
     [NonSerialized] public static string PlayerPotion = "No Potion"; // текущее особое заклинание (зелье)
 
-    public int KillCounter; // счетчик убийств
+    public int KillCounter = 0; // счетчик убийств
     [NonSerialized] public static float ExtraDamage = 0f;
     [NonSerialized] public int MaxKillsInLevel1 = 5; // максимальное количество убитых врагов на Level1
     [NonSerialized] public int MaxKillsInLevel2 = 7; // максимальное количество убитых врагов на Level2
@@ -116,8 +116,6 @@ public class PlayerBehaviour : MonoBehaviour
             MaxPlayerHP = 200;
             maxPlayerSpellCount = 10;
         }
-        PlayerHP += 20;
-        PlayerSpellCount += 1;
         Debug.Log($"Достигнут уровень {PlayerLevel}");
     }
     private void Awake()
@@ -127,6 +125,7 @@ public class PlayerBehaviour : MonoBehaviour
         input.XRILeftInteraction.Pause.performed += ctx => TogglePause();
         PauseScreen.enabled = false;
         PlayerSpellCount = maxPlayerSpellCount;
+        PlayerHP = 200;
     }
     private void OnTriggerEnter(Collider other)
     {
