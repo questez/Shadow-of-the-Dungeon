@@ -19,7 +19,7 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] Canvas PauseScreen;
 
     [NonSerialized] public static int maxPlayerSpellCount = 5;
-    [NonSerialized] public static float SpellDamage = 5f;
+    [NonSerialized] public static float SpellDamage = 20f;
     [NonSerialized] public static XRIDefaultInputActions input;
     [NonSerialized] public static float MaxPlayerHP = 100f;
     [NonSerialized] private bool isPaused;

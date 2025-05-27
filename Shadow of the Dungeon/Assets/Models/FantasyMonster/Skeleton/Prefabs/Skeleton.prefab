@@ -2754,7 +2754,7 @@ MonoBehaviour:
   coin: {fileID: 4448123184397291684, guid: d18be603c12f9784d8fe93db62320530, type: 3}
   ChaseDistance: 10
   AttackDistance: 2
-  EnemyHP: 40
+  EnemyHP: 50
   Enemyspeed: 2
   EnemyDamage: 6
 --- !u!1 &2470389341847842041
