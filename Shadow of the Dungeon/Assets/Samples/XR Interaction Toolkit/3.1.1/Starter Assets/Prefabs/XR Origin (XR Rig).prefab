@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5967689310316253315}
   - component: {fileID: 6693052528577237899}
   - component: {fileID: 3495717608674179280}
+  - component: {fileID: 2881096422764409854}
   m_Layer: 5
   m_Name: Left Controller
   m_TagString: Untagged
@@ -194,6 +195,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvas: {fileID: 6308348153417956747}
   _leftHand: {fileID: 202364687}
+--- !u!114 &2881096422764409854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202364687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308890975f3d44a4fa0122020a60a602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spell: {fileID: 582227584337622951, guid: 6d61e5a5ada026a4ab985c454ceaafe1, type: 3}
 --- !u!1 &1670256624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,6 +1096,7 @@ GameObject:
   - component: {fileID: 5033801203051696737}
   - component: {fileID: 1956086946934181903}
   - component: {fileID: 6422600887289108950}
+  - component: {fileID: 8776656292657035164}
   m_Layer: 5
   m_Name: XR Origin (XR Rig)
   m_TagString: Player
@@ -1337,6 +1352,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8776656292657035164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717954561962503725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2165e3b20621a14790196538a7c399a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1787516059220952802
 GameObject:
   m_ObjectHideFlags: 0
@@ -3466,6 +3493,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2777823292164928127, guid: 1392f805216c47742996d4742c80721c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381299006331274950, guid: 1392f805216c47742996d4742c80721c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381299006331274950, guid: 1392f805216c47742996d4742c80721c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381299006331274950, guid: 1392f805216c47742996d4742c80721c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381299006331274950, guid: 1392f805216c47742996d4742c80721c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}

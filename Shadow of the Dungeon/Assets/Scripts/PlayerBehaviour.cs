@@ -23,7 +23,7 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public static float MaxPlayerHP = 100f;
     [NonSerialized] private bool isPaused;
 
-    [NonSerialized] private static float playerHP = 50f; // очки здоровья;
+    [NonSerialized] private static float playerHP = MaxPlayerHP; // очки здоровья;
     [NonSerialized] public static int PlayerXP = 0; // очки опыта
     [NonSerialized] public static int PlayerLevel = 0; // уровень игрока
     [NonSerialized] public static int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
