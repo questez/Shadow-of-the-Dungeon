@@ -5,13 +5,10 @@ using UnityEngine;
 public class SpellSpawner : MonoBehaviour
 {
     [SerializeField] GameObject spell;
-    [NonSerialized] private Transform spawnpoint;
+    [SerializeField] Transform spawnpoint;
     [NonSerialized] private XRIDefaultInputActions input;
-    [NonSerialized] private Rigidbody rb;
     private void Start()
     {
-        spawnpoint = gameObject.transform;
-        rb = spell.GetComponent<Rigidbody>();
         input = PlayerBehaviour.input;
         input.XRILeftInteraction.CastSpell.performed += ctx => SpawnSpell();
     }
@@ -37,10 +34,14 @@ public class SpellSpawner : MonoBehaviour
     }
     IEnumerator FireBall()
     {
-        Instantiate(spell, spawnpoint.position + new Vector3(0f, 0f, 1f), spawnpoint.rotation);
-        rb.AddForce(spawnpoint.forward*5f, ForceMode.Acceleration);
+        GameObject currentSpell = Instantiate(spell, spawnpoint.position, spawnpoint.rotation);
+        currentSpell.GetComponent<Rigidbody>().AddForce(spawnpoint.forward*1f, ForceMode.Impulse);
         input.Disable();
         yield return new WaitForSecondsRealtime(5);
+        if (currentSpell != null)
+        {
+            Destroy(currentSpell);
+        }
         input.Enable();
     }
 }

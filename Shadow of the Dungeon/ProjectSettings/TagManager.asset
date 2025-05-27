@@ -10,7 +10,6 @@ TagManager:
   - MysteryBox
   - Weapon
   - Lamp
-  - Magic
   - Gem
   - Spider
   - Golem
@@ -23,6 +22,8 @@ TagManager:
   - MinotaurDamager
   - DemonDamager
   - MusicSource
+  - Fireball
+  - Lightning
   layers:
   - Default
   - TransparentFX
