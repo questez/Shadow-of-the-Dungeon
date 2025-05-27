@@ -24,18 +24,21 @@ public class PutOnSword: MonoBehaviour
         if (sword.name == "Sword1" && buttonText.text == "Equip")
         {            
             PlayerBehaviour.EquippedSwordIndex = 0;
+            SavingSystem.SaveEquipment();
             equipSound.Play();
             Debug.Log("Надет меч 1");
         }
         if (sword.name == "Sword2" && buttonText.text == "Equip")
         {
             PlayerBehaviour.EquippedSwordIndex = 1;
+            SavingSystem.SaveEquipment();
             equipSound.Play();
             Debug.Log("Надет меч 2");
         }
         if (sword.name == "Sword3" && buttonText.text == "Equip")
         {
             PlayerBehaviour.EquippedSwordIndex = 2;
+            SavingSystem.SaveEquipment();
             equipSound.Play();
             Debug.Log("Надет меч 3");            
         }
