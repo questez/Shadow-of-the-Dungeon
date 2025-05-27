@@ -15,5 +15,6 @@ public class HitEnemy : MonoBehaviour
             GetComponentInParent<EnemyStateManager>().EnemyHP -= (PlayerBehaviour.SpellDamage + (PlayerBehaviour.ExtraDamage * 0.5f));
             Destroy(other.gameObject);
         }
+        GetComponentInParent<EnemyStateManager>().SetEnemyHearts();
     }
 }

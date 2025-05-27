@@ -21,9 +21,9 @@ public class UsePotion : MonoBehaviour
     IEnumerator Strength()
     {
         Debug.Log("Started Strength : " + Time.time);
-        PlayerBehaviour.ExtraDamage += 50;
+        PlayerBehaviour.ExtraDamage += 50f;
         yield return new WaitForSecondsRealtime(5);
-        PlayerBehaviour.ExtraDamage -= 50;
+        PlayerBehaviour.ExtraDamage -= 50f;
         Debug.Log("Finished Strength : " + Time.time);
     }
     IEnumerator Invincibility()
