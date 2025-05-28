@@ -30,11 +30,11 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public static int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
     [NonSerialized] public static int PlayerSpellCount = 0;
 
-    [NonSerialized] public static bool HasPotion = false;
+    [NonSerialized] public static bool HasPotion = true;
     [NonSerialized] public static bool IsInvincible = false;
 
     [NonSerialized] public static string PlayerSpell = "Fireball"; // текущее заклинание
-    [NonSerialized] public static string PlayerPotion = "No Potion"; // текущее особое заклинание (зелье)
+    [NonSerialized] public static string PlayerPotion = "Endurance"; // текущее особое заклинание (зелье)
 
     public int KillCounter = 0; // счетчик убийств
     [NonSerialized] public static float ExtraDamage = 0f;

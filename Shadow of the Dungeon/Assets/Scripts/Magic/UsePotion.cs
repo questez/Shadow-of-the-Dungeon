@@ -25,10 +25,10 @@ public class UsePotion : MonoBehaviour
     {
         Debug.Log("Started Strength : " + Time.time);
         PlayerBehaviour.ExtraDamage += 50f;
-        GameObject spellEffect = Instantiate(StrengthEffect, transform.position, transform.rotation);
-        spellEffect.transform.SetParent(transform);
+        GameObject potionEffect = Instantiate(StrengthEffect, transform.position, transform.rotation);
+        potionEffect.transform.SetParent(transform);
         yield return new WaitForSecondsRealtime(5);
-        Destroy(spellEffect);
+        Destroy(potionEffect);
         PlayerBehaviour.ExtraDamage -= 50f;
         Debug.Log("Finished Strength : " + Time.time);
     }
@@ -36,10 +36,10 @@ public class UsePotion : MonoBehaviour
     {
         Debug.Log("Started Invincibility : " + Time.time);
         PlayerBehaviour.IsInvincible = true;
-        GameObject spellEffect = Instantiate(InvincibilityEffect, transform.position, transform.rotation);
-        spellEffect.transform.SetParent(transform);
+        GameObject potionEffect = Instantiate(InvincibilityEffect, transform.position, transform.rotation);
+        potionEffect.transform.SetParent(transform);
         yield return new WaitForSecondsRealtime(5);
-        Destroy(spellEffect);
+        Destroy(potionEffect);
         PlayerBehaviour.IsInvincible = false;
         Debug.Log("Finished Invincibility : " + Time.time);
     }

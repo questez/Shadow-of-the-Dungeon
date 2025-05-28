@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\",
+  "WorkspaceRootPath": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\magic\\usepotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\usepotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\magic\\spelleffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\spelleffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\magic\\spellspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\spellspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\enemystates\\enemystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\enemystates\\enemystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemystates\\enemystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\enemystates\\hitenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\enemystates\\hitenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemystates\\hitenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\users\\iaros\\documents\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\awards\\mysterybox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\awards\\mysterybox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\magic\\spelleffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\spelleffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\users\\iaros\\documents\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\magic\\usepotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\usepotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,81 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SpellSpawner.cs",
-              "DocumentMoniker": "C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Magic\\SpellSpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\SpellSpawner.cs",
-              "ToolTip": "C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Magic\\SpellSpawner.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Magic\\SpellSpawner.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Title": "MysteryBox.cs",
+              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Awards\\MysteryBox.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Awards\\MysteryBox.cs",
+              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Awards\\MysteryBox.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Awards\\MysteryBox.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAACGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T08:13:14.923Z",
+              "WhenOpened": "2025-05-28T16:18:53.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "UsePotion.cs",
-              "DocumentMoniker": "C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Magic\\UsePotion.cs",
+              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Magic\\UsePotion.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\UsePotion.cs",
-              "ToolTip": "C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Magic\\UsePotion.cs",
+              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Magic\\UsePotion.cs",
               "RelativeToolTip": "Assets\\Scripts\\Magic\\UsePotion.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAswDUAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T08:12:54.192Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "SpellEffect.cs",
-              "DocumentMoniker": "C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Magic\\SpellEffect.cs",
+              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Magic\\SpellEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\SpellEffect.cs",
-              "ToolTip": "C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Magic\\SpellEffect.cs",
+              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Magic\\SpellEffect.cs",
               "RelativeToolTip": "Assets\\Scripts\\Magic\\SpellEffect.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T08:00:23.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "EnemyStateManager.cs",
-              "DocumentMoniker": "C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
+              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
-              "ToolTip": "C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
+              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyStates\\EnemyStateManager.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAwwFwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T14:00:52.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "PlayerBehaviour.cs",
-              "DocumentMoniker": "C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerBehaviour.cs",
-              "ToolTip": "C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
+              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerBehaviour.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T13:28:06.25Z"
+              "WhenOpened": "2025-05-27T13:28:06.25Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "HitEnemy.cs",
-              "DocumentMoniker": "C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\HitEnemy.cs",
+              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\HitEnemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyStates\\HitEnemy.cs",
-              "ToolTip": "C:\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\HitEnemy.cs",
+              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyStates\\HitEnemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyStates\\HitEnemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAACGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAB4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T13:22:02.29Z",
               "EditorCaption": ""
