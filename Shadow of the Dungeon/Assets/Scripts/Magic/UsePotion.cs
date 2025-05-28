@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class UsePotion : MonoBehaviour
 {
+    [SerializeField] GameObject StrengthEffect;
+    [SerializeField] GameObject HealingEffect;
+    [SerializeField] GameObject InvincibilityEffect;
     [NonSerialized] private XRIDefaultInputActions input;
     private void Start()
     {
@@ -22,7 +25,10 @@ public class UsePotion : MonoBehaviour
     {
         Debug.Log("Started Strength : " + Time.time);
         PlayerBehaviour.ExtraDamage += 50f;
+        GameObject spellEffect = Instantiate(StrengthEffect, transform.position, transform.rotation);
+        spellEffect.transform.SetParent(transform);
         yield return new WaitForSecondsRealtime(5);
+        Destroy(spellEffect);
         PlayerBehaviour.ExtraDamage -= 50f;
         Debug.Log("Finished Strength : " + Time.time);
     }
@@ -30,7 +36,10 @@ public class UsePotion : MonoBehaviour
     {
         Debug.Log("Started Invincibility : " + Time.time);
         PlayerBehaviour.IsInvincible = true;
+        GameObject spellEffect = Instantiate(InvincibilityEffect, transform.position, transform.rotation);
+        spellEffect.transform.SetParent(transform);
         yield return new WaitForSecondsRealtime(5);
+        Destroy(spellEffect);
         PlayerBehaviour.IsInvincible = false;
         Debug.Log("Finished Invincibility : " + Time.time);
     }
@@ -46,6 +55,7 @@ public class UsePotion : MonoBehaviour
                     break;
                 case "Healing":
                     PlayerBehaviour.PlayerHP = PlayerBehaviour.MaxPlayerHP;
+                    Instantiate(HealingEffect, transform.position, transform.rotation);
                     break;
                 case "Endurance":
                     StartCoroutine(Invincibility());

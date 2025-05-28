@@ -13,7 +13,6 @@ public class HitEnemy : MonoBehaviour
         {
             Debug.Log($"Огненный шар попал по врагу! Ему нанесен урон, равный {PlayerBehaviour.SpellDamage + (PlayerBehaviour.ExtraDamage * 0.5f)}");
             GetComponentInParent<EnemyStateManager>().EnemyHP -= (PlayerBehaviour.SpellDamage + (PlayerBehaviour.ExtraDamage * 0.5f));
-            Destroy(other.gameObject);
         }
         GetComponentInParent<EnemyStateManager>().SetEnemyHearts();
     }

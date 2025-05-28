@@ -1367,6 +1367,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2165e3b20621a14790196538a7c399a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StrengthEffect: {fileID: 1943286446490004412, guid: e953460ff16e0a6459684f9b77202b5c, type: 3}
+  HealingEffect: {fileID: 339158821923109191, guid: 108ca465382c11742bd2c91fe4fdb13f, type: 3}
+  InvincibilityEffect: {fileID: 7314526620251459061, guid: ccf28ea29cf499744ac31bab90073aba, type: 3}
 --- !u!1 &1787516059220952802
 GameObject:
   m_ObjectHideFlags: 0
