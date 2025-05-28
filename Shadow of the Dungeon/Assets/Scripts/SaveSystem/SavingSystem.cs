@@ -41,9 +41,21 @@ public class SavingSystem : MonoBehaviour
 
     public static void SaveEquipment()
     {
-        PlayerPrefs.SetInt("EquippedSword", PlayerBehaviour.EquippedSwordIndex);
+        PlayerPrefs.SetInt("EquippedSword", PlayerBehaviour.EquippedSwordIndex); // сохранение последнего примененного меча
         PlayerPrefs.Save();
     }
+    
+    public static void SaveShop()
+    {
+        PlayerPrefs.SetInt("purchased_sword2", BuySword.isPurchased[1]); // сохранение купленных мечей
+        PlayerPrefs.SetInt("purchased_sword3", BuySword.isPurchased[2]);
+        PlayerPrefs.Save();
+    }
+    public static void LoadShop()
+    {
+        BuySword.isPurchased[1] = PlayerPrefs.GetInt("purchased_sword2");
+        BuySword.isPurchased[2] = PlayerPrefs.GetInt("purchased_sword3");
+    }    
 
     public static void DeleteAllSaves()
     {

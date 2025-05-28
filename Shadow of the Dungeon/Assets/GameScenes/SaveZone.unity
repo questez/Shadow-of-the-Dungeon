@@ -1130,6 +1130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4c44514711c2842bf9e2d37ad6e032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sword: {fileID: 2099890366}
   _clickSound: {fileID: 771255751}
   buySwordButton: {fileID: 44694181}
   putOnButton: {fileID: 832677882}
@@ -5322,6 +5323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4c44514711c2842bf9e2d37ad6e032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sword: {fileID: 996690706}
   _clickSound: {fileID: 771255751}
   buySwordButton: {fileID: 1822127398}
   putOnButton: {fileID: 816939402}

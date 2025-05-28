@@ -27,7 +27,7 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public static int PlayerXP = 0; // очки опыта
     [NonSerialized] public int PlayerXPInLevel = 0; // очки опыта, собранные на конкретном уровне
     [NonSerialized] public static int PlayerLevel = 0; // уровень игрока
-    [NonSerialized] public static int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
+    [NonSerialized] public static int PlayerBalance = 16680; // количество собранных кристаллов (баланс)
     [NonSerialized] public int PlayerBalanceInLevel = 0; // количество собранных кристаллов на конкретном уровне
     [NonSerialized] public string PlayerSpell = "No spell"; // текущее заклинание
     [NonSerialized] public string PlayerPotion = "No potion"; // текущее особое заклинание (зелье)
@@ -125,6 +125,7 @@ public class PlayerBehaviour : MonoBehaviour
         isDeath();
         CheckLevel();
         PlayWalkingSound();
+        SetHearts();
     }
 
     private void PlayWalkingSound()
@@ -135,12 +136,12 @@ public class PlayerBehaviour : MonoBehaviour
         if (isMoving && !walkingSound.isPlaying)
         {
             walkingSound.Play();
-            Debug.Log("WALKINGSOUND!");
+            //Debug.Log("WALKINGSOUND!");
         }
         else if (!isMoving && walkingSound.isPlaying)
         {
             walkingSound.Stop();
-            Debug.Log("STOPSOUND!");
+            //Debug.Log("STOPSOUND!");
         }
     }
 
