@@ -47,7 +47,8 @@ public class SavingSystem : MonoBehaviour
     
     public static void SaveShop()
     {
-        PlayerPrefs.SetInt("purchased_sword2", BuySword.isPurchased[1]); // сохранение купленных мечей
+        // сохранение купленных мечей
+        PlayerPrefs.SetInt("purchased_sword2", BuySword.isPurchased[1]); 
         PlayerPrefs.SetInt("purchased_sword3", BuySword.isPurchased[2]);
         PlayerPrefs.Save();
     }
@@ -55,7 +56,9 @@ public class SavingSystem : MonoBehaviour
     {
         BuySword.isPurchased[1] = PlayerPrefs.GetInt("purchased_sword2");
         BuySword.isPurchased[2] = PlayerPrefs.GetInt("purchased_sword3");
-    }    
+    }     
+
+
 
     public static void DeleteAllSaves()
     {

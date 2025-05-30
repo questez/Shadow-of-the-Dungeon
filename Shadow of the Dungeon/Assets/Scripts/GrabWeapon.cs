@@ -18,9 +18,10 @@ public class GrabWeapon : MonoBehaviour
 
     GameObject enemySpawner;
 
-    public float PlayerDamage; // добавить чтобы с увеличением скорости урон также увеличивался    
+    public float PlayerDamage;
 
     bool islevelStarted = false;
+    
 
     private void Start()
     {
@@ -62,7 +63,6 @@ public class GrabWeapon : MonoBehaviour
     }
     public void OnUnGrab(SelectExitEventArgs args)
     {
-        
         if (weaponCollider != null)
         {
             weaponCollider.isTrigger = false;
@@ -70,11 +70,6 @@ public class GrabWeapon : MonoBehaviour
                
         args.interactableObject.transform.SetParent(null);
     }
-
-    public bool HitTrack { get => rb.linearVelocity.magnitude > 0; } // скорость меча для фиксации попадания
-
-    //void Update()
-    //{
-    //    Debug.Log(rb.linearVelocity.magnitude);
-    //}
+    
+    public bool HitTrack { get => rb.linearVelocity.magnitude >= 0f; } // скорость меча для фиксации попадания    
 }

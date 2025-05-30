@@ -68,7 +68,7 @@ public class EnemyStateManager : MonoBehaviour
     
     private void SpawnCoin()
     {
-        Instantiate(coin, new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z), transform.rotation);
+        Instantiate(coin, new Vector3(transform.position.x, 1.4f, transform.position.z), transform.rotation);
         isCoinSpawned = true;
     }
 
@@ -86,6 +86,4 @@ public class EnemyStateManager : MonoBehaviour
         }
     }
     
-    
-
 }

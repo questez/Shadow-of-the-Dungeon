@@ -5,13 +5,22 @@ public class DeathState : BaseState
     public override void EnterState(EnemyStateManager manager)
     {
         Debug.Log("¬ход в deathstate");
-        if (manager.CompareTag("Minotaur") || manager.CompareTag("Golem"))
+        if (manager.CompareTag("Minotaur"))
         {
             MonoBehaviour.FindAnyObjectByType<GameManager>().isMiniBossDefeated = true;
             PlayerBehaviour.PlayerXP += 10;
             manager.pb.PlayerXPInLevel += 10;
             manager.pb.ExperienceValue.text = PlayerBehaviour.PlayerXP.ToString();
         }
+        if (manager.CompareTag("Golem"))
+        {
+            MonoBehaviour.FindAnyObjectByType<GameManager>().isMiniBossDefeated = true;
+            PlayerBehaviour.PlayerXP += 20;
+            manager.pb.PlayerXPInLevel += 20;
+            manager.pb.ExperienceValue.text = PlayerBehaviour.PlayerXP.ToString();
+        }
+
+
         if (manager.CompareTag("Demon"))
         {
             MonoBehaviour.FindAnyObjectByType<GameManager>().isFinalBossDefeated = true;
@@ -25,7 +34,8 @@ public class DeathState : BaseState
             manager.pb.PlayerXPInLevel += 5;
             manager.pb.ExperienceValue.text = PlayerBehaviour.PlayerXP.ToString();
         }
-        MonoBehaviour.FindAnyObjectByType<PlayerBehaviour>().KillCounter++;        
+        manager.pb.KillCounter++;
+        manager.pb.SetCurrentScore();     
         if (!manager.CompareTag("Demon"))
         { 
             manager.EnemyAnimator.SetTrigger("IsDeath");

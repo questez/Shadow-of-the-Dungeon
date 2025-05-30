@@ -9,7 +9,8 @@ public class PlayerBehaviour : MonoBehaviour
     Vector3 lastPos;
     float movementThreshold = 0.008f; // минимальное смещение для звука ходьбы
 
-    AudioSource walkingSound;
+    [SerializeField] AudioSource walkingSound;
+    [SerializeField] AudioSource HitPlayerSound;
     [SerializeField] AudioSource clickPauseButton;
 
     [SerializeField] HorizontalLayoutGroup HeartRow;
@@ -27,11 +28,12 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public static int PlayerXP = 0; // очки опыта
     [NonSerialized] public int PlayerXPInLevel = 0; // очки опыта, собранные на конкретном уровне
     [NonSerialized] public static int PlayerLevel = 0; // уровень игрока
-    [NonSerialized] public static int PlayerBalance = 16680; // количество собранных кристаллов (баланс)
+    [NonSerialized] public static int PlayerBalance = 0; // количество собранных кристаллов (баланс)
     [NonSerialized] public int PlayerBalanceInLevel = 0; // количество собранных кристаллов на конкретном уровне
     [NonSerialized] public string PlayerSpell = "No spell"; // текущее заклинание
     [NonSerialized] public string PlayerPotion = "No potion"; // текущее особое заклинание (зелье)
-       
+
+
     public int KillCounter; // счетчик убийств
     [NonSerialized] public int MaxKillsInLevel1 = 5; // максимальное количество убитых врагов на Level1
     [NonSerialized] public int MaxKillsInLevel2 = 7; // максимальное количество убитых врагов на Level2
@@ -42,7 +44,6 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void Awake()
     {
-        walkingSound = GetComponent<AudioSource>();
         lastPos = transform.position;
         isPaused = false;
         input = new XRIDefaultInputActions();
@@ -54,12 +55,17 @@ public class PlayerBehaviour : MonoBehaviour
         CoinValue.text = PlayerBalance.ToString();
         PauseScreen.enabled = false;
         SetHearts();
+        if (this.gameObject.scene.name != "DeathScene")
+        {
+            PlayerPrefs.DeleteKey("CurrentScore");
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Contains("Damager"))
         {
+            HitPlayerSound.Play();
             Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от {other.gameObject.tag}!");
             PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
             SetHearts();
@@ -156,35 +162,35 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void CheckLevel()
     {
-        if (PlayerXP >= 20)
+        if (PlayerXP >= 35)
         {
             PlayerLevel = 1;
             LevelValue.text = "1";
             PlayerHP = 120;
             SetHearts();
         }
-        if (PlayerXP >= 40)
+        if (PlayerXP >= 70)
         {
             PlayerLevel = 2;
             LevelValue.text = "2";
             PlayerHP = 140;
             SetHearts();
         }
-        if (PlayerXP >= 80)
+        if (PlayerXP >= 105)
         {
             PlayerLevel = 3;
             LevelValue.text = "3";
             PlayerHP = 160;
             SetHearts();
         }
-        if (PlayerXP >= 160)
+        if (PlayerXP >= 140)
         {
             PlayerLevel = 4;
             LevelValue.text = "4";
             PlayerHP = 180;
             SetHearts();
         }
-        if (PlayerXP >= 320)
+        if (PlayerXP >= 220)
         {
             PlayerLevel = 5;
             LevelValue.text = "5";
@@ -192,4 +198,18 @@ public class PlayerBehaviour : MonoBehaviour
             SetHearts();            
         }       
     }
+
+    public void SetCurrentScore()
+    {
+        PlayerPrefs.SetInt("CurrentScore", PlayerXPInLevel);
+        PlayerPrefs.Save();
+    }
+    public int GetCurrentScore()
+    {
+        PlayerXPInLevel = PlayerPrefs.GetInt("CurrentScore");
+        return PlayerXPInLevel;
+    }
+
+
+
 }   

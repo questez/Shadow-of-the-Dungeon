@@ -165,8 +165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 2470389341847842039, guid: 38b71bf543b67704a935179603f6a67c, type: 3}
   spawnPoint: {fileID: 481769253}
-  spawnTimeInterval: 5
-  MaxNumberOfEnemies: 2
+  MaxNumberOfEnemies: 3
+  MaxNumberOfSpawnedEnemies: 9
 --- !u!1001 &508248488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -960,8 +960,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 1705849404070370923, guid: 3af956640595c6e4cb9436f0f4545ffd, type: 3}
   spawnPoint: {fileID: 2035555631}
-  spawnTimeInterval: 5
   MaxNumberOfEnemies: 1
+  MaxNumberOfSpawnedEnemies: 3
 --- !u!1 &2063195591
 GameObject:
   m_ObjectHideFlags: 0
