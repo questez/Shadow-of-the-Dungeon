@@ -11,8 +11,8 @@ public class HitEnemy : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Fireball"))
         {
-            Debug.Log($"Огненный шар попал по врагу! Ему нанесен урон, равный {PlayerBehaviour.SpellDamage + (PlayerBehaviour.ExtraDamage * 0.5f)}");
-            GetComponentInParent<EnemyStateManager>().EnemyHP -= (PlayerBehaviour.SpellDamage + (PlayerBehaviour.ExtraDamage * 0.5f));
+            Debug.Log($"Огненный шар попал по врагу! Ему нанесен урон, равный {PlayerBehaviour.FireballDamage + (PlayerBehaviour.ExtraDamage * 0.5f)}");
+            GetComponentInParent<EnemyStateManager>().EnemyHP -= (PlayerBehaviour.FireballDamage + (PlayerBehaviour.ExtraDamage * 0.5f));
         }
         GetComponentInParent<EnemyStateManager>().SetEnemyHearts();
     }

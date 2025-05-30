@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 98
+  controlID: 39
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -169,8 +169,8 @@ MonoBehaviour:
     y: 0
     width: 391
     height: 933
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 41
+  controlID: 40
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -221,8 +221,8 @@ MonoBehaviour:
     y: 0
     width: 1128
     height: 624
-  m_MinSize: {x: 50, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 52, y: 76}
+  m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 13}
@@ -397,23 +397,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 6277fdff94d1fdffa6d1fdffbad1fdff1ce5fdffec03feff4204feff7c04fefff804feff0a05feffc407feff261bfeffa43afeff203bfeff323bfeff343bfeffaa4efeff4284feff5098feff0623ffff7667ffff1efbffff3eb70000026a0100066a0100a4f1010062f60100def601009cf801001cf90100d8fa010054fb01000afd0100ba1a0200
+      m_SelectedIDs: aad10000
+      m_LastClickedID: 53674
+      m_ExpandedIDs: 1ee2ffff26e2ffffc8ecffffbeeeffff1cefffff28efffff9eeffffff4efffff2ef0ffffa8f0ffffcef0ffff1efbffffc8d10000ccd10000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Sword1
-        m_OriginalName: Sword1
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -98924
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 7}
@@ -975,9 +975,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -0.023908265, y: 2.197991, z: -4.174674}
+    m_Target: {x: 0.1083613, y: 1.8219998, z: -12.954361}
     speed: 2
-    m_Value: {x: -0.023908265, y: 2.197991, z: -4.174674}
+    m_Value: {x: 0.13999999, y: 1.24, z: 7.92}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1023,13 +1023,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.10706541, y: 0.11730849, z: -0.01267001, w: 0.98741937}
+    m_Target: {x: 0.092870235, y: -0.020115064, z: -0.0016637904, w: -0.99569225}
     speed: 2
-    m_Value: {x: 0.10704498, y: 0.11728611, z: -0.012667593, w: 0.98723096}
+    m_Value: {x: 0.29958823, y: 0.18707229, z: -0.059995152, w: 0.9336227}
   m_Size:
-    m_Target: 0.14142138
+    m_Target: 0.09433983
     speed: 2
-    m_Value: 0.14142138
+    m_Value: 1.469694
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1143,7 +1143,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/GameScenes/GameLevels
+    - Assets/Models/FantasyMonster/Skeleton/Prefabs
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1153,17 +1153,17 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 77
   m_LastFolders:
-  - Assets/GameScenes/GameLevels
+  - Assets/Models/FantasyMonster/Skeleton/Prefabs
   m_LastFoldersGridSize: 77
   m_LastProjectPath: C:\Users\iaros\Documents\GitHub\Shadow-of-the-Dungeon\Shadow
     of the Dungeon
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 58de0000
-    m_LastClickedID: 56920
-    m_ExpandedIDs: 0000000086dd000088dd00008add00008cdd00008edd000090dd000092dd000094dd000096dd000098dd00009add00009cdd00009edd0000a0dd0000a2dd0000a4dd0000a6dd000064de0000b0850100b2850100b4850100bc850100be850100c085010056c6010068c601009ed00100a2d00100aed0010000ca9a3b
+    scrollPos: {x: 0, y: 249}
+    m_SelectedIDs: 263b0100
+    m_LastClickedID: 80678
+    m_ExpandedIDs: 000000009ad000009cd000009ed00000a0d00000a2d00000a4d00000a6d00000a8d00000aad00000acd00000aed00000b0d00000b2d00000b4d00000b6d00000b8d00000bad0000064d1000076d10000c2d60000283b01002a3b010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1192,7 +1192,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000086dd000088dd00008add00008cdd00008edd000090dd000092dd000094dd000096dd000098dd00009add00009cdd00009edd0000a0dd0000a2dd0000a4dd0000a6dd0000
+    m_ExpandedIDs: 000000009ad000009cd000009ed00000a0d00000a2d00000a4d00000a6d00000a8d00000aad00000acd00000aed00000b0d00000b2d00000b4d00000b6d00000b8d00000bad00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

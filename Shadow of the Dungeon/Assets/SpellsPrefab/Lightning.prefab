@@ -9793,6 +9793,7 @@ GameObject:
   - component: {fileID: 4427133471936012105}
   - component: {fileID: 1526104509720408023}
   - component: {fileID: 8610121173949400231}
+  - component: {fileID: 6189700618027178962}
   m_Layer: 0
   m_Name: Lightning
   m_TagString: Lightning
@@ -13468,7 +13469,7 @@ ParticleSystem:
     m_Bounce:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -13580,7 +13581,7 @@ ParticleSystem:
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -14623,6 +14624,18 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &6189700618027178962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358145638506537878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 159c3bc89223e3c4184f0c55ea50e671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2701028301115328130
 GameObject:
   m_ObjectHideFlags: 0
@@ -24367,7 +24380,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8639503260782665
 Transform:
   m_ObjectHideFlags: 0

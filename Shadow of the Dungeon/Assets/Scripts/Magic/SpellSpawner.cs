@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class SpellSpawner : MonoBehaviour
@@ -7,6 +8,8 @@ public class SpellSpawner : MonoBehaviour
     [SerializeField] GameObject fireball;
     [SerializeField] GameObject lightning;
     [SerializeField] Transform spawnpoint;
+    [SerializeField] TextMeshProUGUI SpellText;
+    [SerializeField] TextMeshProUGUI SpellCount;
     [NonSerialized] private XRIDefaultInputActions input;
     private void Start()
     {
@@ -47,17 +50,23 @@ public class SpellSpawner : MonoBehaviour
     {
         GameObject currentSpell = Instantiate(fireball, spawnpoint.position, spawnpoint.rotation);
         currentSpell.GetComponent<Rigidbody>().AddForce(spawnpoint.forward*1f, ForceMode.Impulse);
+        SpellText.faceColor = new Color(255f, 255f, 255f, 100f);
+        SpellCount.faceColor = new Color(255f, 255f, 255f, 100f);
         input.XRILeftInteraction.CastSpell.Disable();
         yield return new WaitForSecondsRealtime(5);
         if (currentSpell != null)
         {
             Destroy(currentSpell);
         }
+        SpellText.faceColor = new Color(255f, 255f, 255f, 255f);
+        SpellCount.faceColor = new Color(255f, 255f, 255f, 255f);
         input.XRILeftInteraction.CastSpell.Enable();
     }
     IEnumerator Lightning()
     {
         GameObject currentSpell = Instantiate(lightning, spawnpoint.position, spawnpoint.rotation);
+        SpellText.faceColor = new Color(255f, 255f, 255f, 100f);
+        SpellCount.faceColor = new Color(255f, 255f, 255f, 100f);
         input.XRILeftInteraction.CastSpell.Disable();
         yield return new WaitForSecondsRealtime(1);
         if (currentSpell != null)
@@ -65,6 +74,8 @@ public class SpellSpawner : MonoBehaviour
             Destroy(currentSpell);
         }
         yield return new WaitForSecondsRealtime(4);
+        SpellText.faceColor = new Color(255f, 255f, 255f, 255f);
+        SpellCount.faceColor = new Color(255f, 255f, 255f, 255f);
         input.XRILeftInteraction.CastSpell.Enable();
     }
 }

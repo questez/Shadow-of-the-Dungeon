@@ -19,7 +19,8 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] Canvas PauseScreen;
 
     [NonSerialized] public static int maxPlayerSpellCount = 5;
-    [NonSerialized] public static float SpellDamage = 20f;
+    [NonSerialized] public static float FireballDamage = 10f;
+    [NonSerialized] public static float LightningDamage = 20f;
     [NonSerialized] public static XRIDefaultInputActions input;
     [NonSerialized] public static float MaxPlayerHP = 100f;
     [NonSerialized] private bool isPaused;
@@ -33,7 +34,7 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public static bool HasPotion = true;
     [NonSerialized] public static bool IsInvincible = false;
 
-    [NonSerialized] public static string PlayerSpell = "Fireball"; // текущее заклинание
+    [NonSerialized] public static string PlayerSpell = "Lightning"; // текущее заклинание
     [NonSerialized] public static string PlayerPotion = "Endurance"; // текущее особое заклинание (зелье)
 
     public int KillCounter = 0; // счетчик убийств

@@ -211,6 +211,8 @@ MonoBehaviour:
   fireball: {fileID: 582227584337622951, guid: 6d61e5a5ada026a4ab985c454ceaafe1, type: 3}
   lightning: {fileID: 3958596659431381315, guid: c50f9e2c685970e4c8ebcd5fc8c7b3e4, type: 3}
   spawnpoint: {fileID: 4053753462044954893}
+  SpellText: {fileID: 2914573680893064918}
+  SpellCount: {fileID: 8325069237592233710}
 --- !u!1 &1670256624
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,7 +2116,7 @@ Transform:
   m_GameObject: {fileID: 4211300327248781313}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1, y: 0, z: 0.6}
+  m_LocalPosition: {x: -0.1, y: 0, z: 0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3655,22 +3657,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4844265005426790061, guid: 1392f805216c47742996d4742c80721c, type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014260647979730770, guid: 1392f805216c47742996d4742c80721c, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014260647979730770, guid: 1392f805216c47742996d4742c80721c, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014260647979730770, guid: 1392f805216c47742996d4742c80721c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014260647979730770, guid: 1392f805216c47742996d4742c80721c, type: 3}
-      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5105893988342728507, guid: 1392f805216c47742996d4742c80721c, type: 3}
