@@ -56,9 +56,7 @@ public class SavingSystem : MonoBehaviour
     {
         BuySword.isPurchased[1] = PlayerPrefs.GetInt("purchased_sword2");
         BuySword.isPurchased[2] = PlayerPrefs.GetInt("purchased_sword3");
-    }     
-
-
+    }
 
     public static void DeleteAllSaves()
     {

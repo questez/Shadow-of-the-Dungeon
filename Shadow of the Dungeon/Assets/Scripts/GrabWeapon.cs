@@ -9,29 +9,36 @@ public class GrabWeapon : MonoBehaviour
 
     [NonSerialized] public Rigidbody rb;
 
-    [SerializeField] Collider weaponCollider; // коллайдер оружия
-    [SerializeField] Collider _stonetableCollider; // коллайдер стола, на котором лежит меч в начале уровня
+    [SerializeField] Collider weaponCollider;
+
+    GameObject stone_pillar;
+    Collider _stonetableCollider;
+
     [SerializeField] GameObject _canvas;
 
     GameObject enemySpawner;
 
-    public float PlayerDamage; // добавить чтобы с увеличением скорости урон также увеличивался    
+    public float PlayerDamage;
 
     bool islevelStarted = false;
+
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        stone_pillar = GameObject.Find("stone_pillar");
+        _stonetableCollider = stone_pillar.GetComponent<Collider>();
         musicSource = GameObject.FindGameObjectWithTag("MusicSource");
         if (musicSource != null)
         {
             musicInLevel = musicSource.GetComponent<AudioSource>();
-        }        
+            //musicInLevel.volume = ChangeSliderValue.MusicValue;
+        }
         enemySpawner = GameObject.Find("EnemySpawnManager");
         if (enemySpawner != null)
         {
             enemySpawner.SetActive(false);
-        }               
+        }
     }
 
     public void OnGrab(SelectEnterEventArgs args)
@@ -50,23 +57,19 @@ public class GrabWeapon : MonoBehaviour
             _stonetableCollider.attachedRigidbody.isKinematic = false;
             _stonetableCollider.isTrigger = true;
             enemySpawner.SetActive(true);
-            islevelStarted = true;            
+            islevelStarted = true;
         }
         args.interactableObject.transform.SetParent(args.interactorObject.transform);
     }
     public void OnUnGrab(SelectExitEventArgs args)
     {
-        
         if (weaponCollider != null)
         {
             weaponCollider.isTrigger = false;
         }
-               
+
         args.interactableObject.transform.SetParent(null);
     }
 
-    void Update()
-    {
-        //Debug.Log(rb.linearVelocity.magnitude);
-    }
+    public bool HitTrack { get => rb.linearVelocity.magnitude >= 0f; }    
 }

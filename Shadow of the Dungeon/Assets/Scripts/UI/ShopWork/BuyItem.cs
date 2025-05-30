@@ -8,8 +8,7 @@ public class BuyItem : MonoBehaviour
     [SerializeField] GameObject _nextItemRow;
     [SerializeField] UnityEngine.UI.Button _button;
     [SerializeField] TMP_Text _itemText;
-    [SerializeField] TMP_Text _priceText;    
-    private PlayerBehaviour _pb;
+    [SerializeField] TMP_Text _priceText;
     private int _itemPrice;
 
     [SerializeField] AudioSource _clickSound;
@@ -22,24 +21,19 @@ public class BuyItem : MonoBehaviour
             switch (_itemText.text)
             {
                 case "Lightning x5":
-                    _pb.PlayerSpell = "Lighning";
-                    _pb.SpellName.text = "Lighning";
+                    PlayerBehaviour.PlayerSpell = "Lighning";
                     break;
                 case "Fireball x5":
-                    _pb.PlayerSpell = "Fireball";
-                    _pb.SpellName.text = "Fireball";
+                    PlayerBehaviour.PlayerSpell = "Fireball";
                     break;
                 case "Strength x1":
-                    _pb.PlayerPotion = "Strength";
-                    _pb.PotionName.text = "Strength";
+                    PlayerBehaviour.PlayerPotion = "Strength";
                     break;
                 case "Healing x1":
-                    _pb.PlayerSpell = "Healing";
-                    _pb.PotionName.text = "Healing";
+                    PlayerBehaviour.PlayerSpell = "Healing";
                     break;
                 case "Endurance x1":
-                    _pb.PlayerSpell = "Endurance";
-                    _pb.PotionName.text = "Endurance";
+                    PlayerBehaviour.PlayerSpell = "Endurance";
                     break;
                 default:
                     Debug.Log("Неверный ввод");
@@ -47,7 +41,6 @@ public class BuyItem : MonoBehaviour
             }
             Debug.Log($"Bought {_itemText.text}");
             PlayerBehaviour.PlayerBalance -= _itemPrice;
-            _pb.CoinValue.text = PlayerBehaviour.PlayerBalance.ToString();
             _currentItemRow.SetActive(false);
             _nextItemRow.SetActive(true);
         }
@@ -55,7 +48,6 @@ public class BuyItem : MonoBehaviour
     private void Awake()
     {
         _button.onClick.AddListener(BuyMagic);
-        _pb = FindAnyObjectByType<PlayerBehaviour>();
         _itemPrice = Convert.ToInt32(_priceText.text);
     }
 }

@@ -7,8 +7,13 @@ using UnityEngine.SceneManagement;
 public class PlayerBehaviour : MonoBehaviour
 {
     Vector3 lastPos;
+    float movementThreshold = 0.008f; // минимальное смещение для звука ходьбы
 
-    [SerializeField] public AudioSource _walkSound;
+
+    [SerializeField] AudioSource walkingSound;
+    [SerializeField] AudioSource HitPlayerSound;
+    [SerializeField] AudioSource clickPauseButton;
+
     [SerializeField] HorizontalLayoutGroup HeartRow;
     public TextMeshProUGUI SpellName;
     public TextMeshProUGUI SpellCountText;
@@ -27,7 +32,9 @@ public class PlayerBehaviour : MonoBehaviour
 
     [NonSerialized] private static float playerHP = MaxPlayerHP; // очки здоровья;
     [NonSerialized] public static int PlayerXP = 0; // очки опыта
+    [NonSerialized] public int PlayerXPInLevel = 0; // очки опыта на конкретном уровне
     [NonSerialized] public static int PlayerLevel = 0; // уровень игрока
+    [NonSerialized] public int PlayerBalanceInLevel = 0; // количество собранных кристаллов на локации
     [NonSerialized] public static int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
     [NonSerialized] public static int PlayerSpellCount = 0;
 
@@ -43,6 +50,8 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public int MaxKillsInLevel2 = 7; // максимальное количество убитых врагов на Level2
     [NonSerialized] public int MaxKillsInLevel3 = 9; // максимальное количество убитых врагов на Level3
     [NonSerialized] public int MaxKillsInLevel4 = 12; // максимальное количество убитых врагов на Level4
+
+    public static int EquippedSwordIndex = 0; // индекс надетого меча (0 = Sword1, 1 = Sword2, 2 = Sword3)
     public static float PlayerHP
     {
         get => playerHP;
@@ -75,6 +84,10 @@ public class PlayerBehaviour : MonoBehaviour
             }
             else
             {
+                if (clickPauseButton != null)
+                {
+                    clickPauseButton.Play();
+                }                
                 Time.timeScale = 1f;
                 isPaused = false;
             }
@@ -82,35 +95,35 @@ public class PlayerBehaviour : MonoBehaviour
     }
     public static void CheckPlayerLevel()
     {
-        if (PlayerXP >= 40 && PlayerXP < 80)
+        if (PlayerXP >= 35 && PlayerXP < 70)
         {
             PlayerLevel = 1;
             ExtraDamage = 2.5f;
             MaxPlayerHP = 120;
             maxPlayerSpellCount = 6;
         }
-        if (PlayerXP >= 80 && PlayerXP < 160)
+        if (PlayerXP >= 70 && PlayerXP < 105)
         {
             PlayerLevel = 2;
             ExtraDamage = 5f;
             MaxPlayerHP = 140;
             maxPlayerSpellCount = 7;
         }
-        if (PlayerXP >= 160 && PlayerXP < 320)
+        if (PlayerXP >= 105 && PlayerXP < 140)
         {
             PlayerLevel = 3;
             ExtraDamage = 7.5f;
             MaxPlayerHP = 160;
             maxPlayerSpellCount = 8;
         }
-        if (PlayerXP >= 320 && PlayerXP < 640)
+        if (PlayerXP >= 140 && PlayerXP < 220)
         {
             PlayerLevel = 4;
             ExtraDamage = 10f;
             MaxPlayerHP = 180;
             maxPlayerSpellCount = 9;
         }
-        if (PlayerXP >= 640 && PlayerXP < 1280)
+        if (PlayerXP >= 220)
         {
             PlayerLevel = 5;
             ExtraDamage = 12.5f;
@@ -127,11 +140,16 @@ public class PlayerBehaviour : MonoBehaviour
         PauseScreen.enabled = false;
         PlayerSpellCount = maxPlayerSpellCount;
         PlayerHP = 200;
+        if (this.gameObject.scene.name != "DeathScene")
+        {
+            PlayerPrefs.DeleteKey("CurrentScore");
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Contains("Damager") && !IsInvincible)
         {
+            HitPlayerSound.Play();
             Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от {other.gameObject.tag}!");
             PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
         }
@@ -197,5 +215,37 @@ public class PlayerBehaviour : MonoBehaviour
             SceneManager.LoadScene("DeathScene");
             PlayerHP = MaxPlayerHP;
         }
+        PlayWalkingSound();
     }
+
+    private void PlayWalkingSound()
+    {
+        float distanceMoved = Vector3.Distance(lastPos, transform.position);
+        bool isMoving = distanceMoved > movementThreshold;
+        lastPos = transform.position;
+        if (isMoving && !walkingSound.isPlaying)
+        {
+            walkingSound.Play();
+            //Debug.Log("WALKINGSOUND!");
+        }
+        else if (!isMoving && walkingSound.isPlaying)
+        {
+            walkingSound.Stop();
+            //Debug.Log("STOPSOUND!");
+        }
+    }
+
+
+    public void SetCurrentScore()
+    {
+        PlayerPrefs.SetInt("CurrentScore", PlayerXPInLevel);
+        PlayerPrefs.Save();
+    }
+    public int GetCurrentScore()
+    {
+        PlayerXPInLevel = PlayerPrefs.GetInt("CurrentScore");
+        return PlayerXPInLevel;
+    }
+
+
 }

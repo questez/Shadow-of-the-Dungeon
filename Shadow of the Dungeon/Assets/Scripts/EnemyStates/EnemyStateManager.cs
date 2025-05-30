@@ -12,6 +12,9 @@ public class EnemyStateManager : MonoBehaviour
     [SerializeField] private NavMeshAgent navMeshAgent;     
     [SerializeField] private Collider _damageCollider1, _damageCollider2; // ссылки на коллайдеры для нанесения урона игроку
 
+    [NonSerialized] public PlayerBehaviour pb;
+
+
     [SerializeField] GameObject coin;
     bool isCoinSpawned = false;
 
@@ -28,7 +31,7 @@ public class EnemyStateManager : MonoBehaviour
     
     private void Start()
     {
-
+        pb = FindAnyObjectByType<PlayerBehaviour>();
         currentEnemyTarget = FindAnyObjectByType<XROrigin>().transform;
         if (_damageCollider1 != null) { _damageCollider1.enabled = false; } // при начале работы по умолчанию коллайдеры отключены
         if (_damageCollider2 != null) { _damageCollider2.enabled = false; }
