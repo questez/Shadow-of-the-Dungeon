@@ -14,6 +14,11 @@ public class HitEnemy : MonoBehaviour
             Debug.Log($"Огненный шар попал по врагу! Ему нанесен урон, равный {PlayerBehaviour.FireballDamage + (PlayerBehaviour.ExtraDamage * 0.5f)}");
             GetComponentInParent<EnemyStateManager>().EnemyHP -= (PlayerBehaviour.FireballDamage + (PlayerBehaviour.ExtraDamage * 0.5f));
         }
+        if (other.gameObject.CompareTag("HexFireball"))
+        {
+            Debug.Log($"Тёмный шар попал по врагу! Ему нанесен урон, равный {PlayerBehaviour.HexDamage + (PlayerBehaviour.ExtraDamage * 0.5f)}");
+            GetComponentInParent<EnemyStateManager>().EnemyHP -= (PlayerBehaviour.HexDamage + (PlayerBehaviour.ExtraDamage * 0.5f));
+        }
         GetComponentInParent<EnemyStateManager>().SetEnemyHearts();
     }
 }

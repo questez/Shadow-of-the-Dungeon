@@ -6,7 +6,7 @@ using UnityEngine;
 public class SpellSpawner : MonoBehaviour
 {
     [SerializeField] GameObject fireball;
-    [SerializeField] GameObject lightning;
+    [SerializeField] GameObject hexFireball;
     [SerializeField] Transform spawnpoint;
     [SerializeField] TextMeshProUGUI SpellText;
     [SerializeField] TextMeshProUGUI SpellCount;
@@ -33,8 +33,8 @@ public class SpellSpawner : MonoBehaviour
                 case "Fireball":
                     StartCoroutine(Fireball());
                     break;
-                case "Lightning":
-                    StartCoroutine(Lightning());
+                case "Hex Fireball":
+                    StartCoroutine(HexFireball());
                     break;
                 default:
                     break;
@@ -62,18 +62,18 @@ public class SpellSpawner : MonoBehaviour
         SpellCount.faceColor = new Color(255f, 255f, 255f, 255f);
         input.XRILeftInteraction.CastSpell.Enable();
     }
-    IEnumerator Lightning()
+    IEnumerator HexFireball()
     {
-        GameObject currentSpell = Instantiate(lightning, spawnpoint.position, spawnpoint.rotation);
+        GameObject currentSpell = Instantiate(hexFireball, spawnpoint.position, spawnpoint.rotation);
+        currentSpell.GetComponent<Rigidbody>().AddForce(spawnpoint.forward * 1f, ForceMode.Impulse);
         SpellText.faceColor = new Color(255f, 255f, 255f, 100f);
         SpellCount.faceColor = new Color(255f, 255f, 255f, 100f);
         input.XRILeftInteraction.CastSpell.Disable();
-        yield return new WaitForSecondsRealtime(1);
+        yield return new WaitForSecondsRealtime(5);
         if (currentSpell != null)
         {
             Destroy(currentSpell);
         }
-        yield return new WaitForSecondsRealtime(4);
         SpellText.faceColor = new Color(255f, 255f, 255f, 255f);
         SpellCount.faceColor = new Color(255f, 255f, 255f, 255f);
         input.XRILeftInteraction.CastSpell.Enable();

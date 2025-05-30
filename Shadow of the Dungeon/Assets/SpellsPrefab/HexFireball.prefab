@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 6720674019207649812}
   - component: {fileID: 6678238179191210109}
   m_Layer: 0
-  m_Name: Fireball
-  m_TagString: Fireball
+  m_Name: HexFireball
+  m_TagString: HexFireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,27 +162,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 227124197536107516, guid: 366377810aaf4fc4ab2be725a54c5712, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
+      value: 0.4339623
       objectReference: {fileID: 0}
     - target: {fileID: 227124197536107516, guid: 366377810aaf4fc4ab2be725a54c5712, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 227124197536107516, guid: 366377810aaf4fc4ab2be725a54c5712, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 1
+      value: 0.4194969
       objectReference: {fileID: 0}
     - target: {fileID: 2259636780811685846, guid: 366377810aaf4fc4ab2be725a54c5712, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
+      value: 0.5147745
       objectReference: {fileID: 0}
     - target: {fileID: 2259636780811685846, guid: 366377810aaf4fc4ab2be725a54c5712, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.38510543
+      value: 0.044054817
       objectReference: {fileID: 0}
     - target: {fileID: 2259636780811685846, guid: 366377810aaf4fc4ab2be725a54c5712, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 1
+      value: 0.5019608
       objectReference: {fileID: 0}
     - target: {fileID: 7212285832888557706, guid: 366377810aaf4fc4ab2be725a54c5712, type: 3}
       propertyPath: m_LocalPosition.x

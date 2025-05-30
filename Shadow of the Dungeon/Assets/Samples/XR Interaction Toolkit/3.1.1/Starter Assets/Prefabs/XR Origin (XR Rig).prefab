@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireball: {fileID: 582227584337622951, guid: 6d61e5a5ada026a4ab985c454ceaafe1, type: 3}
-  lightning: {fileID: 3958596659431381315, guid: c50f9e2c685970e4c8ebcd5fc8c7b3e4, type: 3}
+  hexFireball: {fileID: 582227584337622951, guid: 69efb26f955e8804b8ebdd7ff418dd93, type: 3}
   spawnpoint: {fileID: 4053753462044954893}
   SpellText: {fileID: 2914573680893064918}
   SpellCount: {fileID: 8325069237592233710}
@@ -3370,10 +3370,6 @@ PrefabInstance:
     - target: {fileID: 1739119692779790093, guid: 1392f805216c47742996d4742c80721c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1844450340660925138, guid: 1392f805216c47742996d4742c80721c, type: 3}
-      propertyPath: m_Spacing
-      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 1964027610021519493, guid: 1392f805216c47742996d4742c80721c, type: 3}
       propertyPath: m_AnchorMax.y

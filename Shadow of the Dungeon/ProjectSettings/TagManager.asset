@@ -23,7 +23,7 @@ TagManager:
   - DemonDamager
   - MusicSource
   - Fireball
-  - Lightning
+  - HexFireball
   layers:
   - Default
   - TransparentFX
