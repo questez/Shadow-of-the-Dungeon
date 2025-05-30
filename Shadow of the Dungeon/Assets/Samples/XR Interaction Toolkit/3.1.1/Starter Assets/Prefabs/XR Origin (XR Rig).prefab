@@ -189,7 +189,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202364687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b67b2b8784bd3f429f44ab34cab6c6c, type: 3}
   m_Name: 
@@ -3830,10 +3830,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5675836219815177606, guid: 1392f805216c47742996d4742c80721c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5675836219815177606, guid: 1392f805216c47742996d4742c80721c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -4008,6 +4004,14 @@ PrefabInstance:
     - target: {fileID: 8270855663187062767, guid: 1392f805216c47742996d4742c80721c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8454440146853020524, guid: 1392f805216c47742996d4742c80721c, type: 3}
+      propertyPath: m_margin.x
+      value: 2.1193295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8454440146853020524, guid: 1392f805216c47742996d4742c80721c, type: 3}
+      propertyPath: m_margin.z
+      value: 5.2664313
       objectReference: {fileID: 0}
     - target: {fileID: 8758423527188247893, guid: 1392f805216c47742996d4742c80721c, type: 3}
       propertyPath: m_Name

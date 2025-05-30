@@ -22,18 +22,23 @@ public class BuyItem : MonoBehaviour
             {
                 case "Огненный шар":
                     PlayerBehaviour.PlayerSpell = "Огненный шар";
+                    PlayerBehaviour.PlayerSpellCount = PlayerBehaviour.maxPlayerSpellCount;
                     break;
                 case "Тёмный шар":
                     PlayerBehaviour.PlayerSpell = "Тёмный шар";
+                    PlayerBehaviour.PlayerSpellCount = PlayerBehaviour.maxPlayerSpellCount;
                     break;
                 case "Зелье силы":
                     PlayerBehaviour.PlayerPotion = "Сила";
+                    PlayerBehaviour.HasPotion = true;
                     break;
                 case "Зелье исцеления":
-                    PlayerBehaviour.PlayerSpell = "Исцеление";
+                    PlayerBehaviour.PlayerPotion = "Исцеление";
+                    PlayerBehaviour.HasPotion = true;
                     break;
                 case "Зелье неуяз-сти":
-                    PlayerBehaviour.PlayerSpell = "Неуязвимость";
+                    PlayerBehaviour.PlayerPotion = "Неуязвимость";
+                    PlayerBehaviour.HasPotion = true;
                     break;
                 default:
                     Debug.Log("Неверный ввод");

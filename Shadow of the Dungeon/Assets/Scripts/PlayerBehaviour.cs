@@ -138,8 +138,7 @@ public class PlayerBehaviour : MonoBehaviour
         input = new XRIDefaultInputActions();
         input.XRILeftInteraction.Pause.performed += ctx => TogglePause();
         PauseScreen.enabled = false;
-        PlayerSpellCount = maxPlayerSpellCount;
-        PlayerHP = 200;
+        PlayerHP = MaxPlayerHP;
         if (this.gameObject.scene.name != "DeathScene")
         {
             PlayerPrefs.DeleteKey("CurrentScore");
@@ -193,6 +192,11 @@ public class PlayerBehaviour : MonoBehaviour
         if (PlayerSpellCount == 0)
         {
             PlayerSpell = "Нет Заклинания";
+            SpellCountText.enabled = false;
+        }
+        else
+        {
+            SpellCountText.enabled = true;
         }
         if (!HasPotion)
         {

@@ -1312,7 +1312,7 @@ MonoBehaviour:
   AttackDistance: 2.5
   EnemyHP: 300
   Enemyspeed: 2
-  EnemyDamage: 40
+  EnemyDamage: 30
 --- !u!195 &4832241498979765107
 NavMeshAgent:
   m_ObjectHideFlags: 0
