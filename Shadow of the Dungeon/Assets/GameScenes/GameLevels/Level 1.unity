@@ -197,7 +197,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 2470389341847842039, guid: 38b71bf543b67704a935179603f6a67c, type: 3}
   spawnPoint: {fileID: 481769253}
-  spawnTimeInterval: 5
   MaxNumberOfEnemies: 2
   MaxNumberOfSpawnedEnemies: 4
 --- !u!1001 &508248488
@@ -313,6 +312,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1933586282146309713, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133864463649617159, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133864463649617159, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133864463649617159, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133864463649617159, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
@@ -860,7 +875,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 1705849404070370923, guid: 3af956640595c6e4cb9436f0f4545ffd, type: 3}
   spawnPoint: {fileID: 2035555631}
-  spawnTimeInterval: 5
   MaxNumberOfEnemies: 1
   MaxNumberOfSpawnedEnemies: 1
 --- !u!1 &2063195591

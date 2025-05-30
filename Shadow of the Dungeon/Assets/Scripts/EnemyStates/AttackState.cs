@@ -15,11 +15,11 @@ public class AttackState : BaseState
                 attack = "IsAttack";
                 break;
             case "Spider":
-                enemyXP = 10;
+                enemyXP = 5;
                 attack = "IsAttack";
                 break;
             case "Minotaur":
-                enemyXP = 15;
+                enemyXP = 10;
                 attack = MinotaurCurrentAttack;
                 break;
             case "Golem":
@@ -27,7 +27,7 @@ public class AttackState : BaseState
                 attack = GolemCurrentAttack;
                 break;
             case "Demon":
-                enemyXP = 50;
+                enemyXP = 100;
                 attack = "IsAttack";
                 break;
         }

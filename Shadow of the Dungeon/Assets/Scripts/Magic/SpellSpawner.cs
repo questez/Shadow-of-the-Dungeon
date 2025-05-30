@@ -30,10 +30,10 @@ public class SpellSpawner : MonoBehaviour
         {
             switch (PlayerBehaviour.PlayerSpell)
             {
-                case "Fireball":
+                case "Огненный шар":
                     StartCoroutine(Fireball());
                     break;
-                case "Hex Fireball":
+                case "Тёмный шар":
                     StartCoroutine(HexFireball());
                     break;
                 default:

@@ -43,37 +43,31 @@ public class PutOnSword: MonoBehaviour
 
         if (swordIndex == PlayerBehaviour.EquippedSwordIndex)
         {
-            buttonText.text = "Equipped";
+            buttonText.text = "Взято";
         }        
-
-        Debug.Log("CheckSwordsConditions IS WORKING!");
     }
 
 
     public void PutOnWeapon()
     {        
-        if (sword.name == "Sword1" && buttonText.text == "Equip")
+        if (sword.name == "Sword1" && buttonText.text == "Взять")
         {            
             PlayerBehaviour.EquippedSwordIndex = 0;
             equipSound.Play();
-            Debug.Log("Надет меч 1");
         }
-        if (sword.name == "Sword2" && buttonText.text == "Equip")
+        if (sword.name == "Sword2" && buttonText.text == "Взять")
         {
             PlayerBehaviour.EquippedSwordIndex = 1;
             equipSound.Play();
-            Debug.Log("Надет меч 2");
         }
-        if (sword.name == "Sword3" && buttonText.text == "Equip")
+        if (sword.name == "Sword3" && buttonText.text == "Взять")
         {
             PlayerBehaviour.EquippedSwordIndex = 2;
-            equipSound.Play();
-            Debug.Log("Надет меч 3");            
+            equipSound.Play();          
         }        
 
-        buttonText.text = "Equipped";
+        buttonText.text = "Взято";
         CkeckOtherButtons(this);
-
 
         SavingSystem.SaveEquipment();
     }
@@ -82,9 +76,9 @@ public class PutOnSword: MonoBehaviour
     {
         foreach (PutOnSword button in allSwordButtons)
         {            
-            if (button != activeButton && !button.buttonText.text.Contains("Buy"))
+            if (button != activeButton && !button.buttonText.text.Contains("Купить"))
             {
-                button.buttonText.text = "Equip";
+                button.buttonText.text = "Взять";
             }
         }       
     }

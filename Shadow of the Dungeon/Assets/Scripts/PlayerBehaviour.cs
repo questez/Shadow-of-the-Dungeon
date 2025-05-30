@@ -26,26 +26,26 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public static int maxPlayerSpellCount = 5;
     [NonSerialized] public static float FireballDamage = 10f;
     [NonSerialized] public static float HexDamage = 20f;
-    [NonSerialized] public static XRIDefaultInputActions input;
     [NonSerialized] public static float MaxPlayerHP = 100f;
+    [NonSerialized] public static XRIDefaultInputActions input;
     [NonSerialized] private bool isPaused;
 
     [NonSerialized] private static float playerHP = MaxPlayerHP; // очки здоровья;
     [NonSerialized] public static int PlayerXP = 0; // очки опыта
-    [NonSerialized] public int PlayerXPInLevel = 0; // очки опыта на конкретном уровне
     [NonSerialized] public static int PlayerLevel = 0; // уровень игрока
-    [NonSerialized] public int PlayerBalanceInLevel = 0; // количество собранных кристаллов на локации
     [NonSerialized] public static int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
     [NonSerialized] public static int PlayerSpellCount = 0;
 
     [NonSerialized] public static bool HasPotion = true;
     [NonSerialized] public static bool IsInvincible = false;
 
-    [NonSerialized] public static string PlayerSpell = "Hex Fireball"; // текущее заклинание
-    [NonSerialized] public static string PlayerPotion = "Endurance"; // текущее особое заклинание (зелье)
+    [NonSerialized] public static string PlayerSpell = "Нет Заклинания"; // текущее заклинание
+    [NonSerialized] public static string PlayerPotion = "Нет Зелья"; // текущее особое заклинание (зелье)
 
     public int KillCounter = 0; // счетчик убийств
     [NonSerialized] public static float ExtraDamage = 0f;
+    [NonSerialized] public int PlayerBalanceInLevel = 0; // количество собранных кристаллов на локации
+    [NonSerialized] public int PlayerXPInLevel = 0; // очки опыта на конкретном уровне
     [NonSerialized] public int MaxKillsInLevel1 = 5; // максимальное количество убитых врагов на Level1
     [NonSerialized] public int MaxKillsInLevel2 = 7; // максимальное количество убитых врагов на Level2
     [NonSerialized] public int MaxKillsInLevel3 = 9; // максимальное количество убитых врагов на Level3
@@ -192,11 +192,11 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (PlayerSpellCount == 0)
         {
-            PlayerSpell = "No Spell";
+            PlayerSpell = "Нет Заклинания";
         }
         if (!HasPotion)
         {
-            PlayerPotion = "No Potion";
+            PlayerPotion = "Нет Зелья";
         }
         PotionName.text = PlayerPotion;
         SpellName.text = PlayerSpell;

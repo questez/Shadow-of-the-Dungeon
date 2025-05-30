@@ -1036,10 +1036,6 @@ PrefabInstance:
       propertyPath: m_text
       value: N/a
       objectReference: {fileID: 0}
-    - target: {fileID: 1898386376075504612, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
-      propertyPath: m_margin.z
-      value: 3.9390233
-      objectReference: {fileID: 0}
     - target: {fileID: 1914945723579114991, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1113,14 +1109,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4032707895793951963, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4047463280702797736, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4047463280702797736, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
@@ -1211,10 +1199,6 @@ PrefabInstance:
     - target: {fileID: 8134264607485286803, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
       propertyPath: m_Spacing
       value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8134264607485286803, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
-      propertyPath: m_ChildAlignment
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8134264607485286803, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
       propertyPath: m_ChildForceExpandWidth

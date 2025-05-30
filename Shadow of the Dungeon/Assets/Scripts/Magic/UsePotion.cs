@@ -50,14 +50,14 @@ public class UsePotion : MonoBehaviour
             PlayerBehaviour.HasPotion = false;
             switch (PlayerBehaviour.PlayerPotion)
             {
-                case "Strength":
+                case "Сила":
                     StartCoroutine(Strength());
                     break;
-                case "Healing":
+                case "Исцеление":
                     PlayerBehaviour.PlayerHP = PlayerBehaviour.MaxPlayerHP;
                     Instantiate(HealingEffect, transform.position, transform.rotation);
                     break;
-                case "Endurance":
+                case "Неуязвимость":
                     StartCoroutine(Invincibility());
                     break;
                 default:
