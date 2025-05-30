@@ -3,7 +3,6 @@ using UnityEngine;
 public class AttackState : BaseState
 {
     private string attack;
-    private int enemyXP;
     public override void EnterState(EnemyStateManager manager)
     {        
         Debug.Log("¬ход в attackstate");
@@ -11,23 +10,18 @@ public class AttackState : BaseState
         switch (manager.tag)
         {
             case "Skeleton":
-                enemyXP = 5;
                 attack = "IsAttack";
                 break;
             case "Spider":
-                enemyXP = 5;
                 attack = "IsAttack";
                 break;
             case "Minotaur":
-                enemyXP = 10;
                 attack = MinotaurCurrentAttack;
                 break;
             case "Golem":
-                enemyXP = 20;
                 attack = GolemCurrentAttack;
                 break;
             case "Demon":
-                enemyXP = 100;
                 attack = "IsAttack";
                 break;
         }
@@ -46,10 +40,8 @@ public class AttackState : BaseState
             manager.SwitchState(manager.idlestate);            
         }
         if (manager.EnemyHP <= 0)
-        {
-            manager.SwitchState(manager.deathstate);
-            PlayerBehaviour.PlayerXP += enemyXP;
-            PlayerBehaviour.CheckPlayerLevel();
+        {            
+            manager.SwitchState(manager.deathstate);            
         }
     }   
     
@@ -73,7 +65,7 @@ public class AttackState : BaseState
         {
             string[] attack_list = { "IsAttack1", "IsAttack2" };
             System.Random rand = new System.Random();
-            return attack_list[rand.Next(0, 2)];
+            return attack_list[rand.Next(0, 1)];
         }
     }
     

@@ -514,7 +514,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3518429026496204121}
-  - {fileID: 7820313301565933624}
   m_Father: {fileID: 3769535908034433500}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1105050271141702138
@@ -1306,7 +1305,7 @@ MonoBehaviour:
   HeartRow: {fileID: 5603724528185373481}
   navMeshAgent: {fileID: 4832241498979765107}
   _damageCollider1: {fileID: 6500402722080443917}
-  _damageCollider2: {fileID: 1742688704284577256}
+  _damageCollider2: {fileID: 0}
   coin: {fileID: 4448123184397291684, guid: d18be603c12f9784d8fe93db62320530, type: 3}
   ChaseDistance: 10
   AttackDistance: 2.5
@@ -1921,8 +1920,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6230353, y: 0.75647646, z: 0.32302472}
-  m_Center: {x: 0.04357469, y: -0.12176174, z: 0.09895051}
+  m_Size: {x: 1.0386473, y: 1.1149485, z: 0.32302472}
+  m_Center: {x: 0.025922472, y: 0.05747459, z: 0.098950595}
 --- !u!1 &5033001062764807970
 GameObject:
   m_ObjectHideFlags: 0
@@ -2850,59 +2849,6 @@ Transform:
   - {fileID: 3992000776701645962}
   m_Father: {fileID: 670157388614351190}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7047481376489428021
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7820313301565933624}
-  - component: {fileID: 1742688704284577256}
-  m_Layer: 0
-  m_Name: GolemDamagerRight
-  m_TagString: GolemDamager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7820313301565933624
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7047481376489428021}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2650359550103042516}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1742688704284577256
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7047481376489428021}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.6230353, y: 0.75647646, z: 0.32302472}
-  m_Center: {x: 0.04357469, y: -0.12176174, z: 0.09895051}
 --- !u!1 &7053552148282426969
 GameObject:
   m_ObjectHideFlags: 0

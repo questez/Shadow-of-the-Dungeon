@@ -30,20 +30,21 @@ public class BuyItem : MonoBehaviour
                     break;
                 case "Зелье силы":
                     PlayerBehaviour.PlayerPotion = "Сила";
-                    PlayerBehaviour.HasPotion = true;
+                    PlayerBehaviour.HasPotion = 1;
                     break;
                 case "Зелье исцеления":
                     PlayerBehaviour.PlayerPotion = "Исцеление";
-                    PlayerBehaviour.HasPotion = true;
+                    PlayerBehaviour.HasPotion = 1;
                     break;
                 case "Зелье неуяз-сти":
                     PlayerBehaviour.PlayerPotion = "Неуязвимость";
-                    PlayerBehaviour.HasPotion = true;
+                    PlayerBehaviour.HasPotion = 1;
                     break;
                 default:
                     Debug.Log("Неверный ввод");
                     break;
             }
+            SavingSystem.SaveMagic();
             Debug.Log($"Bought {itemText.text}");
             PlayerBehaviour.PlayerBalance -= itemPrice;
             currentItemRow.SetActive(false);

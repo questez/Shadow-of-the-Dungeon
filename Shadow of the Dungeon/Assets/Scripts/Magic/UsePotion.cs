@@ -45,9 +45,9 @@ public class UsePotion : MonoBehaviour
     }
     private void UsePlayerPotion()
     {
-        if (PlayerBehaviour.HasPotion)
+        if (PlayerBehaviour.HasPotion == 1)
         {
-            PlayerBehaviour.HasPotion = false;
+            PlayerBehaviour.HasPotion = 0;
             switch (PlayerBehaviour.PlayerPotion)
             {
                 case "Сила":

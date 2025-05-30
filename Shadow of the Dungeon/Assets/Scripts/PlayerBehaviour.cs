@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class PlayerBehaviour : MonoBehaviour
 {
     Vector3 lastPos;
-    float movementThreshold = 0.008f; // минимальное смещение для звука ходьбы
+    float movementThreshold = 0.005f; // минимальное смещение для звука ходьбы
 
 
     [SerializeField] AudioSource walkingSound;
@@ -36,7 +36,7 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public static int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
     [NonSerialized] public static int PlayerSpellCount = 0;
 
-    [NonSerialized] public static bool HasPotion = true;
+    [NonSerialized] public static int HasPotion = 0;
     [NonSerialized] public static bool IsInvincible = false;
 
     [NonSerialized] public static string PlayerSpell = "Нет Заклинания"; // текущее заклинание
@@ -198,7 +198,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             SpellCountText.enabled = true;
         }
-        if (!HasPotion)
+        if (HasPotion == 0)
         {
             PlayerPotion = "Нет Зелья";
         }

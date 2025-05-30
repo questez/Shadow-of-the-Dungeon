@@ -72,7 +72,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 1
         messageOptions: 0
-      - time: 0.5136418
+      - time: 0.35887986
         functionName: OnOffDamager
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: cd57d52512b3f124286f9f13e57fc26a, type: 3}
