@@ -14,7 +14,7 @@ public class ToggleHUD : MonoBehaviour
 
     void Update()
     {
-        if (_leftHand.transform.eulerAngles.z > 80f && _leftHand.transform.eulerAngles.z < 110f)
+        if (_leftHand.transform.eulerAngles.z > 75f && _leftHand.transform.eulerAngles.z < 115f)
         {
             _canvas.SetActive(true);
         }

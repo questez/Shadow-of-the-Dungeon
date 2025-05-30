@@ -2,46 +2,42 @@ using UnityEngine;
 
 public class AttackState : BaseState
 {
-    string golemAttack, spiderAttack, skeletonAttack, minotaurAttack, demonAttack; 
+    private string attack;
+    private int enemyXP;
     public override void EnterState(EnemyStateManager manager)
     {        
         Debug.Log("Вход в attackstate");
         manager.SetSpeed(0);
-        if (manager.CompareTag("Spider"))
+        switch (manager.tag)
         {
-            spiderAttack = "IsAttack";
-            manager.EnemyAnimator.SetBool(spiderAttack, true);
-        } 
-        if (manager.CompareTag("Golem"))
-        {
-            golemAttack = GolemCurrentAttack;
-            manager.EnemyAnimator.SetBool(golemAttack, true);
-        } 
-        if (manager.CompareTag("Minotaur"))
-        {
-            minotaurAttack = MinotaurCurrentAttack;
-            manager.EnemyAnimator.SetBool(minotaurAttack, true);
+            case "Skeleton":
+                enemyXP = 5;
+                attack = "IsAttack";
+                break;
+            case "Spider":
+                enemyXP = 10;
+                attack = "IsAttack";
+                break;
+            case "Minotaur":
+                enemyXP = 15;
+                attack = MinotaurCurrentAttack;
+                break;
+            case "Golem":
+                enemyXP = 20;
+                attack = GolemCurrentAttack;
+                break;
+            case "Demon":
+                enemyXP = 50;
+                attack = "IsAttack";
+                break;
         }
-        if (manager.CompareTag("Skeleton"))
-        {
-            skeletonAttack = "IsAttack";
-            manager.EnemyAnimator.SetBool(skeletonAttack, true);
-        }
-        if (manager.CompareTag("Demon"))
-        {
-            demonAttack = "IsAttack";
-            manager.EnemyAnimator.SetBool(demonAttack, true);
-        }
+        manager.EnemyAnimator.SetBool(attack, true);
     }
 
     public override void ExitState(EnemyStateManager manager)
     {
         Debug.Log("Выход из attackstate");
-        if (manager.CompareTag("Golem")) manager.EnemyAnimator.SetBool(golemAttack, false);
-        if (manager.CompareTag("Spider")) manager.EnemyAnimator.SetBool(spiderAttack, false);
-        if (manager.CompareTag("Minotaur")) manager.EnemyAnimator.SetBool(minotaurAttack, false);
-        if (manager.CompareTag("Skeleton")) manager.EnemyAnimator.SetBool(skeletonAttack, false);
-        if (manager.CompareTag("Demon")) manager.EnemyAnimator.SetBool(demonAttack, false);
+        manager.EnemyAnimator.SetBool(attack, false);
     }
     public override void UpdateState(EnemyStateManager manager)
     {
@@ -51,7 +47,9 @@ public class AttackState : BaseState
         }
         if (manager.EnemyHP <= 0)
         {
-            manager.SwitchState(manager.deathstate);            
+            manager.SwitchState(manager.deathstate);
+            PlayerBehaviour.PlayerXP += enemyXP;
+            PlayerBehaviour.CheckPlayerLevel();
         }
     }   
     

@@ -2,12 +2,13 @@ using System;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class EnemyStateManager : MonoBehaviour
 {
     private Transform currentEnemyTarget;
-    [NonSerialized] public PlayerBehaviour pb;
-    public Animator EnemyAnimator; 
+    public Animator EnemyAnimator;
+    [SerializeField] private GridLayoutGroup HeartRow;
     [SerializeField] private NavMeshAgent navMeshAgent;     
     [SerializeField] private Collider _damageCollider1, _damageCollider2; // ссылки на коллайдеры для нанесения урона игроку
 
@@ -27,7 +28,7 @@ public class EnemyStateManager : MonoBehaviour
     
     private void Start()
     {
-        pb = FindAnyObjectByType<PlayerBehaviour>();
+
         currentEnemyTarget = FindAnyObjectByType<XROrigin>().transform;
         if (_damageCollider1 != null) { _damageCollider1.enabled = false; } // при начале работы по умолчанию коллайдеры отключены
         if (_damageCollider2 != null) { _damageCollider2.enabled = false; }
@@ -44,15 +45,30 @@ public class EnemyStateManager : MonoBehaviour
         currentState.EnterState(this);
     }
 
-    private void Update()
+    public void SetEnemyHearts()
     {
-        //Debug.Log(DistanceToTarget);
-        navMeshAgent.destination = currentEnemyTarget.position; // отслеживание позиции игрока
-        currentState.UpdateState(this);  
-        
-        if (currentState == deathstate && !isCoinSpawned)
+        int heartCount = (int)(EnemyHP / 20);
+        Image[] hearts = HeartRow.GetComponentsInChildren<Image>();
+        foreach (Image h in hearts)
         {
-            SpawnCoin();
+            h.gameObject.SetActive(false);
+        }
+        for (int i = 0; i < heartCount; i++)
+        {
+            hearts[i].gameObject.SetActive(true);
+            hearts[i].fillAmount = 1f;
+        }
+        if (EnemyHP % 20 != 0)
+        {
+            if (EnemyHP % 20 < 11)
+            {
+                hearts[heartCount].fillAmount = 0.5f;
+            }
+            hearts[heartCount].gameObject.SetActive(true);
+        }
+        if (EnemyHP <= 0)
+        {
+            hearts[0].gameObject.SetActive(false);
         }
     }
 
@@ -64,11 +80,22 @@ public class EnemyStateManager : MonoBehaviour
     public float DistanceToTarget // расчет дистанции до игрока
     {
         get { return (transform.position - currentEnemyTarget.position).magnitude; }       
-    }    
-    
+    }
+
+    private void Update()
+    {
+        //Debug.Log(DistanceToTarget);
+        navMeshAgent.destination = currentEnemyTarget.position; // отслеживание позиции игрока
+        currentState.UpdateState(this);
+        if (currentState == deathstate && !isCoinSpawned)
+        {
+            SpawnCoin();
+        }
+    }
+
     private void SpawnCoin()
     {
-        Instantiate(coin, new Vector3(transform.position.x, 1.4f, transform.position.z), transform.rotation);
+        Instantiate(coin, new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z), transform.rotation);
         isCoinSpawned = true;
     }
 
@@ -85,5 +112,4 @@ public class EnemyStateManager : MonoBehaviour
             if (_damageCollider2 != null) { _damageCollider2.enabled = false; }
         }
     }
-    
 }

@@ -10,29 +10,22 @@ public class GrabWeapon : MonoBehaviour
     [NonSerialized] public Rigidbody rb;
 
     [SerializeField] Collider weaponCollider; // коллайдер оружия
-
-    GameObject stone_pillar;
-    Collider _stonetableCollider; // коллайдер стола, на котором лежит меч в начале уровня
-
-    [SerializeField] GameObject _canvas; // стартовое сообщение на StartRoom
+    [SerializeField] Collider _stonetableCollider; // коллайдер стола, на котором лежит меч в начале уровня
+    [SerializeField] GameObject _canvas;
 
     GameObject enemySpawner;
 
-    public float PlayerDamage;
+    public float PlayerDamage; // добавить чтобы с увеличением скорости урон также увеличивался    
 
     bool islevelStarted = false;
-    
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        stone_pillar = GameObject.Find("stone_pillar");
-        _stonetableCollider = stone_pillar.GetComponent<Collider>();
         musicSource = GameObject.FindGameObjectWithTag("MusicSource");
         if (musicSource != null)
         {
             musicInLevel = musicSource.GetComponent<AudioSource>();
-            //musicInLevel.volume = ChangeSliderValue.MusicValue;
         }        
         enemySpawner = GameObject.Find("EnemySpawnManager");
         if (enemySpawner != null)
@@ -40,7 +33,7 @@ public class GrabWeapon : MonoBehaviour
             enemySpawner.SetActive(false);
         }               
     }
-    
+
     public void OnGrab(SelectEnterEventArgs args)
     {
         if (_canvas != null)
@@ -63,6 +56,7 @@ public class GrabWeapon : MonoBehaviour
     }
     public void OnUnGrab(SelectExitEventArgs args)
     {
+        
         if (weaponCollider != null)
         {
             weaponCollider.isTrigger = false;
@@ -70,6 +64,9 @@ public class GrabWeapon : MonoBehaviour
                
         args.interactableObject.transform.SetParent(null);
     }
-    
-    public bool HitTrack { get => rb.linearVelocity.magnitude >= 0f; } // скорость меча для фиксации попадания    
+
+    void Update()
+    {
+        //Debug.Log(rb.linearVelocity.magnitude);
+    }
 }

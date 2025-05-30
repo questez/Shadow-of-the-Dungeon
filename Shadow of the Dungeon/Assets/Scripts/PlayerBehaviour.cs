@@ -7,81 +7,143 @@ using UnityEngine.SceneManagement;
 public class PlayerBehaviour : MonoBehaviour
 {
     Vector3 lastPos;
-    float movementThreshold = 0.008f; // минимальное смещение для звука ходьбы
 
-    [SerializeField] AudioSource walkingSound;
-    [SerializeField] AudioSource HitPlayerSound;
-    [SerializeField] AudioSource clickPauseButton;
-
+    [SerializeField] public AudioSource _walkSound;
     [SerializeField] HorizontalLayoutGroup HeartRow;
-    public TMP_Text SpellName;
-    public TMP_Text PotionName;
-    public TMP_Text LevelValue;
-    public TMP_Text ExperienceValue;
-    public TMP_Text CoinValue;
+    public TextMeshProUGUI SpellName;
+    public TextMeshProUGUI SpellCountText;
+    public TextMeshProUGUI PotionName;
+    public TextMeshProUGUI LevelValue;
+    public TextMeshProUGUI ExperienceValue;
+    public TextMeshProUGUI CoinValue;
     [SerializeField] Canvas PauseScreen;
 
-    private bool isPaused;
-    private XRIDefaultInputActions input;
+    [NonSerialized] public static int maxPlayerSpellCount = 5;
+    [NonSerialized] public static float FireballDamage = 10f;
+    [NonSerialized] public static float HexDamage = 20f;
+    [NonSerialized] public static XRIDefaultInputActions input;
+    [NonSerialized] public static float MaxPlayerHP = 100f;
+    [NonSerialized] private bool isPaused;
 
-    [NonSerialized] public float PlayerHP = 100f; // очки здоровья
+    [NonSerialized] private static float playerHP = MaxPlayerHP; // очки здоровья;
     [NonSerialized] public static int PlayerXP = 0; // очки опыта
-    [NonSerialized] public int PlayerXPInLevel = 0; // очки опыта, собранные на конкретном уровне
     [NonSerialized] public static int PlayerLevel = 0; // уровень игрока
-    [NonSerialized] public static int PlayerBalance = 0; // количество собранных кристаллов (баланс)
-    [NonSerialized] public int PlayerBalanceInLevel = 0; // количество собранных кристаллов на конкретном уровне
-    [NonSerialized] public string PlayerSpell = "No spell"; // текущее заклинание
-    [NonSerialized] public string PlayerPotion = "No potion"; // текущее особое заклинание (зелье)
+    [NonSerialized] public static int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
+    [NonSerialized] public static int PlayerSpellCount = 0;
 
+    [NonSerialized] public static bool HasPotion = true;
+    [NonSerialized] public static bool IsInvincible = false;
 
-    public int KillCounter; // счетчик убийств
+    [NonSerialized] public static string PlayerSpell = "Hex Fireball"; // текущее заклинание
+    [NonSerialized] public static string PlayerPotion = "Endurance"; // текущее особое заклинание (зелье)
+
+    public int KillCounter = 0; // счетчик убийств
+    [NonSerialized] public static float ExtraDamage = 0f;
     [NonSerialized] public int MaxKillsInLevel1 = 5; // максимальное количество убитых врагов на Level1
     [NonSerialized] public int MaxKillsInLevel2 = 7; // максимальное количество убитых врагов на Level2
     [NonSerialized] public int MaxKillsInLevel3 = 9; // максимальное количество убитых врагов на Level3
     [NonSerialized] public int MaxKillsInLevel4 = 12; // максимальное количество убитых врагов на Level4
+    public static float PlayerHP
+    {
+        get => playerHP;
+        set
+        {
+            if (value > MaxPlayerHP)
+            {
+                playerHP = MaxPlayerHP;
+            }
+            else if (value < 0)
+            {
+                playerHP = 0;
+            }
+            else
+            {
+                playerHP = value;
+            }
+        }
+    }
 
-    public static int EquippedSwordIndex = 0; // индекс надетого меча (0 = Sword1, 1 = Sword2, 2 = Sword3)
-
+    public void TogglePause()
+    {
+        if (this.gameObject.scene.name != "MainMenu" && this.gameObject.scene.name != "DeathScene")
+        {
+            PauseScreen.enabled = !PauseScreen.enabled;
+            if (!isPaused)
+            {
+                Time.timeScale = 0f;
+                isPaused = true;
+            }
+            else
+            {
+                Time.timeScale = 1f;
+                isPaused = false;
+            }
+        }
+    }
+    public static void CheckPlayerLevel()
+    {
+        if (PlayerXP >= 40 && PlayerXP < 80)
+        {
+            PlayerLevel = 1;
+            ExtraDamage = 2.5f;
+            MaxPlayerHP = 120;
+            maxPlayerSpellCount = 6;
+        }
+        if (PlayerXP >= 80 && PlayerXP < 160)
+        {
+            PlayerLevel = 2;
+            ExtraDamage = 5f;
+            MaxPlayerHP = 140;
+            maxPlayerSpellCount = 7;
+        }
+        if (PlayerXP >= 160 && PlayerXP < 320)
+        {
+            PlayerLevel = 3;
+            ExtraDamage = 7.5f;
+            MaxPlayerHP = 160;
+            maxPlayerSpellCount = 8;
+        }
+        if (PlayerXP >= 320 && PlayerXP < 640)
+        {
+            PlayerLevel = 4;
+            ExtraDamage = 10f;
+            MaxPlayerHP = 180;
+            maxPlayerSpellCount = 9;
+        }
+        if (PlayerXP >= 640 && PlayerXP < 1280)
+        {
+            PlayerLevel = 5;
+            ExtraDamage = 12.5f;
+            MaxPlayerHP = 200;
+            maxPlayerSpellCount = 10;
+        }
+        Debug.Log($"Достигнут уровень {PlayerLevel}");
+    }
     private void Awake()
     {
-        lastPos = transform.position;
         isPaused = false;
         input = new XRIDefaultInputActions();
         input.XRILeftInteraction.Pause.performed += ctx => TogglePause();
-        SpellName.text = PlayerSpell;
-        PotionName.text = PlayerPotion;
-        LevelValue.text = PlayerLevel.ToString();
-        ExperienceValue.text = PlayerXP.ToString();
-        CoinValue.text = PlayerBalance.ToString();
         PauseScreen.enabled = false;
-        SetHearts();
-        if (this.gameObject.scene.name != "DeathScene")
-        {
-            PlayerPrefs.DeleteKey("CurrentScore");
-        }
+        PlayerSpellCount = maxPlayerSpellCount;
+        PlayerHP = 200;
     }
-
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag.Contains("Damager"))
+        if (other.gameObject.tag.Contains("Damager") && !IsInvincible)
         {
-            HitPlayerSound.Play();
             Debug.Log($"Игроку нанесен урон {other.GetComponentInParent<EnemyStateManager>().EnemyDamage} от {other.gameObject.tag}!");
             PlayerHP -= other.GetComponentInParent<EnemyStateManager>().EnemyDamage;
-            SetHearts();
         }
     }
-
     private void OnEnable()
     {
         input.Enable();
     }
-
     private void OnDisable()
     {
         input.Disable();
     }
-
     private void SetHearts()
     {
         int heartCount = (int)(PlayerHP / 20);
@@ -103,113 +165,37 @@ public class PlayerBehaviour : MonoBehaviour
             }
             hearts[heartCount].enabled = true;
         }
-        if (PlayerHP < 0)
+        if (PlayerHP <= 0)
         {
             hearts[0].enabled = false;
         }
     }
-    public void TogglePause()
-    {        
-        if (this.gameObject.scene.name != "MainMenu" && this.gameObject.scene.name != "DeathScene")
+    private void SetHUDText()
+    {
+        if (PlayerSpellCount == 0)
         {
-            PauseScreen.enabled = !PauseScreen.enabled;
-            if (!isPaused)
-            {                
-                Time.timeScale = 0f;
-                isPaused = true;
-            }
-            else
-            {
-                clickPauseButton.Play();
-                Time.timeScale = 1f;
-                isPaused = false;
-            }
+            PlayerSpell = "No Spell";
         }
+        if (!HasPotion)
+        {
+            PlayerPotion = "No Potion";
+        }
+        PotionName.text = PlayerPotion;
+        SpellName.text = PlayerSpell;
+        LevelValue.text = PlayerLevel.ToString();
+        SpellCountText.text = PlayerSpellCount.ToString();
+        ExperienceValue.text = PlayerXP.ToString();
+        CoinValue.text = PlayerBalance.ToString();
     }
     private void Update()
     {
-        isDeath();
-        CheckLevel();
-        PlayWalkingSound();
         SetHearts();
-    }
-
-    private void PlayWalkingSound()
-    {
-        float distanceMoved = Vector3.Distance(lastPos, transform.position);
-        bool isMoving = distanceMoved > movementThreshold;
-        lastPos = transform.position;
-        if (isMoving && !walkingSound.isPlaying)
-        {
-            walkingSound.Play();
-            //Debug.Log("WALKINGSOUND!");
-        }
-        else if (!isMoving && walkingSound.isPlaying)
-        {
-            walkingSound.Stop();
-            //Debug.Log("STOPSOUND!");
-        }
-    }
-
-    private void isDeath()
-    {
+        SetHUDText();
         if (PlayerHP <= 0)
         {
             Debug.Log($"Игрок умер");
             SceneManager.LoadScene("DeathScene");
+            PlayerHP = MaxPlayerHP;
         }
     }
-
-    private void CheckLevel()
-    {
-        if (PlayerXP >= 35)
-        {
-            PlayerLevel = 1;
-            LevelValue.text = "1";
-            PlayerHP = 120;
-            SetHearts();
-        }
-        if (PlayerXP >= 70)
-        {
-            PlayerLevel = 2;
-            LevelValue.text = "2";
-            PlayerHP = 140;
-            SetHearts();
-        }
-        if (PlayerXP >= 105)
-        {
-            PlayerLevel = 3;
-            LevelValue.text = "3";
-            PlayerHP = 160;
-            SetHearts();
-        }
-        if (PlayerXP >= 140)
-        {
-            PlayerLevel = 4;
-            LevelValue.text = "4";
-            PlayerHP = 180;
-            SetHearts();
-        }
-        if (PlayerXP >= 220)
-        {
-            PlayerLevel = 5;
-            LevelValue.text = "5";
-            PlayerHP = 200;
-            SetHearts();            
-        }       
-    }
-
-    public void SetCurrentScore()
-    {
-        PlayerPrefs.SetInt("CurrentScore", PlayerXPInLevel);
-        PlayerPrefs.Save();
-    }
-    public int GetCurrentScore()
-    {
-        PlayerXPInLevel = PlayerPrefs.GetInt("CurrentScore");
-        return PlayerXPInLevel;
-    }
-
-
-
-}   
+}

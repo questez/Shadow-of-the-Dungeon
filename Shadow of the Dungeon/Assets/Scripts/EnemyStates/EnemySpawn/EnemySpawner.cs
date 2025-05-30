@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
     private void Update()
     {
         TimerSpawn();
-        Debug.Log($"Количество {enemy.name} равно {currentNumberOfEnemies}");
+        //Debug.Log($"Количество {enemy.name} равно {currentNumberOfEnemies}");
     }
 
     private void TimerSpawn()
