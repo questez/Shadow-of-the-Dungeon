@@ -9,14 +9,15 @@ public class EnemyStateManager : MonoBehaviour
     private Transform currentEnemyTarget;
     public Animator EnemyAnimator;
     [SerializeField] private GridLayoutGroup HeartRow;
-    [SerializeField] private NavMeshAgent navMeshAgent;     
+    [SerializeField] private NavMeshAgent navMeshAgent;
+
+    Collider[] allEnemyColliders;
     [SerializeField] private Collider _damageCollider1, _damageCollider2; // ссылки на коллайдеры для нанесения урона игроку
 
     [NonSerialized] public PlayerBehaviour pb;
 
-
     [SerializeField] GameObject coin;
-    bool isCoinSpawned = false;
+    
 
     public float ChaseDistance; // дистанция преследования игрока
     public float AttackDistance; // дистанция атаки на игрока
@@ -31,6 +32,7 @@ public class EnemyStateManager : MonoBehaviour
     
     private void Start()
     {
+        allEnemyColliders = GetComponentsInChildren<Collider>();
         pb = FindAnyObjectByType<PlayerBehaviour>();
         currentEnemyTarget = FindAnyObjectByType<XROrigin>().transform;
         if (_damageCollider1 != null) { _damageCollider1.enabled = false; } // при начале работы по умолчанию коллайдеры отключены
@@ -89,17 +91,12 @@ public class EnemyStateManager : MonoBehaviour
     {
         //Debug.Log(DistanceToTarget);
         navMeshAgent.destination = currentEnemyTarget.position; // отслеживание позиции игрока
-        currentState.UpdateState(this);
-        if (currentState == deathstate && !isCoinSpawned)
-        {
-            SpawnCoin();
-        }
+        currentState.UpdateState(this);        
     }
 
-    private void SpawnCoin()
+    public void SpawnCoin() // спавн монет
     {
-        Instantiate(coin, new Vector3(transform.position.x, 1.4f, transform.position.z), transform.rotation);
-        isCoinSpawned = true;
+        Instantiate(coin, new Vector3(transform.position.x, 1.3f, transform.position.z), transform.rotation);
     }
 
     private void OnOffDamager(int switcher)
@@ -115,4 +112,13 @@ public class EnemyStateManager : MonoBehaviour
             if (_damageCollider2 != null) { _damageCollider2.enabled = false; }
         }
     }
+
+    public void OffAllColliders()
+    {
+        foreach (Collider c in allEnemyColliders)
+        {
+            c.enabled = false;
+        }
+    }
+
 }

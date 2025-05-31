@@ -7,8 +7,7 @@ using UnityEngine.SceneManagement;
 public class PlayerBehaviour : MonoBehaviour
 {
     Vector3 lastPos;
-    float movementThreshold = 0.005f; // минимальное смещение для звука ходьбы
-
+    float movementThreshold = 0.008f; // минимальное смещение для звука ходьбы
 
     [SerializeField] AudioSource walkingSound;
     [SerializeField] AudioSource HitPlayerSound;
@@ -134,6 +133,7 @@ public class PlayerBehaviour : MonoBehaviour
     }
     private void Awake()
     {
+        lastPos = transform.position;
         isPaused = false;
         input = new XRIDefaultInputActions();
         input.XRILeftInteraction.Pause.performed += ctx => TogglePause();
@@ -211,15 +211,10 @@ public class PlayerBehaviour : MonoBehaviour
     }
     private void Update()
     {
+        PlayWalkingSound();
         SetHearts();
         SetHUDText();
-        if (PlayerHP <= 0)
-        {
-            Debug.Log($"Игрок умер");
-            SceneManager.LoadScene("DeathScene");
-            PlayerHP = MaxPlayerHP;
-        }
-        PlayWalkingSound();
+        isDeath();
     }
 
     private void PlayWalkingSound()
@@ -239,6 +234,15 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
+    private void isDeath()
+    {
+        if (PlayerHP <= 0)
+        {
+            Debug.Log($"Игрок умер");
+            SceneManager.LoadScene("DeathScene");
+            PlayerHP = MaxPlayerHP;
+        }
+    }
 
     public void SetCurrentScore()
     {

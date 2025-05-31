@@ -11,7 +11,6 @@ public class BuyItem : MonoBehaviour
     private int itemPrice;
 
     [SerializeField] AudioSource _clickSound;
-
     public void BuyMagic()
     {        
         if (PlayerBehaviour.PlayerBalance >= itemPrice)
@@ -43,9 +42,10 @@ public class BuyItem : MonoBehaviour
                     Debug.Log("Неверный ввод");
                     break;
             }
-            SavingSystem.SaveMagic();
+            
             Debug.Log($"Bought {itemText.text}");
             PlayerBehaviour.PlayerBalance -= itemPrice;
+            SavingSystem.SaveMagic();
         }
     }
     private void Awake()

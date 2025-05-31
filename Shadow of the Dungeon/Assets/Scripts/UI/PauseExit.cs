@@ -8,15 +8,14 @@ public class PauseExit : MonoBehaviour
     private void Awake()
     {
         clickSound = GetComponent<AudioSource>();
-        _button.onClick.AddListener(Exit);
-        if (gameObject.scene.name == "StartRoom")
-        {
-            _button.interactable = false;
-        }
+        _button.onClick.AddListener(Exit);        
     }
     private void Exit()
     {
-        clickSound.Play();
+        if (clickSound != null)
+        {
+            clickSound.Play();
+        }
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1f;
     }

@@ -64,7 +64,6 @@ public class BuySword : MonoBehaviour
             buySwordButton.gameObject.SetActive(false);
             putOnButton.gameObject.SetActive(true);
             PlayerBehaviour.PlayerBalance -= _swordPrice;
-            _pb.CoinValue.text = PlayerBehaviour.PlayerBalance.ToString();
             if (sword.name == "Sword2") isPurchased[1] = 1;
             if (sword.name == "Sword3") isPurchased[2] = 1;
 

@@ -1,11 +1,21 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class DeathState : BaseState
 {
     int enemyXP;
+    bool isCoinsSpawned = false;
     public override void EnterState(EnemyStateManager manager)
     {
         Debug.Log("¬ход в deathstate");
+        manager.SetSpeed(0);
+        manager.OffAllColliders();
+        if (!isCoinsSpawned)
+        {
+            manager.SpawnCoin();
+            isCoinsSpawned = true;
+        }      
+        
         if (manager.CompareTag("Minotaur"))
         {
             MonoBehaviour.FindAnyObjectByType<GameManager>().isMiniBossDefeated = true;

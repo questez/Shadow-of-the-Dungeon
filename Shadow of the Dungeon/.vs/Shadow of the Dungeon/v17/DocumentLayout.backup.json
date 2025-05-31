@@ -1,22 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\",
+  "WorkspaceRootPath": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\ui\\shopwork\\buyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|z:\\unity\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\enemywork\\enemystates\\deathstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemywork\\enemystates\\deathstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\savesystem\\savingsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savesystem\\savingsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|z:\\unity\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\enemywork\\enemystates\\enemystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemywork\\enemystates\\enemystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|z:\\unity\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\ui\\shopwork\\buyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\shopwork\\buyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\users\\iaros\\documents\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\ui\\shopwork\\switchitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\shopwork\\switchitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|z:\\unity\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\ui\\shopwork\\buysword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\shopwork\\buysword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\users\\iaros\\documents\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\grabweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grabweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\ui\\shopwork\\putonsword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\shopwork\\putonsword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\assets\\scripts\\magic\\usepotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\usepotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +42,109 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GrabWeapon.cs",
-              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\GrabWeapon.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GrabWeapon.cs",
-              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\GrabWeapon.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GrabWeapon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DeathState.cs",
+              "DocumentMoniker": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyWork\\EnemyStates\\DeathState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyWork\\EnemyStates\\DeathState.cs",
+              "ToolTip": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyWork\\EnemyStates\\DeathState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyWork\\EnemyStates\\DeathState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T10:39:04.158Z",
+              "WhenOpened": "2025-05-31T15:10:20.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemyStateManager.cs",
+              "DocumentMoniker": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyWork\\EnemyStates\\EnemyStateManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyWork\\EnemyStates\\EnemyStateManager.cs",
+              "ToolTip": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyWork\\EnemyStates\\EnemyStateManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyWork\\EnemyStates\\EnemyStateManager.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAcwHMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T15:08:49.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SwitchItem.cs",
-              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ShopWork\\SwitchItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ShopWork\\SwitchItem.cs",
-              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ShopWork\\SwitchItem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\ShopWork\\SwitchItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAqAAAAAAAAAA==",
+              "Title": "SavingSystem.cs",
+              "DocumentMoniker": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\SaveSystem\\SavingSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SaveSystem\\SavingSystem.cs",
+              "ToolTip": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\SaveSystem\\SavingSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SaveSystem\\SavingSystem.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwEAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T10:05:48.22Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BuyItem.cs",
-              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ShopWork\\BuyItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ShopWork\\BuyItem.cs",
-              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ShopWork\\BuyItem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\ShopWork\\BuyItem.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T16:00:46.813Z",
+              "WhenOpened": "2025-05-31T13:05:42.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "PlayerBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
+              "DocumentMoniker": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerBehaviour.cs",
-              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
+              "ToolTip": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\PlayerBehaviour.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerBehaviour.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwBwAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T15:27:27.643Z",
+              "WhenOpened": "2025-05-31T12:11:33.604Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PutOnSword.cs",
+              "DocumentMoniker": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ShopWork\\PutOnSword.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ShopWork\\PutOnSword.cs",
+              "ToolTip": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ShopWork\\PutOnSword.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ShopWork\\PutOnSword.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T10:53:14.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BuySword.cs",
+              "DocumentMoniker": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ShopWork\\BuySword.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ShopWork\\BuySword.cs",
+              "ToolTip": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ShopWork\\BuySword.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ShopWork\\BuySword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:48:16.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BuyItem.cs",
+              "DocumentMoniker": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ShopWork\\BuyItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ShopWork\\BuyItem.cs",
+              "ToolTip": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\ShopWork\\BuyItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ShopWork\\BuyItem.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwC8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T16:00:46.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsePotion.cs",
+              "DocumentMoniker": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Magic\\UsePotion.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\UsePotion.cs",
+              "ToolTip": "Z:\\UNITY\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\Magic\\UsePotion.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Magic\\UsePotion.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwCAAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T16:23:06.934Z"
             }
           ]
         }
