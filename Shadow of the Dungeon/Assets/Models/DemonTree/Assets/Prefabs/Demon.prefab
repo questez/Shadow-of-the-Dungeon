@@ -648,9 +648,9 @@ MonoBehaviour:
   coin: {fileID: 4448123184397291684, guid: d18be603c12f9784d8fe93db62320530, type: 3}
   ChaseDistance: 10
   AttackDistance: 4
-  EnemyHP: 1000
+  EnemyHP: 800
   Enemyspeed: 1
-  EnemyDamage: 20
+  EnemyDamage: 15
 --- !u!195 &7421738213347915126
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4657,7 +4657,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

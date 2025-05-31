@@ -32,7 +32,7 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] private static float playerHP = MaxPlayerHP; // очки здоровья;
     [NonSerialized] public static int PlayerXP = 0; // очки опыта
     [NonSerialized] public static int PlayerLevel = 0; // уровень игрока
-    [NonSerialized] public static int PlayerBalance = 1000; // количество собранных кристаллов (баланс)
+    [NonSerialized] public static int PlayerBalance = 0; // количество собранных кристаллов (баланс)
     [NonSerialized] public static int PlayerSpellCount = 0;
 
     [NonSerialized] public static int HasPotion = 0;
@@ -51,6 +51,20 @@ public class PlayerBehaviour : MonoBehaviour
     [NonSerialized] public int MaxKillsInLevel4 = 12; // максимальное количество убитых врагов на Level4
 
     public static int EquippedSwordIndex = 0; // индекс надетого меча (0 = Sword1, 1 = Sword2, 2 = Sword3)
+
+    private void Awake()
+    {
+        lastPos = transform.position;
+        isPaused = false;
+        input = new XRIDefaultInputActions();
+        input.XRILeftInteraction.Pause.performed += ctx => TogglePause();
+        PauseScreen.enabled = false;
+        PlayerHP = MaxPlayerHP;
+        if (this.gameObject.scene.name != "DeathScene")
+        {
+            PlayerPrefs.DeleteKey("CurrentScore");
+        }
+    }
     public static float PlayerHP
     {
         get => playerHP;
@@ -94,56 +108,48 @@ public class PlayerBehaviour : MonoBehaviour
     }
     public static void CheckPlayerLevel()
     {
-        if (PlayerXP >= 35 && PlayerXP < 70)
+        if (PlayerXP == 35 && PlayerXP < 70 && PlayerLevel < 1)
         {
             PlayerLevel = 1;
             ExtraDamage = 2.5f;
             MaxPlayerHP = 120;
+            PlayerHP = MaxPlayerHP;
             maxPlayerSpellCount = 6;
         }
-        if (PlayerXP >= 70 && PlayerXP < 105)
+        if (PlayerXP >= 70 && PlayerXP < 105 && PlayerLevel < 2)
         {
             PlayerLevel = 2;
             ExtraDamage = 5f;
             MaxPlayerHP = 140;
+            PlayerHP = MaxPlayerHP;
             maxPlayerSpellCount = 7;
         }
-        if (PlayerXP >= 105 && PlayerXP < 140)
+        if (PlayerXP >= 105 && PlayerXP < 140 && PlayerLevel < 3)
         {
             PlayerLevel = 3;
             ExtraDamage = 7.5f;
             MaxPlayerHP = 160;
+            PlayerHP = MaxPlayerHP;
             maxPlayerSpellCount = 8;
         }
-        if (PlayerXP >= 140 && PlayerXP < 220)
+        if (PlayerXP >= 140 && PlayerXP < 220 && PlayerLevel < 4)
         {
             PlayerLevel = 4;
             ExtraDamage = 10f;
             MaxPlayerHP = 180;
+            PlayerHP = MaxPlayerHP;
             maxPlayerSpellCount = 9;
         }
-        if (PlayerXP >= 220)
+        if (PlayerXP >= 220 && PlayerLevel < 5)
         {
             PlayerLevel = 5;
             ExtraDamage = 12.5f;
             MaxPlayerHP = 200;
+            PlayerHP = MaxPlayerHP;
             maxPlayerSpellCount = 10;
-        }
+        }        
         Debug.Log($"Достигнут уровень {PlayerLevel}");
-    }
-    private void Awake()
-    {
-        lastPos = transform.position;
-        isPaused = false;
-        input = new XRIDefaultInputActions();
-        input.XRILeftInteraction.Pause.performed += ctx => TogglePause();
-        PauseScreen.enabled = false;
-        PlayerHP = MaxPlayerHP;
-        if (this.gameObject.scene.name != "DeathScene")
-        {
-            PlayerPrefs.DeleteKey("CurrentScore");
-        }
-    }
+    }    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Contains("Damager") && !IsInvincible)
@@ -208,14 +214,7 @@ public class PlayerBehaviour : MonoBehaviour
         SpellCountText.text = PlayerSpellCount.ToString();
         ExperienceValue.text = PlayerXP.ToString();
         CoinValue.text = PlayerBalance.ToString();
-    }
-    private void Update()
-    {
-        PlayWalkingSound();
-        SetHearts();
-        SetHUDText();
-        isDeath();
-    }
+    }    
 
     private void PlayWalkingSound()
     {
@@ -255,5 +254,12 @@ public class PlayerBehaviour : MonoBehaviour
         return PlayerXPInLevel;
     }
 
+    private void Update()
+    {
+        PlayWalkingSound();
+        SetHearts();
+        SetHUDText();
+        isDeath();
+    }
 
 }

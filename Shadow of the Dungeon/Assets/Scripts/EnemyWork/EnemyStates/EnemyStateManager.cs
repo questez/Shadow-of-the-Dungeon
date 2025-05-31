@@ -94,12 +94,38 @@ public class EnemyStateManager : MonoBehaviour
         currentState.UpdateState(this);        
     }
 
-    public void SpawnCoin() // спавн монет
+    public void SpawnOneCoin() // спавн 1 монеты после убийства пауков и скелетов
     {
         Instantiate(coin, new Vector3(transform.position.x, 1.3f, transform.position.z), transform.rotation);
     }
+    
+    public void SpawnFiveCoins() // спавн 5 монет после убийства минотавра
+    {
+        for (float i = 0.2f; i <= 1f; i += 0.2f)
+        {
+            Instantiate(coin, new Vector3(transform.position.x - 0.9f + i, 1.3f, transform.position.z), transform.rotation);
+        }
+    }
+    public void SpawnTenCoins() // спавн 10 монет после убийства голема
+    {
+        for (float i = 0.2f; i <= 1f; i += 0.2f)
+        {
+            Instantiate(coin, new Vector3(transform.position.x - 0.9f + i, 1.3f, transform.position.z), transform.rotation);
+            Instantiate(coin, new Vector3(transform.position.x - 0.9f + i, 1.3f, transform.position.z - 0.4f), transform.rotation);
+        }        
+    }
+    public void SpawnTwentyCoins() // спавн 20 монет после убийства демона
+    {
+        for (float i = 0.2f; i <= 1f; i += 0.2f)
+        {
+            Instantiate(coin, new Vector3(transform.position.x - 0.9f + i, 1.3f, transform.position.z), transform.rotation);
+            Instantiate(coin, new Vector3(transform.position.x - 0.9f + i, 1.3f, transform.position.z - 0.4f), transform.rotation);
+            Instantiate(coin, new Vector3(transform.position.x - 0.9f + i, 1.3f, transform.position.z - 0.6f), transform.rotation);
+            Instantiate(coin, new Vector3(transform.position.x - 0.9f + i, 1.3f, transform.position.z - 0.8f), transform.rotation);
+        }
+    }
 
-    private void OnOffDamager(int switcher)
+    public void OnOffDamager(int switcher)
     {
         if (switcher == 1)
         {

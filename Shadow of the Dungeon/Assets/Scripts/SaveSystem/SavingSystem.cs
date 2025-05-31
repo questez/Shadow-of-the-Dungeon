@@ -7,7 +7,6 @@ public class SavingSystem : MonoBehaviour
     [SerializeField] Button continueButton;
     [SerializeField] Button restartButton;
     [SerializeField] AudioSource clickSound;
-
     private void Awake()
     {
         if (continueButton != null)
@@ -19,7 +18,6 @@ public class SavingSystem : MonoBehaviour
             restartButton.onClick.AddListener(LoadRestartLevel);
         }            
     }
-
     private void Start()
     {
         if (continueButton != null)
@@ -31,20 +29,21 @@ public class SavingSystem : MonoBehaviour
             else continueButton.interactable = false;
         }        
     }
-
     public static void SaveFinishedLevel(int lastLevel)
     {
         PlayerPrefs.SetInt("lastLevelindex", lastLevel); // сохранение последнего пройденного уровня
         PlayerPrefs.SetInt("PlayerXP", PlayerBehaviour.PlayerXP); // сохранение последних набранных очков опыта
         PlayerPrefs.SetInt("PlayerLevel", PlayerBehaviour.PlayerLevel); // сохранение последнего полученного уровня игрока
-        PlayerPrefs.SetInt("PlayerBalance", PlayerBehaviour.PlayerBalance); // сохранение последнего баланса игрока
+        PlayerPrefs.SetInt("PlayerBalance", PlayerBehaviour.PlayerBalance); // сохранение последнего баланса игрока        
         SaveMagic();
         PlayerPrefs.Save();
     }
-
     public void LoadFinishedLevel()
-    {        
-        clickSound.Play();
+    {
+        if (clickSound != null)
+        {
+            clickSound.Play();
+        }
         GameManager.lastLevelindex = PlayerPrefs.GetInt("lastLevelindex") - 1;
         PlayerBehaviour.PlayerXP = PlayerPrefs.GetInt("PlayerXP");
         PlayerBehaviour.PlayerLevel = PlayerPrefs.GetInt("PlayerLevel");
@@ -54,10 +53,12 @@ public class SavingSystem : MonoBehaviour
         PlayerBehaviour.CheckPlayerLevel();
         SceneManager.LoadScene("SaveZone");
     }
-
     public void LoadRestartLevel()
     {
-        clickSound.Play();
+        if (clickSound != null)
+        {
+            clickSound.Play();
+        }
         PlayerBehaviour.PlayerXP = PlayerPrefs.GetInt("PlayerXP");
         PlayerBehaviour.PlayerLevel = PlayerPrefs.GetInt("PlayerLevel");
         PlayerBehaviour.EquippedSwordIndex = PlayerPrefs.GetInt("EquippedSword");
@@ -65,14 +66,11 @@ public class SavingSystem : MonoBehaviour
         PlayerBehaviour.CheckPlayerLevel();
         LoadMagic();
     }
-
-
     public static void SaveEquipment()
     {
         PlayerPrefs.SetInt("EquippedSword", PlayerBehaviour.EquippedSwordIndex); // сохранение последнего примененного меча
         PlayerPrefs.Save();
-    }
-    
+    }    
     public static void SaveShop()
     {
         // сохранение купленных мечей
@@ -81,13 +79,11 @@ public class SavingSystem : MonoBehaviour
         PlayerPrefs.SetInt("PlayerBalance", PlayerBehaviour.PlayerBalance);
         PlayerPrefs.Save();
     }
-
     public static void LoadShop()
     {
         BuySword.isPurchased[1] = PlayerPrefs.GetInt("purchased_sword2");
         BuySword.isPurchased[2] = PlayerPrefs.GetInt("purchased_sword3");
     }
-
     public static void SaveMagic() // сохранение купленных и потраченных зелий и заклинаний
     {        
         PlayerPrefs.SetString("lastPlayerSpell", PlayerBehaviour.PlayerSpell);
@@ -104,10 +100,8 @@ public class SavingSystem : MonoBehaviour
         PlayerBehaviour.PlayerSpellCount = PlayerPrefs.GetInt("lastPlayerSpellCount");
         PlayerBehaviour.HasPotion = PlayerPrefs.GetInt("lastHasPotion");
     }    
-
     public static void DeleteAllSaves()
     {
         PlayerPrefs.DeleteAll();
     }
-
 }

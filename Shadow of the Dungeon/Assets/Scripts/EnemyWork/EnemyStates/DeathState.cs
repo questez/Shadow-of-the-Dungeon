@@ -9,40 +9,39 @@ public class DeathState : BaseState
     {
         Debug.Log("¬ход в deathstate");
         manager.SetSpeed(0);
-        manager.OffAllColliders();
+        manager.OffAllColliders();              
+        
         if (!isCoinsSpawned)
         {
-            manager.SpawnCoin();
+            if (manager.CompareTag("Skeleton") || manager.CompareTag("Spider"))
+            {
+                enemyXP = 5;
+                manager.SpawnOneCoin();
+            }
+            if (manager.CompareTag("Minotaur"))
+            {
+                MonoBehaviour.FindAnyObjectByType<GameManager>().isMiniBossDefeated = true;
+                enemyXP = 10;
+                manager.SpawnFiveCoins();
+            }
+            if (manager.CompareTag("Golem"))
+            {
+                MonoBehaviour.FindAnyObjectByType<GameManager>().isMiniBossDefeated = true;
+                enemyXP = 20;
+                manager.SpawnTenCoins();
+            }
+            if (manager.CompareTag("Demon"))
+            {
+                MonoBehaviour.FindAnyObjectByType<GameManager>().isFinalBossDefeated = true;
+                enemyXP = 100;
+                manager.SpawnTwentyCoins();
+            }            
             isCoinsSpawned = true;
-        }      
+        }
         
-        if (manager.CompareTag("Minotaur"))
-        {
-            MonoBehaviour.FindAnyObjectByType<GameManager>().isMiniBossDefeated = true;
-            enemyXP = 10;
-            manager.pb.ExperienceValue.text = PlayerBehaviour.PlayerXP.ToString();
-        }
-        if (manager.CompareTag("Golem"))
-        {
-            MonoBehaviour.FindAnyObjectByType<GameManager>().isMiniBossDefeated = true;
-            enemyXP = 20;
-            manager.pb.ExperienceValue.text = PlayerBehaviour.PlayerXP.ToString();
-        }
-        if (manager.CompareTag("Demon"))
-        {
-            MonoBehaviour.FindAnyObjectByType<GameManager>().isFinalBossDefeated = true;
-            enemyXP = 100;
-            manager.pb.ExperienceValue.text = PlayerBehaviour.PlayerXP.ToString();
-        }
-        if (manager.CompareTag("Skeleton") || manager.CompareTag("Spider"))
-        {
-            enemyXP = 5;
-            manager.pb.ExperienceValue.text = PlayerBehaviour.PlayerXP.ToString();
-        }
         PlayerBehaviour.PlayerXP += enemyXP;
         manager.pb.PlayerXPInLevel += enemyXP;
         PlayerBehaviour.CheckPlayerLevel();
-
         manager.pb.KillCounter++;
         manager.pb.SetCurrentScore();
         
