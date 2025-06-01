@@ -24,8 +24,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29681541904231348}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.15304585, y: -0.6903456, z: -0.15304585, w: 0.6903456}
-  m_LocalPosition: {x: -0.1, y: -0.2, z: -0.08}
+  m_LocalRotation: {x: -0.14958228, y: -0.69110435, z: -0.14958228, w: 0.69110435}
+  m_LocalPosition: {x: -0.1, y: -0.2, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -63,7 +63,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.6, z: 0.4}
+  m_LocalScale: {x: 0.40000004, y: 0.7, z: 0.40000004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3983034724737589359}
@@ -329,6 +329,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCollider: {fileID: -6638103147857846523}
-  _stonetableCollider: {fileID: 0}
   _canvas: {fileID: 0}
   PlayerDamage: 35

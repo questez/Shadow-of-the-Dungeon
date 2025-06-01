@@ -51,7 +51,7 @@ public class BuySword : MonoBehaviour
         }
         if (sword.name == "Sword3" && isPurchased[2] == 0)
         {
-            _swordPrice = 100;
+            _swordPrice = 20;
         }
 
     }

@@ -45,10 +45,8 @@ public class DeathState : BaseState
         manager.pb.KillCounter++;
         manager.pb.SetCurrentScore();
         
-        if (!manager.CompareTag("Demon"))
-        {
-            manager.EnemyAnimator.SetTrigger("IsDeath");
-        }
+        
+        manager.EnemyAnimator.SetTrigger("IsDeath");
         MonoBehaviour.Destroy(manager.gameObject, 4f);
     }
 

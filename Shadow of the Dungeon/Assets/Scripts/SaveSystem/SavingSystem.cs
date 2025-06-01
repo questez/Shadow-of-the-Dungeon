@@ -34,7 +34,10 @@ public class SavingSystem : MonoBehaviour
         PlayerPrefs.SetInt("lastLevelindex", lastLevel); // сохранение последнего пройденного уровня
         PlayerPrefs.SetInt("PlayerXP", PlayerBehaviour.PlayerXP); // сохранение последних набранных очков опыта
         PlayerPrefs.SetInt("PlayerLevel", PlayerBehaviour.PlayerLevel); // сохранение последнего полученного уровня игрока
-        PlayerPrefs.SetInt("PlayerBalance", PlayerBehaviour.PlayerBalance); // сохранение последнего баланса игрока        
+        PlayerPrefs.SetInt("PlayerBalance", PlayerBehaviour.PlayerBalance); // сохранение последнего баланса игрока
+        PlayerPrefs.SetFloat("MaxPlayerHP", PlayerBehaviour.MaxPlayerHP); // сохранение последнего макс хп игрока
+        PlayerPrefs.SetFloat("ExtraDamage", PlayerBehaviour.ExtraDamage); // сохранение последнего доп урона игрока
+        PlayerPrefs.SetInt("maxPlayerSpellCount", PlayerBehaviour.maxPlayerSpellCount); // сохранение последнего макс кол-ва заклинаний игрока
         SaveMagic();
         PlayerPrefs.Save();
     }
@@ -49,6 +52,11 @@ public class SavingSystem : MonoBehaviour
         PlayerBehaviour.PlayerLevel = PlayerPrefs.GetInt("PlayerLevel");
         PlayerBehaviour.EquippedSwordIndex = PlayerPrefs.GetInt("EquippedSword");
         PlayerBehaviour.PlayerBalance = PlayerPrefs.GetInt("PlayerBalance");
+
+        PlayerBehaviour.MaxPlayerHP = PlayerPrefs.GetFloat("MaxPlayerHP");
+        PlayerBehaviour.ExtraDamage = PlayerPrefs.GetFloat("ExtraDamage");
+        PlayerBehaviour.maxPlayerSpellCount = PlayerPrefs.GetInt("maxPlayerSpellCount");
+
         LoadMagic();
         PlayerBehaviour.CheckPlayerLevel();
         SceneManager.LoadScene("SaveZone");
@@ -63,8 +71,13 @@ public class SavingSystem : MonoBehaviour
         PlayerBehaviour.PlayerLevel = PlayerPrefs.GetInt("PlayerLevel");
         PlayerBehaviour.EquippedSwordIndex = PlayerPrefs.GetInt("EquippedSword");
         PlayerBehaviour.PlayerBalance = PlayerPrefs.GetInt("PlayerBalance");
-        PlayerBehaviour.CheckPlayerLevel();
+
+        PlayerBehaviour.MaxPlayerHP = PlayerPrefs.GetFloat("MaxPlayerHP");
+        PlayerBehaviour.ExtraDamage = PlayerPrefs.GetFloat("ExtraDamage");
+        PlayerBehaviour.maxPlayerSpellCount = PlayerPrefs.GetInt("maxPlayerSpellCount");
+
         LoadMagic();
+        PlayerBehaviour.CheckPlayerLevel();
     }
     public static void SaveEquipment()
     {

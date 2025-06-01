@@ -19,7 +19,7 @@ public class AttackState : BaseState
                 attack = MinotaurCurrentAttack;
                 break;
             case "Golem":
-                attack = GolemCurrentAttack;
+                attack = "IsAttack1";
                 break;
             case "Demon":
                 attack = "IsAttack";
@@ -52,21 +52,9 @@ public class AttackState : BaseState
     {
         get
         {
-            string[] attack_list = { "IsAttack1", "IsAttack2", "IsAttack3" };
+            string[] attack_list = { "IsAttack1", "IsAttack3" };
             System.Random rand = new System.Random();
-            return attack_list[rand.Next(0, 3)];
+            return attack_list[rand.Next(0, 2)];
         }
-    }
-
-    // "Golem":
-    private string GolemCurrentAttack
-    {
-        get
-        {
-            string[] attack_list = { "IsAttack1", "IsAttack2" };
-            System.Random rand = new System.Random();
-            return attack_list[rand.Next(0, 1)];
-        }
-    }
-    
+    }    
 }
