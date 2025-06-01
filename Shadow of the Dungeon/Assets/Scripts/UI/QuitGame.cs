@@ -1,4 +1,3 @@
-using UnityEditor;
 using UnityEngine;
 
 public class QuitGame : MonoBehaviour
@@ -9,7 +8,7 @@ public class QuitGame : MonoBehaviour
     public void Quit()
     {
         _clickSound.Play();
-        EditorApplication.isPlaying = false;
+        //EditorApplication.isPlaying = false;
         Application.Quit();
     }
     private void Awake()
