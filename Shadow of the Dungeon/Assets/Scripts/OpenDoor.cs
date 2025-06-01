@@ -26,6 +26,10 @@ public class OpenDoor : MonoBehaviour
             {                
                 SceneManager.LoadScene("SaveZone");
                 SavingSystem.SaveFinishedLevel(GameManager.lastLevelindex + 1);
+                if (PlayerBehaviour.PlayerSpell != "Нет Заклинания")
+                {
+                    PlayerBehaviour.PlayerSpellCount = PlayerBehaviour.maxPlayerSpellCount;
+                }
             }     
             else if (name_scene == "StartRoom")
             {
@@ -34,6 +38,10 @@ public class OpenDoor : MonoBehaviour
             else if (name_scene == "SaveZone" && (GameManager.lastLevelindex + 1) <= SceneManager.sceneCountInBuildSettings)
             {
                 SceneManager.LoadScene(GameManager.lastLevelindex + 1);
+                if (PlayerBehaviour.PlayerSpell != "Нет Заклинания")
+                {
+                    PlayerBehaviour.PlayerSpellCount = PlayerBehaviour.maxPlayerSpellCount;
+                }
             }
         }        
     }

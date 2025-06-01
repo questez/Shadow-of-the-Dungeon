@@ -71,5 +71,5 @@ public class GrabWeapon : MonoBehaviour
         args.interactableObject.transform.SetParent(null);
     }
 
-    public bool HitTrack { get => rb.linearVelocity.magnitude >= 0f; }    
+    public bool HitTrack { get => rb.linearVelocity.magnitude >= 0.5f; }    
 }
