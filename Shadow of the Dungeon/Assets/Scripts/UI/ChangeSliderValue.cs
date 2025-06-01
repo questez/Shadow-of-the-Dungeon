@@ -15,15 +15,15 @@ public class ChangeSliderValue: MonoBehaviour
 
     public void ChangeValue()
     {
-        if (_text.text == "Sound Volume" && SoundSource != null)
+        if (_text.text == "√ромкость Ёффектов" && SoundSource != null)
         {
-            Debug.Log("SoundVolume: " + _slider.value);
+            Debug.Log("√ромкость Ёффектов: " + _slider.value);
             SoundSource.volume = _slider.value / 100;
             SoundValue = _slider.value;
         }
-        else if (_text.text == "Music Volume" && MusicSource != null)
+        if (_text.text == "√ромкость ћузыки" && MusicSource != null)
         {
-            Debug.Log("MusicVolume: " + _slider.value);
+            Debug.Log("√ромкость ћузыки: " + _slider.value);
             MusicSource.volume = _slider.value / 100;
             MusicValue = _slider.value;
         }
