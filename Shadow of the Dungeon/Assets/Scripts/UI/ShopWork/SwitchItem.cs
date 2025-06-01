@@ -29,10 +29,6 @@ public class SwitchItem : MonoBehaviour
             currentItemRow.SetActive(false);
             previousItemRow.SetActive(true);
         }
-        else
-        {
-            Debug.Log("Неверный ввод");
-        }
         if (clickSound != null)
         {
             clickSound.Play();
