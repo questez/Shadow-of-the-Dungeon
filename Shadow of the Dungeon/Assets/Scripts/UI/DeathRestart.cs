@@ -11,6 +11,7 @@ public class DeathRestart : MonoBehaviour
     }    
     private void Restart()
     {
+        PlayerBehaviour.PlayerHP = PlayerBehaviour.MaxPlayerHP;
         _clickSound.Play();
         SceneManager.LoadScene(GameManager.lastLevelindex);
     }

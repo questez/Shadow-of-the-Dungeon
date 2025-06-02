@@ -54,6 +54,7 @@ public class SavingSystem : MonoBehaviour
         PlayerBehaviour.PlayerBalance = PlayerPrefs.GetInt("PlayerBalance");
 
         PlayerBehaviour.MaxPlayerHP = PlayerPrefs.GetFloat("MaxPlayerHP");
+        PlayerBehaviour.PlayerHP = PlayerBehaviour.MaxPlayerHP;
         PlayerBehaviour.ExtraDamage = PlayerPrefs.GetFloat("ExtraDamage");
         PlayerBehaviour.maxPlayerSpellCount = PlayerPrefs.GetInt("maxPlayerSpellCount");
 
@@ -73,6 +74,7 @@ public class SavingSystem : MonoBehaviour
         PlayerBehaviour.PlayerBalance = PlayerPrefs.GetInt("PlayerBalance");
 
         PlayerBehaviour.MaxPlayerHP = PlayerPrefs.GetFloat("MaxPlayerHP");
+        PlayerBehaviour.PlayerHP = PlayerBehaviour.MaxPlayerHP;
         PlayerBehaviour.ExtraDamage = PlayerPrefs.GetFloat("ExtraDamage");
         PlayerBehaviour.maxPlayerSpellCount = PlayerPrefs.GetInt("maxPlayerSpellCount");
 

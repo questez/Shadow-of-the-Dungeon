@@ -16,6 +16,11 @@ public class StartMessage : MonoBehaviour
         _continueButton.onClick.AddListener(CloseStartMessage);
     }
 
+    private void Start()
+    {
+        SavingSystem.SaveFinishedLevel(GameManager.lastLevelindex);
+    }
+
 
     public void CloseStartMessage()
     {
