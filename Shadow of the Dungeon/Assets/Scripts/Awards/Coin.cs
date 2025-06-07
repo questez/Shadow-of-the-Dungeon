@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    float _rotationSpeed = 300f;
-    
+    float _rotationSpeed = 300f;    
 
     [SerializeField] AudioSource _coinSound;    
 
