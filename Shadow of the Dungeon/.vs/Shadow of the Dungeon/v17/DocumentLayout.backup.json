@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\",
+  "WorkspaceRootPath": "D:\\UNI\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|c:\\users\\iaros\\documents\\github\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\enemywork\\enemystates\\enemystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemywork\\enemystates\\enemystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|d:\\uni\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\grabweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grabweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|d:\\uni\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\ui\\startmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\startmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|d:\\uni\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\savesystem\\savingsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savesystem\\savingsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|d:\\uni\\shadow-of-the-dungeon\\shadow of the dungeon\\assets\\scripts\\ui\\deathrestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B482B45-FF6E-3A56-80EB-0A4601ADF15D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\deathrestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EnemyStateManager.cs",
-              "DocumentMoniker": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyWork\\EnemyStates\\EnemyStateManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyWork\\EnemyStates\\EnemyStateManager.cs",
-              "ToolTip": "C:\\Users\\iaros\\Documents\\GitHub\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\EnemyWork\\EnemyStates\\EnemyStateManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemyWork\\EnemyStates\\EnemyStateManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBkAAAAAAAAAAAAAAA==",
+              "Title": "GrabWeapon.cs",
+              "DocumentMoniker": "D:\\UNI\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\GrabWeapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GrabWeapon.cs",
+              "ToolTip": "D:\\UNI\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\GrabWeapon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GrabWeapon.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowEkAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T12:20:12.454Z",
+              "WhenOpened": "2025-06-02T10:54:33.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StartMessage.cs",
+              "DocumentMoniker": "D:\\UNI\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\StartMessage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\StartMessage.cs",
+              "ToolTip": "D:\\UNI\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\StartMessage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\StartMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T10:50:42.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SavingSystem.cs",
+              "DocumentMoniker": "D:\\UNI\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\SaveSystem\\SavingSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SaveSystem\\SavingSystem.cs",
+              "ToolTip": "D:\\UNI\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\SaveSystem\\SavingSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SaveSystem\\SavingSystem.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T10:45:26.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeathRestart.cs",
+              "DocumentMoniker": "D:\\UNI\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\DeathRestart.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\DeathRestart.cs",
+              "ToolTip": "D:\\UNI\\Shadow-of-the-Dungeon\\Shadow of the Dungeon\\Assets\\Scripts\\UI\\DeathRestart.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\DeathRestart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T10:43:19.231Z",
               "EditorCaption": ""
             }
           ]
